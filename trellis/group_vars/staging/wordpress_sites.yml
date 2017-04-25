@@ -3,7 +3,7 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  example.com:
+  alloe.io:
     site_hosts:
       - canonical: www-alloe.staging.lkmx.io
         # redirects:
