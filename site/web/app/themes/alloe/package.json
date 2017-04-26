@@ -65,6 +65,8 @@
     "css-reset-and-normalize-sass": "^0.1.2",
     "font-awesome": "^4.7.0",
     "jquery": "1.12.4 - 3",
-    "sass-mediaqueries": "^1.6.1"
+    "jquery.animate-number": "^0.0.14",
+    "sass-mediaqueries": "^1.6.1",
+    "scrollpos-styler": "^0.6.1"
   }
 }

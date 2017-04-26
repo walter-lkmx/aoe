@@ -1,5 +1,7 @@
 /** import external dependencies */
 import 'jquery';
+import 'scrollpos-styler';
+import 'jquery.animate-number';
 
 /** import local dependencies */
 import Router from './util/Router';
