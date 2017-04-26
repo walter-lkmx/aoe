@@ -1,0 +1,94 @@
+footer {
+    overflow: hidden;
+    background: $brand-grey;
+    padding: $base-padding * 2 0;
+    width: 100%;
+    .container {
+        // @extend .vertical-centering;
+        width: 100%;
+        border-bottom: $base-border;
+        border-color: lighten($brand-dark, 60%);
+        overflow: hidden;
+        padding: $base-padding * 2 $base-padding * 2;
+        @include mq($max-width: 768px) {
+            text-align: center;
+            padding: 0;
+        }
+        .footer-column {
+            float: left;
+            width: 25%;
+            // text-align: center;
+            @include mq($max-width: 768px) {
+                width: 100%;
+                float: none;
+                margin-bottom: $base-margin * 3;
+            }
+            &:first-child {
+                // background-color: red;
+                // width: 20%;
+                img {
+                    width: 150px;
+                }
+            }
+            h5 {
+                margin-bottom: $base-margin * 2;
+            }
+            ul {
+                li {
+                    margin-bottom: $base-margin / 2;
+                }
+            }
+            svg {
+                #mask {
+                    fill: transparent;
+                }
+                #color-mesh {
+                    // display: none;
+                }
+            }
+        }
+    }
+    .copyright {
+        float: left;
+        @include mq($max-width: 768px) {
+            display: none;
+        }
+        display: inline-block;
+        color: lighten($brand-dark, 40%);
+        padding-top: $base-padding;
+        padding-left: $base-padding * 1.5;
+    }
+    .copyright-mobile {
+        display: none;
+        @include mq($max-width: 768px) {
+            float: none;
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: lighten($brand-dark, 40%);
+            padding-top: $base-padding;
+        }
+    }
+    nav.nav-social {
+        float: right;
+        right: 0;
+        @include mq($max-width: 768px) {
+            float: none;
+            width: 100%;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            // padding: $base-padding !important;
+        }
+        padding-top: $base-padding * 2.5;
+        padding-right: $base-padding * 1.5;
+        a {
+            font-size: $base-font-size * 2;
+            margin-left: $base-margin;
+            color: $brand-dark;
+        }
+    }
+}
