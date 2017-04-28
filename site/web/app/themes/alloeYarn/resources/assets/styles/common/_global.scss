@@ -41,6 +41,11 @@ p {
     line-height: $base-line-height;
 }
 
+// Initial visibility
+.initial-display {
+    display: initial !important;
+}
+
 // Buttons
 .button {
     padding: $base-padding $base-padding * 2;

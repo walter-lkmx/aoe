@@ -2,6 +2,7 @@
 import 'jquery';
 import 'scrollpos-styler';
 import 'jquery.animate-number';
+import 'angular';
 
 /** import local dependencies */
 import Router from './util/Router';

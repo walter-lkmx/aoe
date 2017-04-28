@@ -6,3 +6,9 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+@mixin delay($seconds: 2s) {
+    -webkit-animation-duration: $seconds;
+    -ms-animation-duration: $seconds;
+    animation-duration: $seconds;
+}

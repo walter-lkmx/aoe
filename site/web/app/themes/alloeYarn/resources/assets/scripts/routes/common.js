@@ -1,6 +1,11 @@
 export default {
     init() {
             // JavaScript to be fired on all pages
+            // loader
+            $(document).ready(function() {
+                $("body").addClass('initial-display');
+            });
+            // button
             $(document).ready(function() {
                 $("button").click(function() {
                     $(this).hide();
