@@ -1,9 +1,9 @@
 .features {
-    @extend .after-menu-header;
     .page-header {
         display: none;
     }
     .not-just-app {
+        @extend .after-menu-header;
         @extend .magazine-container;
         @include mq($max-width: 768px) {
             width: 90%;
