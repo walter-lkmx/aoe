@@ -3,7 +3,7 @@
         display: none;
     }
     .not-just-app {
-        @extend .after-menu-header;
+        @extend .after-menu-header;  
         @extend .magazine-container;
         @include mq($max-width: 768px) {
             width: 90%;
