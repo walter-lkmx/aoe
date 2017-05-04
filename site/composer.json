@@ -34,7 +34,7 @@
         "johnpbloch/wordpress": "4.7.4",
         "oscarotero/env": "^1.0",
         "roots/wp-password-bcrypt": "1.0.0",
-        "wpackagist-plugin/woocommerce": "^3.0.4"
+        "wpackagist-plugin/wordpress-importer": "0.6.3"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.5.1"
