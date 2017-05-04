@@ -125,7 +125,7 @@ header.banner {
         // @include vertical-align();
         display: inline-block;
         margin-left: $base-margin * 2;
-        margin-top: $base-margin * 2;
+        margin-top: $base-margin * 1.5;
         float: left;
         transition: $base-transition;
         a {
@@ -150,6 +150,21 @@ header.banner {
             .subscribe-now {
                 .home & {
                     display: none;
+                }
+                padding: $base-padding $base-padding * 2;
+                margin-top: -1px !important;
+                border-radius: 100px;
+                transition: .3s;
+                background: $brand-purple;
+                color: $brand-white;
+                padding-top: $base-padding / 2;
+                padding-bottom: $base-padding / 2;
+                margin-top: $base-margin / 2;
+                transition: $base-transition;
+                display: inline-block;
+                @extend .ripple;
+                &:hover {
+                    background: darken($brand-purple, 5%);
                 }
                 .features & {
                     display: initial;

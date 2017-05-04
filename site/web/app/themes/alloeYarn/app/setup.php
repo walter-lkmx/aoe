@@ -29,6 +29,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('soil-nav-walker');
     add_theme_support('soil-nice-search');
     add_theme_support('soil-relative-urls');
+    add_theme_support('woocommerce');
 
     /**
      * Enable plugins to manage the document title
@@ -155,3 +156,8 @@ add_action('after_setup_theme', function () {
  * Init config
  */
 sage()->bindIf('config', Config::class, true);
+
+/**
+ * Init config
+ */
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );

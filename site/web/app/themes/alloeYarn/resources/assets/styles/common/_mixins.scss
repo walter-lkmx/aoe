@@ -7,6 +7,25 @@
     transform: translateY(-50%);
 }
 
+// absolute centered
+@mixin centerer($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+// delay animation
 @mixin delay($seconds: 2s) {
     -webkit-animation-duration: $seconds;
     -ms-animation-duration: $seconds;

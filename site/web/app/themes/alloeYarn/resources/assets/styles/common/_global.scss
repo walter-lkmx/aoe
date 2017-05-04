@@ -11,6 +11,7 @@ body {
 
 a {
     text-decoration: none;
+    color: $brand-dark;
 }
 
 // Typography
@@ -20,7 +21,7 @@ h1 {
 
 h2 {
     font-size: $base-font-size * 2.4;
-    font-weight: $base-font-weight-normal;
+    font-weight: $base-font-weight-light;
 }
 
 h3 {
