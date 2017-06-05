@@ -14,7 +14,7 @@
   @if (!have_posts())
     <div class="alert alert-warning">
       <p>{{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}</p>
-       <a href="" title="Go Home">Go Home</a>
+       <a href="{{ home_url('/') }}" title="Go Home">Go Home</a>
     </div>
     {{-- {!! get_search_form(false) !!} --}}
   @endif

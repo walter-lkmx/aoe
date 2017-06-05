@@ -25,9 +25,20 @@
     }
 }
 
-// delay animation
-@mixin delay($seconds: 2s) {
+// duration animation
+@mixin duration($seconds: 2s) {
     -webkit-animation-duration: $seconds;
     -ms-animation-duration: $seconds;
+    -moz-animation-duration: $seconds;
+    -o-animation-duration: $seconds;
     animation-duration: $seconds;
+}
+
+// delay animation
+@mixin delay($seconds: 2s) {
+    -webkit-animation-delay: $seconds;
+    -ms-animation-delay: $seconds;
+    -moz-animation-delay: $seconds;
+    -o-animation-delay: $seconds;
+    animation-delay: $seconds;
 }

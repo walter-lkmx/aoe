@@ -17,14 +17,14 @@
 </svg>
 
         </a>
-        <nav class="nav-primary">
+        <nav class="nav-primary"> 
             {{-- @if (has_nav_menu('primary_navigation')) {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!} @endif --}}
             <a href="">Employer solutions</a>
-            <a href="">Our experts</a>
+            <a href="{{ home_url('/') }}#our-experts">Our experts</a>
             <a href="">Media</a>
             <a href="">Work with us</a>
-            <a class="subscribe-now" href="" title="">Subscribe now</a>
-        </nav>
+            <a id="show-subscribe" class="subscribe-now" href="#" rel="/?empty-cart=clearcart" title="">Subscribe now</a>
+        </nav> 
         <nav class="nav-download">
             <a href="" title="" class="fa fa-apple"></a>
             <a href="" title="" class="fa fa-android"></a>
@@ -38,27 +38,22 @@
         <nav class="menu-toggle">
             <a title="" id="show-menu">
                 <svg width="24px" height="18px" viewBox="990 -48 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
                     <g id="Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(990.000000, -48.000000)">
                         <path d="M0,0 L0,2 L24,2 L24,0 L0,0 L0,0 Z M0,8 L0,10 L24,10 L24,8 L0,8 L0,8 Z M0,16 L0,18 L24,18 L24,16 L0,16 L0,16 Z" id="Shape" fill="#000000"></path>
                     </g>
                 </svg>
             </a>
         </nav>
+        {{-- Mobile menu --}}
         <nav id="nav-mobile" class="nav-mobile">
             <a id="hide-menu" class="close-menu" title="">
                 <svg width="52px" height="52px" viewBox="884 -65 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
                     <g id="close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(884.000000, -65.000000)">
                         <path d="M26,0 C11.6642858,0 0,11.6642858 0,26 C0,40.335714 11.6642858,52 26,52 C40.335714,52 52,40.335714 52,26 C52,11.6642858 40.335714,0 26,0 L26,0 Z M26,4 C38.173954,4 48,13.8260462 48,26 C48,38.173954 38.173954,48 26,48 C13.8260462,48 4,38.173954 4,26 C4,13.8260462 13.8260462,4 26,4 L26,4 Z M18.4375,15.5625 L15.5625,18.4375 L23.125,26 L15.5625,33.5625 L18.4375,36.4375 L26,28.875 L33.5625,36.4375 L36.4375,33.5625 L28.875,26 L36.4375,18.4375 L33.5625,15.5625 L26,23.125 L18.4375,15.5625 L18.4375,15.5625 Z" id="Shape" fill="#212A34"></path>
                     </g>
                 </svg>
             </a>
-            <a class="subscribe-now" href="" title="">Subscribe now</a>
+            <a id="show-subscribe" class="subscribe-now" href="" title="">Subscribe now</a>
             <a href="" title="">Employer solution</a>
             <a href="" title="">Our experts</a>
             <a href="" title="">Media</a>

@@ -2,8 +2,8 @@
     <div class="message-call-to-action">
         <h1 id="show-menu">Building healthy 
         companies</h1>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-        <a href="" title="Subscribe to Alloe.io">Subscribe now</a>
+        <p>Group wellness Software as a Service (SaaS) platform empowering organizations to support healthy humans.</p>
+        <a id="welcome-show-subscribe" href="#" rel="/?empty-cart=clearcart" title="Subscribe to Alloe.io">Subscribe now</a>
     </div>
     <div class="alloe-smartphone">
         <img src="@asset('images/alloe-app.png')" alt="">

@@ -1,37 +1,35 @@
 <div class="not-just-app">
-    <h2>It’s not just an app</h2>
-    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+    <h2>It’s not just an app</h2> {{--
+    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p> --}}
     <div class="features">
         <h4 class="social">Social</h4>
         <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Use Alloe.IO to create a private health and wellness network for users to join challenges, track goals and encourage others to live a happy and healthy life.
         </p>
         <a href="" title="">Learn more</a>
     </div>
     <div class="features">
         <h4 class="engagement">Engagement</h4>
         <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Don’t have the time or resources to build, communicate, manage and measure a successful and proven health and wellness program? Use our out of the box programs and features to build and support happy and healthy lifestyles today.
         </p>
         <a href="" title="">Learn more</a>
     </div>
     <div class="features">
         <h4 class="management">Management</h4>
         <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Manage end-to-end group and enterprise health and wellness programs. Invite users, schedule events, program incentives and more all in one place.
         </p>
         <a href="" title="">Learn more</a>
     </div>
     <div class="features">
-        <h4 class="measurement">Measurement</h4>
+        <h4 class="measurement">Measurement</h4> 
         <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            A program is only as good as it’s outcomes. Alloe.IO provides each admin with a monthly Know Your Numbers (KYN) dashboard of key metrics to gain the insights needed to influence healthy outcomes.
         </p>
         <a href="" title="">Learn more</a>
     </div>
     <svg id="chart" width="110%" height="670px" viewBox="0 1078 1627 670" preserveAspectRatio="xMaxYMin meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-        <desc>Created with Sketch.</desc>
         <defs>
             <path d="M334,571 C465,575 578,465 570,335 C562,205 459,91.9999998 334,99 C209,106 98,204.660799 98,335 C98,465.339201 203,567 334,571 Z" id="path-1"></path>
         </defs>
@@ -43,49 +41,51 @@
                         <tspan x="904.193332" y="20">Engagement</tspan>
                     </text>
                     <g id="Group-9" transform="translate(0.000000, 25.000000)">
-                        <text id="Sed-ut-perspiciatis" font-family="Lato-Light, Lato" font-size="16" font-weight="300" letter-spacing="0.666666865" fill="#212A34">
-                            <tspan x="797.245994" y="17">Sed ut perspiciatis unde omnis </tspan>
-                            <tspan x="796.803327" y="36">iste natus error sit voluptatem </tspan>
-                            <tspan x="836.115329" y="55">accusantium doloremque </tspan>
-                            <tspan x="934.952664" y="74">laudantium.</tspan>
-                        </text>
-                        <rect id="Rectangle-12" fill="#212A34" x="895" y="98" width="128" height="35" rx="17.5"></rect>
-                        <rect id="Rectangle-12-Copy" fill="#212A34" x="894" y="463" width="128" height="35" rx="17.5"></rect>
-                        <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
-                            <tspan x="915" y="121">Learn more</tspan>
-                        </text>
-                        <text id="Learn-more-Copy" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
-                            <tspan x="914" y="486">Learn more</tspan>
-                        </text>
-                        <text id="Sed-ut-perspiciatis" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
-                            <tspan x="1" y="16">Sed ut perspiciatis unde </tspan>
-                            <tspan x="1" y="38">omnis iste natus error sit </tspan>
-                            <tspan x="1" y="60">voluptatem accusantium </tspan>
-                            <tspan x="1" y="82">doloremque laudantium.</tspan>
-                        </text>
-                        <rect id="Rectangle-12" fill="#212A34" x="0" y="98" width="128" height="35" rx="17.5"></rect>
-                        <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
-                            <tspan x="20" y="121">Learn more</tspan>
-                        </text>
-                    </g>
+                            <text id="Create-a-private-hea" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
+                                <tspan x="740.798" y="16.5">Create a private health and wellness </tspan>
+                                <tspan x="741.318" y="38.5">network for users to join challenges, </tspan>
+                                <tspan x="746.158" y="60.5">track goals and encourage others to </tspan>
+                                <tspan x="805.262" y="82.5">live a happy and healthy life</tspan>
+                                <tspan x="1018.59" y="82.5">.</tspan>
+                            </text>
+                            <rect id="Rectangle-12" fill="#212A34" x="895" y="98" width="128" height="35" rx="17.5"></rect>
+                            <rect id="Rectangle-12-Copy" fill="#212A34" x="894" y="463" width="128" height="35" rx="17.5"></rect>
+                            <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="915" y="121">Learn more</tspan>
+                            </text>
+                            <text id="Learn-more-Copy" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="914" y="486">Learn more</tspan>
+                            </text>
+                            <text id="Create-a-private-hea" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
+                                <tspan x="1" y="16">Create a private health and wellness </tspan>
+                                <tspan x="1" y="38">network for users to join challenges, </tspan>
+                                <tspan x="1" y="60">track goals and encourage others to </tspan>
+                                <tspan x="1" y="82">live a happy and healthy life.</tspan>
+                            </text>
+                            <rect id="Rectangle-12" fill="#212A34" x="0" y="98" width="128" height="35" rx="17.5"></rect>
+                            <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="20" y="121">Learn more</tspan>
+                            </text>
+                        </g>
                     <g id="Group-9-Copy" transform="translate(1.000000, 390.000000)">
-                        <text id="Sed-ut-perspiciatis" font-family="Lato-Light, Lato" font-size="16" font-weight="300" letter-spacing="0.666666865" fill="#212A34">
-                            <tspan x="796.245994" y="17">Sed ut perspiciatis unde omnis </tspan>
-                            <tspan x="795.803327" y="36">iste natus error sit voluptatem </tspan>
-                            <tspan x="835.115329" y="55">accusantium doloremque </tspan>
-                            <tspan x="933.952664" y="74">laudantium.</tspan>
-                        </text>
-                        <text id="Sed-ut-perspiciatis" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
-                            <tspan x="0" y="16">Sed ut perspiciatis unde </tspan>
-                            <tspan x="0" y="38">omnis iste natus error sit </tspan>
-                            <tspan x="0" y="60">voluptatem accusantium </tspan>
-                            <tspan x="0" y="82">doloremque laudantium.</tspan>
-                        </text>
-                        <rect id="Rectangle-12" fill="#212A34" x="0" y="98" width="128" height="35" rx="17.5"></rect>
-                        <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
-                            <tspan x="20" y="121">Learn more</tspan>
-                        </text>
-                    </g>
+                            <text id="Alloe.IO-provides-ea" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
+                                <tspan x="677.638" y="16">Alloe.IO provides each admin with a monthly </tspan>
+                                <tspan x="667.59" y="38">Know Your Numbers  (KYN) dashboard of  key </tspan>
+                                <tspan x="730.63" y="60">metrics to gain the insights needed to </tspan>
+                                <tspan x="805.854" y="82">influence healthy outcomes.</tspan>
+                            </text>
+                            <text id="Manage-end-to-end-gr" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#212A34">
+                                <tspan x="0" y="16">Manage end-to-end group and enterprise </tspan>
+                                <tspan x="0" y="38">health and wellness programs.  Invite </tspan>
+                                <tspan x="0" y="60">users, schedule events, program </tspan>
+                                <tspan x="0" y="82">incentives and more all in one place.</tspan>
+                                <tspan x="0" y="104"> </tspan>
+                            </text>
+                            <rect id="Rectangle-12" fill="#212A34" x="0" y="98" width="128" height="35" rx="17.5"></rect>
+                            <text id="Learn-more" font-family="Lato-Light, Lato" font-size="16" font-weight="300" line-spacing="22" letter-spacing="1" fill="#FFFFFF">
+                                <tspan x="20" y="121">Learn more</tspan>
+                            </text>
+                        </g>
                 </g>
                 <g id="Group-2-Copy" transform="translate(1.000000, 0.000000)">
                     <text id="Social" font-family="Lato-Regular, Lato" font-size="20" font-weight="normal" letter-spacing="0.833333611" fill="#4A83E5">

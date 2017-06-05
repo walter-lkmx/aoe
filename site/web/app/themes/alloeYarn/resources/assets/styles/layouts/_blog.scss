@@ -1,26 +1,45 @@
-.blog {
+.blog,
+.author {
     main {
         @extend .after-menu-header;
+        @include mq($max-width: 768px) {
+            margin-top: 0;
+        }
         .page-header {
             display: none;
         }
         article {
-            // background-color: lightgreen;
+            overflow: hidden;
             box-sizing: border-box;
             width: 70%;
-            // display: inline-block;
-            // float:left;
-            padding: $base-padding;
-            overflow: hidden;
+            @include mq($max-width: 768px) {
+                width: 100%;
+            }
+            max-width: 1280px;
             margin-bottom: $base-margin * 4;
+            padding: $base-padding;
+            border-bottom: $base-border;
+            border-color: rgba($brand-dark, .1);
+            padding-bottom: $base-padding * 5;
+            @include mq($max-width: 768px) {
+                border: rgba($brand-dark, .1);
+                padding-bottom: 0;
+            }
             @extend .vertical-centering;
+            &:last-child {
+                border-bottom: 0;
+            }
             .post-content {
                 position: absolute;
                 z-index: 1;
                 width: 45%;
+                @include mq($max-width: 768px) {
+                    position: relative;
+                    width: 100%;
+                }
                 header {
                     h2 {
-                        font-family: 'Cormorant', serif;
+                        // font-family: 'Cormorant', serif;
                         display: inline-block;
                         margin-top: $base-margin * 3;
                         padding-top: $base-padding;
@@ -30,38 +49,59 @@
                         background-color: $brand-white;
                         a {
                             color: $brand-dark;
+                            transition: .3s;
+                            &:hover {
+                                color: $brand-primary;
+                            }
                         }
                     }
                 }
                 .entry-excerpt {
                     width: 55%;
                     // margin-top: $base-margin * 12;
+                    @include mq($max-width: 768px) {
+                        width: 100%;
+                    }
                     .meta {
                         .byline {
-                            margin-left: $base-margin;
                             display: inline-block;
+                            margin-left: $base-margin;
                             a {
                                 display: inline-block;
                             }
                         }
                     }
                     a {
-                        margin-top: $base-margin;
                         display: block;
+                        margin-top: $base-margin;
+                        &:hover {
+                            color: $brand-primary;
+                        }
+                    }
+                }
+                .feature-image {
+                    display: none;
+                    @include mq($max-width: 768px) {
+                        display: initial;
                     }
                 }
             }
             .feature-image {
+                position: relative;
                 display: inline-block;
                 float: right;
+                overflow: hidden;
                 width: 60%;
                 height: 450px;
-                margin-left: calc(100% - 70%);
                 margin-top: $base-margin;
                 margin-bottom: $base-margin;
+                margin-left: calc(100% - 70%);
                 text-align: center;
-                overflow: hidden;
-                position: relative;
+                @include mq($max-width: 768px) {
+                    display: none;
+                    width: 100%;
+                    height: 200px;
+                }
                 img {
                     position: relative;
                     @include centerer(true, true);

@@ -1,0 +1,203 @@
+.subscribe {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($brand-white, 1);
+    // overflow-y: scroll;
+    text-align: center;
+    padding: $base-padding;
+    padding-bottom: $base-padding * 4;
+    @include mq($max-width: 768px) {
+        position: fixed;
+        box-sizing: border-box;
+    }
+    @include delay(.2s);
+    // @include duration(.3s);
+    // transition: $base-transition;
+    .close-subscription {
+        @extend .button;
+        // border: $base-border;
+        // border-color: rgba($brand-dark, .5);
+        // color: rgba($brand-primary, .5);
+        color: $brand-primary;
+        padding-top: $base-padding / 2;
+        padding-bottom: $base-padding / 2;
+        position: absolute;
+        right: $base-margin;
+        top: $base-margin;
+        @include mq($max-width: 768px) {
+            padding-right: 0;
+            right: $base-margin;
+            top: $base-margin / 2;
+        }
+        transition: $base-transition;
+        &:hover {
+            // background-color: $brand-dark;
+            color: darken($brand-primary, 20%);
+            path {
+                fill: darken($brand-primary, 20%);
+                // fill: $brand-white;
+            }
+        }
+        svg {
+            margin-right: $base-margin / 2;
+            path {
+                fill: $brand-primary;
+            }
+        }
+    }
+    #logo-overlay {
+        // display: none;
+        margin-top: $base-margin;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+    }
+    p.description {
+        width: 70%;
+        @include mq($max-width: 768px) {
+            width: 90%;
+        }
+        max-width: 1024px;
+        margin-top: $base-margin;
+        @extend .vertical-centering;
+    }
+    ul.plans {
+        margin-top: $base-margin * 4;
+        width: 1024px;
+        @include mq($max-width: 768px) {
+            width: 90%;
+        }
+        // background-color: rgba($brand-yellow, 1);
+        height: 200px;
+        // padding-left: $base-padding * 4;
+        @extend .vertical-centering;
+        li {
+            // background-color: rgba($brand-yellow, .95);
+            // background-color: rgba($brand-dark, .02);
+            border: $base-border;
+            border-color: rgba($brand-dark, .1);
+            text-align: left;
+            width: 275.3px;
+            // margin-right: 4.5%;
+            padding: $base-padding * 2;
+            float: left;
+            transition: $base-transition;
+            @include mq($max-width: 768px) {
+                width: 80%;
+                float: none;
+                margin-bottom: $base-margin * 2;
+            }
+            &:hover {
+                box-shadow: 0 8px 50px -6px rgba($brand-grey-purple, .26);
+                // box-shadow: 0 8px 50px 0 rgba($brand-grey-purple, .3);
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.monthly {
+                h2 {
+                    // color: $brand-purple;
+                }
+            }
+            &.customized {
+                h2 {
+                    // color: $brand-purple;
+                }
+            }
+            &.yearly {
+                border-top: .2rem solid;
+                border-color: $brand-purple;
+                -ms-transform: scale(1.1, 1.1);
+                -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1);
+                background-color: rgba($brand-white, 1);
+                border-right: 0;
+                border-left: 0;
+                border-bottom: 0;
+                box-shadow: 0 8px 50px -6px rgba($brand-grey-purple, .26);
+                &:hover {
+                    // box-shadow: 0 8px 50px 0 rgba($brand-grey-purple, .4);
+                }
+                a {
+                    background-color: $brand-purple;
+                    color: $brand-white;
+                    &:hover {
+                        color: $brand-white;
+                        background: darken($brand-purple, 5%);
+                    }
+                }
+            }
+            h2 {
+                // color: $brand-purple;
+            }
+            ul {
+                margin-bottom: $base-margin * 1.5;
+                display: inline-block;
+                li {
+                    background: transparent;
+                    display: block;
+                    width: 100%;
+                    border: 0;
+                    @include mq($max-width: 768px) {
+                        margin-bottom: 0;
+                    }
+                    padding-left: 0;
+                    padding: $base-padding / 2;
+                    padding-left: 0;
+                    box-shadow: none !important;
+                    &:before {
+                        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAthJREFUSA21Vs1LVFEUP+f5xsYgwkArRygdMGySFqXQomWEFCiIES1atA4KCm1V1C6pRdAumEWEmxBGqP6BFoIfgZhJU34U6IB9GPQxk45zOr/33n28mWYmx3Q2995zfud37jv3fAxTmV/L0RORtexaNwufUViUWBocuPCSrrPC8jxkhxLJyZHFUjRcTNF67OT+TCZzW3WXSKSqGMaXMa/rPh4Oh2/NTLxM+XJv85eD5iMdZykng0Kyi5lWRTjBzMNk03hNdiduTmn7VwNl6biIdDFLtwhVM/F3svjC3OvRZ0EneQ6aYh2XSXIPFGAp6ZBtUV9yamwuaFC4b2lrb87maECd9aguR2xdmZ8efWhwvgPcXHK5YVfBffNvxu4b0EbWpsPt14hkAFi2rC7zJY4DxPx3OvMWYVH19UrJzQU8J/cQrh014UN4EwtKPKgbcx7aLDl4YIvQgstLEmI3FbMfmGTdtrj1XzEHUbmf+yYyI8RVIds+YCHPkYrIlv8lh2NwgAuc4LZRRPpJpJ+WKHWzWKy3Ok0LdzRTLgKj2Mc1dPDm9PTT1WI2qh9W7Dlw2wqIOiCbJoqBIfPI+41ejfvTvIDjDSPLW7VmaM2RRC1T/qaI8oDewdw8qCsmM3qfS1uLk0VGseWrNiuL3Mblln8JD4h5oaqYzGCcVuIenDqYdfbaWwygcMWDKuFdlaOZpbCHrBDnn30ueW+j5WoSdWpMuxQw6IMCGy9b8KCBRx0LIPK3HpcGh15sf6F5wyKOlouumH+Xyk9uZ6VqtYyD28kiDAs0KP20HrdhVU4MC9iCA1zghMyZVp9TH3/U7m2c0vI+r7JTtXWRn98+LY0AsNFfoF2Ltuved5Mjr2Drj8OV5cVkbX3jV+3pnSo/vac+0la3LzL+ZXlppZwTNLfddZFHandVcdpznIHzxNj4A8cISozMhI7MCVOhmx6Zxsm2Dn3jBOtW/G35A0vDgF/Rxg5PAAAAAElFTkSuQmCC');
+                        background-size: cover;
+                        color: transparent;
+                        width: 13px;
+                        height: 13px;
+                        display: inline-block;
+                        content: ".";
+                        vertical-align: inherit;
+                        margin-right: $base-margin / 2;
+                        opacity: .6;
+                    }
+                }
+            }
+            a {
+                // background: $brand-secondary;
+                border: $base-border;
+                border-color: $brand-purple;
+                color: $brand-purple;
+                text-align: center;
+                display: block;
+                transition: width 1.5s ease-in-out;
+                width: 210px;
+                @extend .button;
+                padding-left: $base-padding;
+                padding-right: $base-padding;
+                &:hover {
+                    color: $brand-white;
+                    background: darken($brand-purple, 5%);
+                }
+                .loaderMonthly,
+                .loaderYearly,
+                .loaderCustomized {
+                    display: none;
+                    // margin-left: -9px;
+                    @extend .rotate-center;
+                }
+                &.loading {
+                    width: 33px;
+                    background-color: $brand-yellow;
+                    border-color: $brand-yellow;
+                    text-align: center;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}

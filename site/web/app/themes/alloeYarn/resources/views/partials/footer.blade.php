@@ -30,6 +30,7 @@
         <div class="footer-column">
             <h5>Customer service</h5>
             <ul>
+                <li><a href="/my-account">My Account</a></li>
                 <li>FAQ</li>
                 <li>Delivery</li>
                 <li>Returns</li>
@@ -60,3 +61,4 @@
             <br>All rights Reserved. LOLOLOL</p>
     </div>
 </footer>
+@include('partials/subscribe')

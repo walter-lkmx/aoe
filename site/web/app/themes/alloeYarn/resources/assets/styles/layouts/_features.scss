@@ -3,6 +3,8 @@
         display: none;
     }
     .not-just-app {
+        max-width: 1280px;
+        @extend .vertical-centering;
         @extend .after-menu-header;
         @extend .magazine-container;
         @include mq($max-width: 768px) {

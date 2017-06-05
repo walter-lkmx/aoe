@@ -1,11 +1,8 @@
 <div class="simple-as">
-    <h3>Simple as</h3>
+    <h3>Simple as 1, 2, 3</h3>
     <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
     <div class="steps">
         <svg width="150px" height="150px" viewBox="172 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
             <g id="sign-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(172.000000, 0.000000)">
                 <path d="M74.549116,128.229658 C103.841943,128.229658 122.058301,106.108979 127.588471,75.1903033 C132.829641,39.2168178 109.489734,27.1783757 74.549116,22.1509486 C39.6084984,17.1235215 21.5097613,45.8974765 21.5097613,75.1903033 C21.5097613,104.48313 45.2562893,128.229658 74.549116,128.229658 Z" id="Oval-2-Copy-5" fill="#96C243" opacity="0.206238678" transform="translate(74.916364, 74.902646) rotate(10.000000) translate(-74.916364, -74.902646) "></path>
                 <path d="M74.549116,128.229658 C103.841943,128.229658 122.058301,106.108979 127.588471,75.1903033 C132.829641,39.2168178 109.489734,27.1783757 74.549116,22.1509486 C39.6084984,17.1235215 21.5097613,45.8974765 21.5097613,75.1903033 C21.5097613,104.48313 45.2562893,128.229658 74.549116,128.229658 Z" id="Oval-2-Copy-6" fill="#96C243" opacity="0.206238678" transform="translate(74.916364, 74.902646) rotate(218.000000) translate(-74.916364, -74.902646) "></path>
@@ -61,6 +58,6 @@
         <h3>Start</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
     </div>
-    <a href="" title="Subscribe to Alloe.io">Subscribe now</a>
+    <a id="simpleAs-show-subscribe" href="" title="Subscribe to Alloe.io">Subscribe now</a>
 </div>
 </div> {{-- End of main gradient --}}

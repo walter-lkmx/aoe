@@ -9,6 +9,16 @@ body {
     color: $brand-dark;
 }
 
+::-moz-selection {
+    background: $brand-purple;
+    color: $brand-white
+}
+
+::selection {
+    background: $brand-purple;
+    color: $brand-white
+}
+
 a {
     text-decoration: none;
     color: $brand-dark;
@@ -137,4 +147,38 @@ p {
         opacity: .2;
         transition: 0s;
     }
+}
+
+// rotation animation
+.rotate-center {
+    -webkit-animation: rotate-center 1s linear infinite;
+    -moz-animation: rotate-center 1s linear infinite;
+    animation: rotate-center 1s linear infinite;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+// Freeze body while overlay subscriptions is activate
+.freezeBody {
+    overflow: hidden;
 }

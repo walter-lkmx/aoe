@@ -97,6 +97,11 @@ header.banner {
     }
     // without scroll
     .brand {
+        // Centered in checkout
+        .woocommerce-checkout & {
+            @extend .vertical-centering;
+            float: none;
+        }
         display: inline-block;
         margin-top: $base-margin;
         float: left;
@@ -122,6 +127,10 @@ header.banner {
         }
     }
     nav {
+        // hidden in checkout
+        .woocommerce-checkout & {
+            display: none;
+        }
         // @include vertical-align();
         display: inline-block;
         margin-left: $base-margin * 2;

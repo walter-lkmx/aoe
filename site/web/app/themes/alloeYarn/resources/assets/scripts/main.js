@@ -1,9 +1,8 @@
 /** import external dependencies */
 import 'jquery';
 import 'scrollpos-styler';
-import 'jquery.animate-number';
-import 'angular';
-
+import 'jquery.animate-number'; 
+ 
 /** import local dependencies */
 import Router from './util/Router';
 import common from './routes/common';

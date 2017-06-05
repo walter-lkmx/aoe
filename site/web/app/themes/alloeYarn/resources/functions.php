@@ -89,3 +89,4 @@ if ($sage_views !== get_option('stylesheet')) {
     wp_redirect($_SERVER['REQUEST_URI']);
     exit();
 }
+

@@ -54,7 +54,8 @@
                 }
             }
             .alloe-smartphone {
-                margin-top: $base-margin - 9;
+                margin-top: $base-margin - 10.6;
+                overflow: hidden;
                 @include mq($max-width: 768px) {
                     display: block;
                     overflow: hidden;
