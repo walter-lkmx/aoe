@@ -35,7 +35,9 @@
                 <li>Itaque earum rerum</li>
                 <li>Itaque earum rerum</li>
             </ul>
-            <a id="addToCartYearly" href="#" rel="/?add-to-cart=40" title="Yearly subscription to Alloe">
+            <a id="addToCartYearly" href="#" rel="/?add-to-cart=46" title="Yearly subscription to Alloe">
+            {{-- LOCAL --}}
+            {{-- <a id="addToCartYearly" href="#" rel="/?add-to-cart=40" title="Yearly subscription to Alloe"> --}}
                 <span class="legendYearly">Subscribe now</span>
                 <object type="" class="loaderYearly" data="@asset('images/loader.svg')" width="20" height="28"></object>
             </a>
@@ -49,7 +51,9 @@
                 <li>Itaque earum rerum</li>
                 <li>Itaque earum rerum</li>
             </ul>
-            <a id="addToCartCustomized" href="#" rel="/?add-to-cart=41" title="Customized subscription to Alloe">
+            <a id="addToCartCustomized" href="#" rel="/?add-to-cart=47" title="Customized subscription to Alloe">
+            {{-- LOCAL --}}
+            {{-- <a id="addToCartCustomized" href="#" rel="/?add-to-cart=41" title="Customized subscription to Alloe"> --}}
                 <span class="legendCustomized">Subscribe now</span>
                 <object type="" class="loaderCustomized" data="@asset('images/loader.svg')" width="20" height="28"></object>
             </a>
