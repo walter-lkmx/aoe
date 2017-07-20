@@ -1,0 +1,11 @@
+--- web/wp/wp-includes/load.php 2016-03-12 01:51:09.000000000 -0500
++++ web/wp/wp-includes/load.php 2016-03-12 01:51:20.000000000 -0500
+@@ -285,7 +285,7 @@
+  */
+ function wp_debug_mode() {
+    if ( WP_DEBUG ) {
+-       error_reporting( E_ALL );
++       error_reporting( E_ALL  & ~E_DEPRECATED );
+
+        if ( WP_DEBUG_DISPLAY )
+            ini_set( 'display_errors', 1 );

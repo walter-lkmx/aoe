@@ -13,10 +13,12 @@
             height: 100vh;
             text-align: center;
             color: $brand-white;
-            background-image: linear-gradient(-180deg, rgba($brand-primary, .9) 0%, rgba($brand-primary, .9) 100%), url('../images/back-sf.jpg');
-            background-position: center;
-            background-size: cover;
+            background-image: url('../images/logo.png'), linear-gradient(-180deg, rgba($brand-primary, .9) 0%, rgba($brand-primary, .9) 100%), url('../images/back-sf-bw.jpg');
+            background-position: center center;
+            background-size: inherit;
+            background-repeat: no-repeat;
             h1 {
+                display: none;
                 position: relative !important;
                 font-size: $base-font-size * 2;
                 font-weight: $base-font-weight-light;
@@ -63,6 +65,9 @@
                 color: $brand-white;
                 transition: $base-transition;
                 padding: $base-padding $base-padding * 1.5;
+                line-height: 0 !important;
+                border: 0 !important;
+                box-shadow: none;
                 &:hover {
                     color: $brand-white;
                     padding: $base-padding $base-padding * 1.5;
@@ -87,5 +92,8 @@
                 color: $brand-yellow;
             }
         }
+    }
+    footer {
+        display: none;
     }
 }

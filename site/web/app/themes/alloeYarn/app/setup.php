@@ -162,5 +162,12 @@ sage()->bindIf('config', Config::class, true);
  */
 add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
+// add_filter('add_to_cart_redirect', __NAMESPACE__ . '\\themeprefix_add_to_cart_redirect');
+// function themeprefix_add_to_cart_redirect() {
+//  global $woocommerce;
+//  $checkout_url = $woocommerce->cart->get_checkout_url();
+//  return $checkout_url;
+// }
+ 
 
 

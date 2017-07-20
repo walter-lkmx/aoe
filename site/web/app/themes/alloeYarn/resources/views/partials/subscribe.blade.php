@@ -13,7 +13,7 @@
     <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
     <ul class="plans">
         <li class="monthly">
-            <h2>Monthly / $20</h2>
+            <h2>Monthly / $9.99</h2> 
             <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque</p>
             <ul class="features">
                 <li>Itaque earum rerum</li>
@@ -35,9 +35,10 @@
                 <li>Itaque earum rerum</li>
                 <li>Itaque earum rerum</li>
             </ul>
-            <a id="addToCartYearly" href="#" rel="/?add-to-cart=46" title="Yearly subscription to Alloe">
+            {{-- STAGING --}}
+            {{-- <a id="addToCartYearly" href="#" rel="/?add-to-cart=46" title="Yearly subscription to Alloe"> --}}
             {{-- LOCAL --}}
-            {{-- <a id="addToCartYearly" href="#" rel="/?add-to-cart=40" title="Yearly subscription to Alloe"> --}}
+            <a id="addToCartYearly" href="#" rel="/?add-to-cart=40" title="Yearly subscription to Alloe">
                 <span class="legendYearly">Subscribe now</span>
                 <object type="" class="loaderYearly" data="@asset('images/loader.svg')" width="20" height="28"></object>
             </a>
@@ -51,9 +52,10 @@
                 <li>Itaque earum rerum</li>
                 <li>Itaque earum rerum</li>
             </ul>
-            <a id="addToCartCustomized" href="#" rel="/?add-to-cart=47" title="Customized subscription to Alloe">
+            {{-- STAGING --}}
+            {{-- <a id="addToCartCustomized" href="#" rel="/?add-to-cart=47" title="Customized subscription to Alloe"> --}}
             {{-- LOCAL --}}
-            {{-- <a id="addToCartCustomized" href="#" rel="/?add-to-cart=41" title="Customized subscription to Alloe"> --}}
+            <a id="addToCartCustomized" href="#" rel="/?add-to-cart=41" title="Customized subscription to Alloe">
                 <span class="legendCustomized">Subscribe now</span>
                 <object type="" class="loaderCustomized" data="@asset('images/loader.svg')" width="20" height="28"></object>
             </a>
