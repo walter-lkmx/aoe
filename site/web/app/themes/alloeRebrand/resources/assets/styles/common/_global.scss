@@ -1,0 +1,52 @@
+// Base styles
+html,
+body {
+  font-family: $base-font-family-normal;
+  letter-spacing: $base-letter-spacing;
+  font-weight: $base-font-weight-light;
+  color: $brand-dark;
+  // line-height: 1.5em;
+  * {
+     ::selection {
+      color: $brand-white;
+      background-color: $brand-secondary;
+    }
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $base-font-family-title;
+  font-weight: $base-font-weight-heavy;
+}
+
+// centering
+.vertical-centering {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Containers
+.width-boundaries {
+  @extend .vertical-centering;
+  max-width: 1000px;
+  padding: $base-padding;
+  // overflow: hidden;
+}
+

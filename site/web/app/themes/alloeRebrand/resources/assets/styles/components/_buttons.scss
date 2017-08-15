@@ -1,0 +1,24 @@
+// Buttons
+.circle-button {
+  background-color: $brand-primary;
+  border-radius: 100rem;
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $base-margin * 2;
+  font-size: $base-font-size * 1.4;
+  color: $brand-white;
+  position: relative;
+  cursor: pointer;
+  transition: $base-transition;
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+  }
+  span {
+    @include centerer-absolute;
+    line-height: 1.2;
+  }
+}
+

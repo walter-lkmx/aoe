@@ -1,0 +1,128 @@
+.blog {
+  * {
+    box-sizing: border-box;
+  }
+  aside.sidebar {
+    width: 15%;
+    float: left;
+    padding: $base-padding;
+    position: fixed;
+    h3 {
+      margin-bottom: $base-margin;
+      font-size: $base-font-size * 1.1;
+    }
+    ul {
+      // padding-left: $base-padding / 2;
+      li {
+        a {
+          color: $brand-dark;
+          padding: $base-padding / 2 $base-padding;
+          display: block;
+        }
+      } // color loop
+      @for $i from 1 through length($array-brand-color) {
+        li:nth-child(#{length($array-brand-color)}n+#{$i}) a:hover {
+          background-color: nth($array-brand-color, $i);
+          color: $brand-white;
+          text-decoration: none;
+
+        }
+      }
+    }
+  }
+  main {
+    width: 70%;
+    float: left;
+    margin-left: 20%;
+    margin-top: $base-margin * 4;
+    .page-header {
+      display: none;
+    }
+    article {
+      position: relative;
+      display: block;
+      clear: both;
+      height: pxToRem(450px); // overflow: hidden;
+      background-color: $brand-white;
+      margin-bottom: $base-margin * 4;
+      .metadata {
+        transform: rotate(-90deg);
+        position: absolute;
+        z-index: 1;
+        bottom: pxToRem(70px);
+        left: pxToRem(-120px);
+        font-weight: normal;
+        font-size: $base-font-size - .1;
+        .avatar-container {
+          width: 60px;
+          height: 60px;
+          overflow: hidden;
+          border-radius: pxToRem(100px);
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: $base-margin;
+          img.avatar {
+            width: 150%;
+            height: auto;
+            transform: rotate(90deg) translate(-20%, 20%);
+          }
+        }
+        p {
+          display: inline-block;
+          a {
+            color: $brand-purple;
+          }
+        }
+      }
+      .feature-image {
+        width: 40%;
+        height: pxToRem(450px);
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        img {
+          @include centerer-absolute(true, true);
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      .content {
+        width: 60%;
+        float: left;
+        overflow: hidden;
+        header {
+          padding-top: pxToRem(50px);
+          padding-left: pxToRem(50px);
+          padding-right: pxToRem(50px);
+
+          h2 {
+            a {
+              font-size: $base-font-size * 1.8;
+              color: $brand-dark;
+              &:hover {
+                color: $brand-purple;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .entry-summary {
+          padding-top: pxToRem(50px);
+          padding-left: pxToRem(50px);
+          padding-right: pxToRem(50px);
+          p {
+            a {
+              color: $brand-purple;
+              margin-top: $base-margin * 2;
+              clear: both;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

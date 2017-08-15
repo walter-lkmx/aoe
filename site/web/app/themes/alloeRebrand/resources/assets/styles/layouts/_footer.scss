@@ -1,0 +1,73 @@
+// Footer
+footer {
+  background-color: $brand-white;
+  height: 400px;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  .width-boundaries {
+    overflow: hidden;
+    width: 800px;
+    @include centerer-horizontal;
+    .brand {
+      float: left;
+      width: 40%;
+      height: pxToRem(240px);
+      img {
+        width: 60%;
+        @include centerer-horizontal;
+      }
+    }
+    .links {
+      float: left;
+      font-size: $base-font-size - .1;
+      width: 60%;
+      ul {
+        float: left;
+        width: 50%;
+        margin-bottom: $base-margin * 2;
+        &.about {
+          li:first-child {
+            background-color: $brand-primary;
+          }
+        }
+        &.get-touch {
+          li:first-child {
+            background-color: $brand-yellow;
+          }
+        }
+        &.customer-service {
+          li:first-child {
+            background-color: $brand-purple;
+            color: $brand-white;
+          }
+        }
+        li {
+          text-align: left;
+          line-height: 1.5;
+          clear: both;
+          &:first-child {
+            padding: $base-padding / 4 $base-padding * 2 $base-padding / 4 $base-padding / 2;
+            display: inline-block;
+            float: left;
+            margin-bottom: $base-margin / 2;
+          }
+          a {
+            color: $brand-dark;
+            &:hover {
+              color: $brand-purple;
+            }
+          }
+        }
+
+
+
+        &:nth-child(3n) {
+          clear: both;
+        }
+      }
+    }
+  }
+}

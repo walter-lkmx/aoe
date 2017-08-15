@@ -1,0 +1,107 @@
+// Header
+header.banner {
+  padding: $base-padding;
+  z-index: 9;
+  * {
+    transition: $base-transition;
+  }
+  &.js-is-sticky,
+  &.js-is-stuck {
+    background-color: rgba($brand-white, 1);
+
+    .container {
+      .brand {
+        img {
+          height: 30px;
+        }
+      }
+      nav {
+        &.nav-primary {
+          .subscribe {
+            display: initial;
+            background: $brand-primary;
+            padding: $base-padding / 2 $base-padding;
+            color: $brand-white;
+            // border-radius: $base-border-radius * 4;
+            &:hover {
+              background: darken($brand-primary, 5%);
+              text-decoration: none;
+            }
+          }
+        }
+        &.social {
+          padding-top: $base-padding / 7;
+        }
+      }
+    }
+  }
+  .container {
+    .brand {
+      vertical-align: middle;
+      display: inline-block;
+      img {
+        height: 50px;
+      }
+    }
+    nav {
+      display: inline-block;
+
+      a {
+        margin-left: $base-margin * 1.5;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      &.nav-primary {
+        margin-left: $base-margin * 12;
+        a {
+          color: $brand-dark;
+          &:hover {
+            color: $brand-purple;
+          }
+        }
+        .subscribe {
+          display: none;
+        }
+        .download-ios {
+          color: #000; // ios logo color
+          font-size: $base-font-size * 1.5;
+          margin-left: $base-margin * 2;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .download-android {
+          color: #A4C639; // android logo color
+          font-size: $base-font-size * 1.5;
+          margin-left: $base-margin;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &.social {
+        float: right;
+        font-size: $base-font-size * 1.5;
+        display: inline-block;
+        padding-top: $base-padding / 1.5;
+        a {
+          margin-left: $base-margin;
+          color: $brand-grey;
+          &:hover {
+            text-decoration: none;
+            &.twitter {
+              color: $brand-twitter;
+            }
+            &.facebook {
+              color: $brand-facebook;
+            }
+            &.linkedin {
+              color: $brand-linkedin;
+            }
+          }
+        }
+      }
+    }
+  }
+}

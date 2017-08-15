@@ -1,0 +1,123 @@
+.employer-solutions {
+  .wrap {
+    .welcome {
+      width: 100%;
+      text-align: left; // background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1)), url('images/welcome-background.jpg');
+      background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
+      height: 550px;
+      padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
+      position: fixed;
+      top: 0;
+      z-index: 0;
+      padding-left: $base-padding;
+      h1 {
+        // width: 400px;
+        font-size: $base-font-size * 5;
+        width: 80%;
+        // transition: $base-transition;
+        span.break {
+          display: block;
+        }
+        span {
+          &.social {
+            background-color: $brand-primary;
+            padding-right: $base-padding * 4;
+          }
+          &.engagement {
+            background-color: $brand-yellow;
+            padding-right: $base-padding * 4;
+          }
+          &.management {
+            background-color: $brand-purple;
+            padding-right: $base-padding * 4;
+            color: $brand-white;
+          }
+          &.measurement {
+            background-color: $brand-secondary;
+            padding-right: $base-padding * 4;
+          }
+        }
+      }
+      p {
+        margin-top: $base-margin * 2;
+        width: 450px;
+        font-size: $base-font-size * 1.4;
+        display: inline-block;
+        line-height: 1.5; // color: $brand-white;
+      }
+    }
+    .overall {
+      z-index: 1;
+      position: relative;
+      margin-top: pxToRem(450px); // background-color: $brand-white;
+      transition: $base-transition;
+      .features-list {
+        width: 100%;
+        .sticky-features {
+          background-color: $brand-white;
+          display: block;
+          clear: both;
+          margin-top: pxToRem(250px);
+          overflow: hidden;
+          img {
+            width: 40%;
+            float: left;
+          }
+          .description {
+            width: 30%;
+            float: left;
+            h2 {
+              font-size: $base-font-size * 2;
+              margin-bottom: $base-margin * 2;
+              padding: $base-padding / 2 $base-padding * 2 $base-padding / 2 0;
+              display: inline-block;
+            }
+            h3 {
+              margin-bottom: $base-margin;
+              padding: $base-padding / 2;
+              border-left: 5px solid;
+            }
+            p {
+              margin-bottom: $base-padding * 2;
+            }
+          }
+          &.social {
+            h2 {
+              background-color: $brand-primary;
+            }
+            h3 {
+              border-color: $brand-primary;
+            }
+          }
+          &.engagement {
+            // height: 600px;
+            h2 {
+              background-color: $brand-yellow;
+            }
+            h3 {
+              border-color: $brand-yellow;
+            }
+          }
+          &.management {
+            height: 650px;
+            h2 {
+              background-color: $brand-purple;
+              color: $brand-white
+            }
+            h3 {
+              border-color: $brand-purple;
+            }
+          }
+          &.measurement {
+            h2 {
+              background-color: $brand-secondary;
+            }
+            h3 {
+              border-color: $brand-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

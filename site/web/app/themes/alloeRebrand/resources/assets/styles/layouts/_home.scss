@@ -1,0 +1,225 @@
+.home {
+  .welcome {
+    text-align: center;
+    background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1)), url('images/welcome-background.jpg');
+    height: 550px;
+    padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    h1 {
+      // width: 400px;
+      padding: 0 25%;
+      font-size: $base-font-size * 5;
+    }
+    p {
+      margin-top: $base-margin * 2;
+      width: 450px;
+      font-size: $base-font-size * 1.4;
+      display: inline-block;
+      line-height: 1.5; // color: $brand-white;
+    }
+    a {
+      background-color: $brand-primary;
+      border-radius: 100rem;
+      height: 150px;
+      width: 150px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $base-margin * 2;
+      font-size: $base-font-size * 1.4;
+      color: $brand-white;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($brand-primary, 10%);
+      }
+      span {
+        @include centerer-absolute;
+        line-height: 1.2;
+      }
+    }
+    * {
+      transition: $base-transition;
+    }
+  }
+  .overall {
+    z-index: 1;
+    position: relative;
+    margin-top: pxToRem(450px);
+    .our-numbers {
+      // background-image: url('images/background-shape.svg');
+      background-image: url('images/background-shape-purple.svg');
+      background-size: cover;
+      background-position: center top;
+      height: 574px;
+      padding: $base-padding; // width: 100%;
+      // border-bottom: 10px solid;
+      // border-color: $brand-dark;
+      width: auto;
+      * {
+        box-sizing: border-box;
+      }
+
+      .message {
+        margin-top: $base-margin * 13.5;
+        padding: $base-padding;
+        float: left;
+        width: 40%;
+        color: $brand-white;
+        h2 {
+          font-size: $base-font-size * 3;
+          margin-bottom: $base-margin * 2;
+          padding-left: $base-padding * 2;
+        }
+        p {
+          font-size: $base-font-size * 1.2;
+          line-height: 1.5;
+          padding-left: $base-padding * 2;
+        }
+      }
+      .unslider {
+        display: inline;
+        .app-screens {
+          margin-top: pxToRem(20px);
+          float: left;
+          width: 30%;
+          height: 640px;
+          overflow: initial !important;
+          img {
+            // width: 95%;
+            // height: auto;
+            box-shadow: 0 0 16px 0 rgba(6, 19, 21, 0.12);
+          }
+        }
+        .unslider-nav {
+          display: none;
+        }
+        .unslider-arrow {
+          display: none;
+        }
+      }
+      .stats {
+        margin-top: $base-margin * 15;
+        float: left;
+        width: 30%;
+        height: pxToRem(280px) !important;
+        text-align: center;
+        overflow: hidden; // @include centerer-horizontal;
+        // overflow: visible !important;
+        img {
+          height: pxToRem(100px);
+        }
+        p {
+          color: $brand-white;
+
+          span {
+            font-size: 2.5rem;
+            font-weight: $base-font-weight-heavy;
+            line-height: 1.5;
+          }
+          span.label {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: $base-font-weight-light;
+          }
+        }
+      }
+    }
+    .not-just-app {
+      background-color: $brand-white;
+      height: pxToRem(600px);
+      position: relative;
+      @extend .not-just-app-animation;
+      h2 {
+        transform: rotate(-90deg);
+        float: left;
+        left: pxToRem(-80px);
+        display: block;
+        position: absolute;
+        margin-top: pxToRem(250px);
+        font-size: $base-font-size * 3;
+        width: 25%;
+        text-align: right;
+      }
+    }
+    .simple-as {
+      height: pxToRem(300px);
+      background-color: $brand-yellow;
+      // background-image: linear-gradient(0deg, #FF9900 1%, $brand-yellow 60%);
+      text-align: left;
+      padding-top: $base-padding * 4;
+      position: relative;
+      .content {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        @include centerer-horizontal;
+      }
+      h2 {
+        font-size: $base-font-size * 3;
+      }
+      ul {
+        margin-top: $base-margin - 2;
+        li {
+          display: inline-block;
+          font-size: $base-font-size * 1.4;
+          margin-right: $base-margin * 2;
+          vertical-align: middle;
+          padding-top: $base-padding * 2;
+          img {
+            vertical-align: middle;
+            margin-right: $base-margin;
+          }
+          &.subscribe-now {
+            padding-top: 0;
+            a {
+              @extend .circle-button;
+              text-align: center;
+              background-color: $brand-dark;
+              span {
+                padding-top: $base-padding / 2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .read-experts {
+      background-color: #fff;
+      padding: $base-padding;
+      text-align: center;
+      height: pxToRem(400px);
+      padding-top: $base-padding * 10;
+      img {
+        vertical-align: baseline;
+        margin-right: $base-margin;
+        line-height: 15;
+        display: inline-block;
+      }
+      h2 {
+        font-size: $base-font-size * 3;
+        display: inline-block;
+        text-align: left;
+        line-height: 0.8;
+        margin-bottom: $base-margin * 4;
+        span {
+          font-size: $base-font-size * 5;
+          display: block;
+        }
+      }
+      p {
+        font-size: $base-font-size * 1.4;
+        margin-bottom: $base-margin * 4;
+        span {
+          display: block;
+        }
+      }
+      a {
+        font-size: $base-font-size * 1.4;
+        color: $brand-purple;
+      }
+    }
+  }
+}

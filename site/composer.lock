@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cf22e00aa9264e4e3cd8165d0273f9b",
+    "content-hash": "d0fad430d30d6e5689a71128e60b7cc7",
     "packages": [
         {
             "name": "composer/installers",
@@ -283,16 +283,16 @@
         },
         {
             "name": "oscarotero/env",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/env.git",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
-                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0f676e41d758fa984806c32e27f0cf7afa63d8db",
+                "reference": "0f676e41d758fa984806c32e27f0cf7afa63d8db",
                 "shasum": ""
             },
             "require": {
@@ -321,7 +321,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08T17:14:32+00:00"
+            "time": "2017-07-17T20:41:59+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -472,15 +472,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.1.0",
+            "version": "3.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.1.0"
+                "reference": "tags/3.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.1.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.1.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -492,15 +492,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce-gateway-stripe",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce-gateway-stripe/",
-                "reference": "tags/3.2.1"
+                "reference": "tags/3.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-gateway-stripe.3.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-gateway-stripe.3.2.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -529,6 +529,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-user-avatar",
+            "version": "2.0.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-user-avatar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-user-avatar.zip?timestamp=1497493515",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-user-avatar/"
         }
     ],
     "packages-dev": [
