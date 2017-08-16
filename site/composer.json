@@ -54,9 +54,7 @@
         "wordpress-install-dir": "web/wp"
     },
     "patches": {
-        "johnpbloch/wordpress": {
-            "Prevent E_DEPRECATED error messages when debug is enabled": "wordpress.patch"
-        }
+        
     },
     "scripts": {
         "test": [
