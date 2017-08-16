@@ -1,8 +1,9 @@
 .home {
   .welcome {
     text-align: center;
-    background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1)), url('images/welcome-background.jpg');
+    background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
     height: 550px;
+    width: 100%;
     padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
     position: fixed;
     top: 0;
@@ -50,7 +51,7 @@
     margin-top: pxToRem(450px);
     .our-numbers {
       // background-image: url('images/background-shape.svg');
-      background-image: url('images/background-shape-purple.svg');
+      background-image: url('../images/background-shape-purple.svg');
       background-size: cover;
       background-position: center top;
       height: 574px;
