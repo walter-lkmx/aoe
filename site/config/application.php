@@ -82,4 +82,4 @@ if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
 
-// define('WP_DEBUG_DISPLAY', false);
+define('WP_DEBUG_DISPLAY', true);
