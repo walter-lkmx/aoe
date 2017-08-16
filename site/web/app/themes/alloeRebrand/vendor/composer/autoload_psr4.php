@@ -6,14 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
     'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
-    'Sober\\Controller\\Module\\' => array($vendorDir . '/soberwp/controller/src/Module'),
-    'Sober\\Controller\\' => array($vendorDir . '/soberwp/controller/src'),
     'Roots\\Sage\\' => array($baseDir . '/app/lib/Sage'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
-    'Noodlehaus\\' => array($vendorDir . '/hassankhan/config/src'),
     'Illuminate\\View\\' => array($vendorDir . '/illuminate/view'),
     'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
     'Illuminate\\Filesystem\\' => array($vendorDir . '/illuminate/filesystem'),
@@ -22,5 +18,4 @@ return array(
     'Illuminate\\Container\\' => array($vendorDir . '/illuminate/container'),
     'Illuminate\\Config\\' => array($vendorDir . '/illuminate/config'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
-    'Brain\\Hierarchy\\' => array($vendorDir . '/brain/hierarchy/src'),
 );

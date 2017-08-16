@@ -39,7 +39,6 @@
         "wpackagist-plugin/woo-empty-cart-button": "^1.0.2",
         "wpackagist-plugin/theme-my-login": "6.4.9",
         "wpackagist-plugin/woocommerce-gateway-stripe": "^3.2.1",
-        "cweagans/composer-patches": "~1.0",
         "wpackagist-plugin/wp-user-avatar": "~2.0.8"
     },
     "require-dev": {
@@ -54,7 +53,7 @@
         "wordpress-install-dir": "web/wp"
     },
     "patches": {
-        
+
     },
     "scripts": {
         "test": [

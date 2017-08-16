@@ -9,17 +9,13 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
     public static $files = array (
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
-        'b50336562d531777993d90ca775abd88' => __DIR__ . '/..' . '/soberwp/controller/controller.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
-            'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Debug\\' => 24,
-            'Sober\\Controller\\Module\\' => 24,
-            'Sober\\Controller\\' => 17,
         ),
         'R' => 
         array (
@@ -28,10 +24,6 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         'P' => 
         array (
             'Psr\\Log\\' => 8,
-        ),
-        'N' => 
-        array (
-            'Noodlehaus\\' => 11,
         ),
         'I' => 
         array (
@@ -47,17 +39,9 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         array (
             'Composer\\Installers\\' => 20,
         ),
-        'B' => 
-        array (
-            'Brain\\Hierarchy\\' => 16,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Component\\Yaml\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/yaml',
-        ),
         'Symfony\\Component\\Finder\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
@@ -66,14 +50,6 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         array (
             0 => __DIR__ . '/..' . '/symfony/debug',
         ),
-        'Sober\\Controller\\Module\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/soberwp/controller/src/Module',
-        ),
-        'Sober\\Controller\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/soberwp/controller/src',
-        ),
         'Roots\\Sage\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/lib/Sage',
@@ -81,10 +57,6 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
-        'Noodlehaus\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/hassankhan/config/src',
         ),
         'Illuminate\\View\\' => 
         array (
@@ -118,10 +90,6 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
-        'Brain\\Hierarchy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/brain/hierarchy/src',
-        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -153,6 +121,7 @@ class ComposerStaticInit0cb6047d5b399628ae868c432277f7b9
         'Generic_Sniffs_ControlStructures_InlineControlStructureSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/ControlStructures/InlineControlStructureSniff.php',
         'Generic_Sniffs_Debug_CSSLintSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Debug/CSSLintSniff.php',
         'Generic_Sniffs_Debug_ClosureLinterSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Debug/ClosureLinterSniff.php',
+        'Generic_Sniffs_Debug_ESLintSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Debug/ESLintSniff.php',
         'Generic_Sniffs_Debug_JSHintSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Debug/JSHintSniff.php',
         'Generic_Sniffs_Files_ByteOrderMarkSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Files/ByteOrderMarkSniff.php',
         'Generic_Sniffs_Files_EndFileNewlineSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Generic/Sniffs/Files/EndFileNewlineSniff.php',
