@@ -156,7 +156,7 @@ add_action('after_setup_theme', function () {
  */
 sage()->bindIf('config', Config::class, true);
 
-
+// sidebar location
 add_filter('sage/display_sidebar', function ($display) {
     static $display;
 
@@ -167,4 +167,7 @@ add_filter('sage/display_sidebar', function ($display) {
 
     return $display;
 });
+ 
+// disabling Woo styles
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
