@@ -1,0 +1,95 @@
+table,
+.shop_table {
+  width: 80%;
+  display: table;
+  @extend .horizontal-centering;
+  thead {
+    tr {
+      border-bottom: $base-border;
+      border-color: rgba($brand-dark, .1);
+      th {
+        padding-bottom: $base-padding;
+        padding-top: $base-padding;
+        text-align: left;
+        color: rgba($brand-dark, .5);
+        font-weight: $base-font-weight-normal;
+        &.product-name {
+          padding-left: $base-padding;
+        }
+        &.product-subtotal {
+          padding-left: $base-padding * 2;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: $base-border;
+      border-color: rgba($brand-dark, .1);
+      &:nth-child(even) {
+        background-color: rgba($brand-dark, .03);
+      }
+      td {
+        padding-bottom: $base-padding;
+        padding-top: $base-padding;
+        &.product-remove {
+          padding-left: $base-padding;
+          a {
+            color: $brand-primary;
+            font-weight: $base-font-weight-bold;
+          }
+        }
+        &.product-thumbnail {
+          width: 50px;
+          height: 50px;
+          padding-left: $base-padding;
+          img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+          }
+        }
+        &.product-name {
+          padding-left: $base-padding;
+        }
+        &.product-quantity {
+          width: 50px;
+          input {
+            width: 50px;
+          }
+        }
+        &.product-subtotal {
+          padding-left: $base-padding * 2;
+        }
+        input[type="submit"] {
+          @extend .button;
+          background-color: rgba($brand-dark, .1);
+          border: 0 !important;
+          box-shadow: none;
+          height: 2.8rem;
+          color: $brand-dark;
+          &:hover {
+            background-color: rgba($brand-dark, .2);
+          }
+          &[name="update_cart"] {
+            float: right;
+          }
+        }
+        &.actions {
+          padding-left: $base-padding;
+          padding-right: $base-padding;
+          .coupon {
+            display: inline-block;
+            input[type="submit"] {
+              background-color: rgba($brand-dark, .1);
+              color: $brand-dark;
+              &:hover {
+                background-color: rgba($brand-dark, .2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.woocommerce-message {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: $brand-secondary;
+    padding: $base-padding;
+    color: $brand-dark;
+    margin-top: $base-margin - 2.2;
+    a {
+        color: $brand-dark;
+        text-decoration: underline;
+    }
+}

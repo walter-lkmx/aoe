@@ -16,6 +16,8 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 import employerSolutions from './routes/employer-solutions';
 import blog from './routes/blog';
+import subscribe from './routes/subscribe';
+import checkout from './routes/checkout';
 
 /**
  * Populate Router instance with DOM routes
@@ -28,10 +30,14 @@ const routes = new Router({
   home,
   /** blog */
   blog,
+  /** subscribe */
+  subscribe,
+  /** checkout */
+  checkout,
   /** Employer solutions */
   employerSolutions,
   /** About Us page, note the change from about-us to aboutUs. */
-  aboutUs,
+  aboutUs, 
   /** util */
   stickyBits,
 });

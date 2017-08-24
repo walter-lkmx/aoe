@@ -43,7 +43,7 @@
   animation-delay: $seconds;
 }
 
-//
+// pixels to rem
 @function pxToRem($size) {
   $remSize: $size / 16px;
   @return #{$remSize}rem;
@@ -53,3 +53,4 @@
   font-size: $size; //Fallback in px
   font-size: calculateRem($size);
 }
+

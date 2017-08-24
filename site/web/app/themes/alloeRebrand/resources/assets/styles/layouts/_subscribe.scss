@@ -1,0 +1,104 @@
+body.template-subscribe {
+  background-color: $brand-white;
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    .container {
+      .brand {
+        display: block;
+        img {
+          @extend .horizontal-centering;
+        }
+      }
+      nav.nav-primary {
+        display: none;
+      }
+      nav.social {
+        display: none;
+      }
+    }
+  }
+  .subscribe {
+    @extend .width-boundaries;
+    width: 800px;
+    text-align: center;
+    margin-bottom: $base-margin * 4;
+    overflow: hidden;
+    .invitation {
+      width: 90%;
+      @extend .horizontal-centering;
+      h1 {
+        font-size: $base-font-size * 3;
+        margin-top: $base-margin * 2;
+        margin-bottom: $base-margin * 2;
+      }
+    }
+    ul.plans {
+
+      li {
+        width: 33.33%;
+        float: left;
+        padding: $base-padding * 2 $base-padding;
+        border: 3px solid;
+        border-color: $brand-white;
+        &:hover {
+          border-color: $brand-dark;
+        }
+        h2 {
+          font-size: $base-font-size * 1.6;
+          font-weight: $base-font-weight-normal;
+          margin-bottom: $base-margin;
+        } // &.monthly {
+        //   h2 {
+        //     color: $brand-purple;
+        //   }
+        // }
+        &.yearly {
+          &:hover {
+            border-color: $brand-primary;
+          }
+          h2 {
+            color: $brand-primary;
+          }
+        } // &.customized {
+        //   h2 {
+        //     color: $brand-purple;
+        //   }
+        // }
+        p {
+          margin-bottom: $base-margin;
+        }
+        ul.features {
+          margin-bottom: $base-margin;
+          overflow: hidden;
+          li {
+            border: 0;
+            width: 100%;
+            float: none;
+            margin-bottom: $base-margin;
+            padding: 0; // font-weight: $base-font-weight-normal;
+            span {
+              color: rgba($brand-purple, 1);
+            }
+          }
+        }
+        &.monthly {
+          a {
+            @include button($brand-dark, $brand-white);
+          }
+        }
+        &.yearly {
+          a {
+            @include button($brand-primary, $brand-white);
+          }
+        }
+        &.customized {
+          a {
+            @include button($brand-dark, $brand-white);
+          }
+        }
+      }
+    }
+  }
+}

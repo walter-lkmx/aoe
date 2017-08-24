@@ -31,6 +31,7 @@ footer {
         &.about {
           li:first-child {
             background-color: $brand-primary;
+            color: $brand-white;
           }
         }
         &.get-touch {

@@ -2,7 +2,7 @@
 
 // webfonts
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Overpass:800,900');
+@import url('https://fonts.googleapis.com/css?family=Overpass:600,800,900');
 // Import npm dependencies
 @import "~font-awesome/scss/font-awesome";
 @import "~sass-mediaqueries/media-queries";
@@ -17,11 +17,16 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
-@import "components/its-not-just-an-app";
+@import "components/its-not-just-an-app"; 
+@import "components/loaders";
+@import "components/woocommerce-message";
+@import "components/tables";
 // Layouts
 @import "layouts/header";
 @import "layouts/home";
 @import "layouts/employer-solutions";
+@import "layouts/checkout";
+@import "layouts/subscribe";
 @import "layouts/blog";
 @import "layouts/sidebar";
 @import "layouts/footer";

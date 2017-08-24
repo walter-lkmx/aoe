@@ -1,1 +1,37 @@
-// Search form
+body {
+  form {}
+  input,
+  select,
+  textarea {
+    background-color: #fff;
+    color: #000;
+    padding: $base-padding / 3 $base-padding;
+    height: 2rem;
+    border: 1px solid #bbb !important;
+    border-radius: 0;
+    transition: $base-transition; // -ms-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .18);
+    // -o-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .18);
+    // box-shadow: inset 0 1px 2px rgba(0, 0, 0, .18);
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+      border: 1px solid #28a0e5 !important;
+      outline: none;
+      -ms-box-shadow: inset 0 1px 2px #ddd, 0 0 5px #28a0e5;
+      -o-box-shadow: inset 0 1px 2px #ddd, 0 0 5px #28a0e5;
+      box-shadow: inset 0 1px 2px #ddd, 0 0 5px #28a0e5;
+    }
+  }
+  textarea {
+    min-height: 5rem;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    height: 1rem !important;
+    width: 1rem !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .form-row {
+    margin-bottom: $base-margin / 2;
+  }
+}

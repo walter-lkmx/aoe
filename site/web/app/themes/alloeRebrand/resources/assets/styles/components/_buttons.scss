@@ -22,3 +22,12 @@
   }
 }
 
+@mixin button($background, $color) {
+  background-color: $background;
+  color: $color;
+  padding: $base-padding / 2 $base-padding;
+  text-decoration: none;
+  &:hover {
+    background-color: darken($background, 10%);
+  }
+}
