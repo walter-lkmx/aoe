@@ -18,7 +18,8 @@
                 <li><span>✓</span> Itaque earum rerum</li>
                 <li><span>✓</span> Itaque earum rerum</li>
             </ul>
-            <a id="addToCartMonthly" href="#" rel="/?add-to-cart=39" title="Monthly subscription to Alloe">
+            {{-- <a id="addToCartMonthly" href="#" rel="/?add-to-cart=39" title="Monthly subscription to Alloe"> --}}
+            <a id="addToCartMonthly" href="#" rel="/?add-to-cart=12" title="Monthly subscription to Alloe">
                 <span class="legendMonthly">Subscribe monthly</span>
             </a>
         </li>
@@ -31,7 +32,8 @@
                 <li><span>✓</span> Itaque earum rerum</li>
                 <li><span>✓</span> Itaque earum rerum</li>
             </ul>
-            <a id="addToCartYearly" href="#" rel="/?add-to-cart=44" title="Yearly subscription to Alloe">
+            {{-- <a id="addToCartYearly" href="#" rel="/?add-to-cart=44" title="Yearly subscription to Alloe"> --}}
+            <a id="addToCartYearly" href="#" rel="/?add-to-cart=46" title="Yearly subscription to Alloe">
                 <span class="legendYearly">Subscribe yearly</span>
             </a>
         </li>
