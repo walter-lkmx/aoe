@@ -6,11 +6,11 @@
       {{-- @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif --}}
-      <a href="">Employer solutions</a>
+      <a href="/employer-solutions">Employer solutions</a> 
       <a href="">Our experts</a>      
       <a href="">Media</a>       
       <a class="work" href="">Work with us</a>
-      <a class="subscribe" href="" title="">Subscribe now</a>
+      <a class="subscribe" href="/subscribe" title="">Subscribe now</a>
       <a class="download-ios" href="" title="Download our APP in Apple Store">
         <i class="fa fa-apple" aria-hidden="true"></i>
       </a>
