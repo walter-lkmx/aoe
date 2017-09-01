@@ -1,8 +1,15 @@
 .home {
+  
   .welcome {
     text-align: center;
     background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
-    height: 550px;
+    height: 700px;
+    @include mq($min-width: 480px, $max-width: 767px) {
+      height: 800px;
+    }
+    @include mq($min-width: 768px, $max-width: 980px) {
+      height: 800px;
+    }
     width: 100%;
     padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
     position: fixed;
@@ -11,12 +18,24 @@
     h1 {
       // width: 400px;
       padding: 0 25%;
+      @include mq($max-width: 480px) {
+        padding: 0;
+        }
       font-size: $base-font-size * 5;
+      @include mq($max-width: 480px) {
+        font-size: $base-font-size * 3.5;
+        }
     }
     p {
       margin-top: $base-margin * 2;
       width: 450px;
+      @include mq($max-width: 480px) {
+        width: 100%;
+      }
       font-size: $base-font-size * 1.4;
+      @include mq($max-width: 480px) {
+        font-size: $base-font-size * 1.1;
+        }
       display: inline-block;
       line-height: 1.5; // color: $brand-white;
     }
@@ -49,12 +68,29 @@
     z-index: 1;
     position: relative;
     margin-top: pxToRem(450px);
+    @include mq($min-width: 480px, $max-width: 767px) {
+            margin-top: 22rem;
+      }
     .our-numbers {
       // background-image: url('images/background-shape.svg');
       background-image: url('../images/background-shape-purple.svg');
       background-size: cover;
       background-position: center top;
       height: 574px;
+      @include mq($max-width: 480px) {
+        height: 2000px !important;
+        margin-top: -550px;
+      }
+      @include mq($min-width: 480px, $max-width: 767px) {
+        height: 1100px !important;
+      }
+      @include mq($min-width: 768px, $max-width: 980px) {
+        height: 574px;
+        margin-top: 500px;
+      }
+      @include mq($max-width: 1024px) {
+        height: 574px;
+      }
       padding: $base-padding; // width: 100%;
       // border-bottom: 10px solid;
       // border-color: $brand-dark;
@@ -65,33 +101,82 @@
 
       .message {
         margin-top: $base-margin * 13.5;
+        @include mq($max-width: 480px) {
+          margin-top: 75rem;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          margin-top: 22rem;
+        }
         padding: $base-padding;
+        @include mq($max-width: 480px) {
+        padding: 0;
+        }
         float: left;
+        @include mq($max-width: 480px) {
+          float: none;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          float: right;
+        }
         width: 40%;
+        @include mq($max-width: 480px) {
+          width: 100%;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          width: 50%;
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+            margin-left: 1rem;
+          }
         color: $brand-white;
         h2 {
           font-size: $base-font-size * 3;
           margin-bottom: $base-margin * 2;
           padding-left: $base-padding * 2;
+          @include mq($max-width: 480px) {
+            padding-left: $base-padding * 0;
+            text-align: center;
+          }
         }
         p {
           font-size: $base-font-size * 1.2;
           line-height: 1.5;
           padding-left: $base-padding * 2;
+          @include mq($max-width: 480px) {
+            padding-left: $base-padding * 0;
+            text-align: center;
+          }
         }
       }
       .unslider {
         display: inline;
         .app-screens {
           margin-top: pxToRem(20px);
+          @include mq($min-width: 480px, $max-width: 767px) {
+            margin-top: 23rem;
+          }
           float: left;
           width: 30%;
+          @include mq($min-width: 768px, $max-width: 980px) {
+            width: 35%;
+          }
           height: 640px;
           overflow: initial !important;
+          .unslider-wrap {
+            li {
+              @include mq($max-width: 480px) {
+                right: -10px;
+                top: 530px;
+              }
+            }
+          }
           img {
             // width: 95%;
             // height: auto;
             box-shadow: 0 0 16px 0 rgba(6, 19, 21, 0.12);
+            @include mq($max-width: 480px) {
+               width: 300%;
+            }
           }
         }
         .unslider-nav {
@@ -103,8 +188,26 @@
       }
       .stats {
         margin-top: $base-margin * 15;
+        @include mq($max-width: 480px) {
+          margin-top: $base-margin * 5;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          margin-top: $base-margin * 3;
+        }
         float: left;
+        @include mq($min-width: 480px, $max-width: 767px) {
+          float: right;
+        }
         width: 30%;
+        @include mq($max-width: 480px) {
+          width: 100%;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          width: 49%;
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+          width: 20%;
+        }
         height: pxToRem(280px) !important;
         text-align: center;
         overflow: hidden; // @include centerer-horizontal;
@@ -131,42 +234,138 @@
     .not-just-app {
       background-color: $brand-white;
       height: pxToRem(600px);
+      @include mq($min-width: 480px, $max-width: 767px) {
+        height: 44rem;
+      }
+      @include mq($min-width: 768px, $max-width: 980px) {
+        height: 40rem;
+      }
       position: relative;
       @extend .not-just-app-animation;
       h2 {
         transform: rotate(-90deg);
+        @include mq($max-width: 480px) {
+          transform: rotate(0deg);
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          transform: rotate(0deg);
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+          transform: rotate(0deg);  
+        }
         float: left;
+        @include mq($min-width: 768px, $max-width: 980px) {
+            float: right;
+        }
         left: pxToRem(-80px);
+        @include mq($max-width: 480px) {
+          left: 4rem;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          left: 14rem;
+        }
         display: block;
         position: absolute;
         margin-top: pxToRem(250px);
+        @include mq($max-width: 480px) {
+        margin-top: 4rem;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          margin-top: 5rem;
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+            margin-top: 5rem;
+          }
         font-size: $base-font-size * 3;
+        @include mq($max-width: 480px) {
+        font-size: $base-font-size * 2;
+        }
         width: 25%;
+        @include mq($max-width: 480px) {
+        width: 65%;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          width: 40%;
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+          width: 60%;
+        }
         text-align: right;
+        @include mq($max-width: 480px) {
+        text-align: center;
+        margin-left: 0px;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          text-align: center;
+        }
+        @include mq($min-width: 768px, $max-width: 980px) {
+          text-align: right;
+          margin-left: 27rem;
+        }
       }
     }
     .simple-as {
       height: pxToRem(300px);
+      @include mq($max-width: 480px) {
+        height: 35rem;
+        }
+      @include mq($min-width: 480px, $max-width: 767px) {
+        height: 30rem;
+      }
       background-color: $brand-yellow;
       // background-image: linear-gradient(0deg, #FF9900 1%, $brand-yellow 60%);
       text-align: left;
       padding-top: $base-padding * 4;
       position: relative;
+      margin-top: -1px;
+      /*@include mq($max-width: 480px) {
+        position: absolute;
+      }
+      @include mq($max-width: 480px) {
+        margin-top: -10rem;
+        }*/
       .content {
         width: 800px;
+        @include mq($max-width: 480px) {
+        width: 100%;
+        }
         margin-left: auto;
         margin-right: auto;
+        @include mq($max-width: 480px) {
+        top: 50%;
+        }
         @include centerer-horizontal;
       }
       h2 {
         font-size: $base-font-size * 3;
+        @include mq($max-width: 480px) {
+        text-align: center;
+        font-size: $base-font-size * 2.3;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          text-align: center;
+        }
       }
       ul {
         margin-top: $base-margin - 2;
+        @include mq($max-width: 480px) {
+          margin-top: 2rem;
+        }
         li {
           display: inline-block;
+          @include mq($max-width: 480px) {
+            display: block;
+            text-align: center;
+          }
+          @include mq($min-width: 480px, $max-width: 767px) {
+            display: block;
+            text-align: center;
+          }
           font-size: $base-font-size * 1.4;
           margin-right: $base-margin * 2;
+          @include mq($max-width: 480px) {
+            margin-right: 0;
+          }
           vertical-align: middle;
           padding-top: $base-padding * 2;
           img {
@@ -175,6 +374,9 @@
           }
           &.subscribe-now {
             padding-top: 0;
+            @include mq($max-width: 480px) {
+              padding-bottom: 4rem;
+            }
             a {
               @extend .circle-button;
               text-align: center;
@@ -192,7 +394,13 @@
       padding: $base-padding;
       text-align: center;
       height: pxToRem(400px);
+      @include mq($max-width: 480px) {
+        height: 28rem;
+      }
       padding-top: $base-padding * 10;
+      @include mq($max-width: 480px) {
+        padding-top: $base-padding * 5;
+      }
       img {
         vertical-align: baseline;
         margin-right: $base-margin;
@@ -203,8 +411,14 @@
         font-size: $base-font-size * 3;
         display: inline-block;
         text-align: left;
+        @include mq($max-width: 480px) {
+          text-align: center;
+        }
         line-height: 0.8;
         margin-bottom: $base-margin * 4;
+        @include mq($max-width: 480px) {
+          margin-bottom: $base-margin * 2;
+        }
         span {
           font-size: $base-font-size * 5;
           display: block;
@@ -212,7 +426,13 @@
       }
       p {
         font-size: $base-font-size * 1.4;
+        @include mq($max-width: 480px) {
+          font-size: $base-font-size * 1.2;
+        }
         margin-bottom: $base-margin * 4;
+        @include mq($max-width: 480px) {
+          margin-bottom: $base-margin * 2;
+        }
         span {
           display: block;
         }

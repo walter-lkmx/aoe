@@ -41,8 +41,20 @@
       height: pxToRem(150px);
       margin-top: $base-margin * 8;
       margin-right: $base-margin * 4;
+      @include mq($max-width: 480px) {
+        margin-top: $base-margin * 10;
+        margin-left: $base-margin * 2;
+        }
+      @include mq($min-width: 480px, $max-width: 767px) {
+        margin-top: 13rem;
+        margin-right: 6rem;
+      }
       z-index: 2;
       position: relative;
+      @include mq($max-width: 480px) {
+        position: absolute;
+      }
+
       g {
         fill: transaprent;
         stroke: $brand-dark;
@@ -51,13 +63,33 @@
     section {
       float: right;
       width: 75%;
+      @include mq($max-width: 480px) {
+        width: 100%;
+        }
       position: relative;
+      @include mq($max-width: 480px) {
+        position: absolute;
+        }
       margin-right: $base-margin * 4;
+      @include mq($max-width: 480px) {
+        margin-right: 1.5rem;
+        }
       color: $brand-white;
       font-size: $base-font-size * 1.2;
+      @include mq($max-width: 480px) {
+        z-index: 2;
+        margin-top: 15rem;
+        margin-left: 0.5rem;
+        }
       figure {
         margin-top: $base-margin * 2;
         width: 50%;
+        @include mq($max-width: 480px) {
+        width: 80%;
+        }
+        @include mq($min-width: 480px, $max-width: 767px) {
+          width: 65%;
+        }
         overflow: hidden;
         h3 {
           font-size: $base-font-size * 1.5;
@@ -65,6 +97,10 @@
         }
         p {
           line-height: 1.5;
+          @include mq($max-width: 480px) {
+            line-height: 1.2;
+            font-size: 15px;
+          }
         }
         a {
           @extend .circle-button;
@@ -75,6 +111,9 @@
           color: $brand-dark;
           float: left;
           margin-top: 0;
+          @include mq($max-width: 480px) {
+            margin-top: 1rem;
+          }
           margin-left: $base-margin;
           &:hover{
             color: $brand-dark;
@@ -108,7 +147,13 @@
         }
         &.feature-measurement {
           width: 75%;
+          @include mq($max-width: 480px) {
+            width: 80%
+          }
           margin-right: 0;
+          @include mq($max-width: 480px) {
+            margin-right: 25px;
+          }
           float: right;
           text-align: right;
           
