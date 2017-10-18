@@ -1,3 +1,12 @@
+@mixin container($width)
+{
+  display: block;
+
+  max-width: $width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 // Vertical align mixin
 @mixin centerer-horizontal($position: relative) {
   position: $position;

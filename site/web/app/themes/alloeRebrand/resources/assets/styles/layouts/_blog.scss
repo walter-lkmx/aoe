@@ -1,6 +1,12 @@
-.blog {
+.blog, .archive {
+
+  
   * {
     box-sizing: border-box;
+  }
+  .wrap{
+  @include container(1280px);  
+  // font-size: 0;
   }
   aside.sidebar {
     width: 15%;
@@ -31,9 +37,9 @@
     }
   }
   main {
-    width: 70%;
-    float: left;
-    margin-left: 20%;
+    width: 80%;
+    float: right;
+    
     margin-top: $base-margin * 4;
     .page-header {
       display: none;
@@ -44,7 +50,7 @@
       clear: both;
       height: pxToRem(450px); // overflow: hidden;
       background-color: $brand-white;
-      margin-bottom: $base-margin * 4;
+      margin-bottom: $gratio-6;
       .metadata {
         transform: rotate(-90deg);
         position: absolute;

@@ -162,7 +162,9 @@ add_filter('sage/display_sidebar', function ($display) {
 
     isset($display) || $display = in_array(true, [
       // The sidebar will be displayed if any of the following return true
-      is_home()
+      is_home(),
+      is_category(),
+      is_author()
     ]);
 
     return $display;

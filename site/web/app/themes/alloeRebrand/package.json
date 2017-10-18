@@ -72,9 +72,12 @@
   "dependencies": {
     "css-reset-and-normalize-sass": "^0.1.2",
     "font-awesome": "^4.7.0",
+    "form-2-json": "^1.0.3",
     "ityped": "^0.0.10",
     "jquery": "1.12.4 - 3",
+    "jquery-serializeobject": "^1.0.0",
     "jquery-typewrite": "^0.1.0",
+    "jquery-ui": "^1.12.1",
     "jquery.animate-number": "^0.0.14",
     "legit-ripple": "^1.1.0",
     "loaders.css": "^0.1.2",

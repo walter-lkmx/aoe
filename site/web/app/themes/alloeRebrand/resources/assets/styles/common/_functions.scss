@@ -1,0 +1,5 @@
+$global-font-size: 16px;
+@function rem($size) {
+    $remSize: $size / $global-font-size;
+    @return #{$remSize}rem;
+}

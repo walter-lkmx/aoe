@@ -1,6 +1,7 @@
 .employer-solutions {
   background-color: $brand-white;
   .wrap {
+    @include container(1280px);
     .welcome {
       width: 100%;
       text-align: left; // background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1)), url('images/welcome-background.jpg');
@@ -14,7 +15,9 @@
       h1 {
         // width: 400px;
         font-size: $base-font-size * 5;
+        line-height: 1;
         width: 80%;
+        @include centerer-absolute(false, true);
         // transition: $base-transition;
         span.break {
           display: block;
@@ -23,6 +26,7 @@
           &.social {
             background-color: $brand-primary;
             padding-right: $base-padding * 4;
+            color: white;
           }
           &.engagement {
             background-color: $brand-yellow;
@@ -52,31 +56,47 @@
       position: relative;
       margin-top: pxToRem(450px); // background-color: $brand-white;
       transition: $base-transition;
+      @include container(1280px);
       .features-list {
-        width: 100%;
+          font-size: 0;
         .sticky-features {
           background-color: $brand-white;
-          display: block;
-          clear: both;
+          display: inline-block;
+          padding-top: $gratio-4;
+          
           margin-top: pxToRem(250px);
-          overflow: hidden;
+          
           img {
-            width: 40%;
-            float: left;
-          }
-          .description {
             width: 30%;
-            float: left;
+            // float: left;
+            vertical-align: top;
+          }
+
+          .description {
+            width: 60%;
+            font-size: 1rem;
+            display: inline-block;
+            background-color: $brand-white;
             h2 {
               font-size: $base-font-size * 2;
               margin-bottom: $base-margin * 2;
               padding: $base-padding / 2 $base-padding * 2 $base-padding / 2 0;
+              display: block;
+              width: 30%;
+            }
+            section.feature {
               display: inline-block;
+              width: 45%;
+              vertical-align: top;
+              margin-right: $gratio-5;
+              &:nth-child(3) {
+                margin-right: 0;
+              }
             }
             h3 {
-              margin-bottom: $base-margin;
-              padding: $base-padding / 2;
-              border-left: 5px solid;
+              margin-bottom: $gratio-3;
+              // padding: $base-padding / 2;
+              // border-left: 5px solid;
             }
             p {
               margin-bottom: $base-padding * 2;
@@ -85,6 +105,7 @@
           &.social {
             h2 {
               background-color: $brand-primary;
+              color: white;
             }
             h3 {
               border-color: $brand-primary;

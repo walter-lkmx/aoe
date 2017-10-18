@@ -4,12 +4,15 @@ import 'stickybits';
 import 'unslider';
 import 'jquery.animate-number'; 
 import 'typed.js'; 
+import 'jquery-ui'; 
 
 
 /** import local dependencies */
 // util
 import Router from './util/Router';
 import stickyBits from './util/stickyBits';
+import overlap from './util/overlap';
+
 // routes
 import common from './routes/common';
 import home from './routes/home';
@@ -40,6 +43,7 @@ const routes = new Router({
   aboutUs, 
   /** util */
   stickyBits,
+  overlap,
 });
 
 /** Load Events */

@@ -1,0 +1,126 @@
+.single-post
+{
+    article
+    {
+        margin-top: $gratio-3;
+
+        @include container(1280px);
+        h1
+        {
+            font-size: 2.5rem;
+            line-height: 1;
+
+            margin-bottom: $gratio-6;
+
+            text-align: center;
+
+            @include container(800px);
+        }
+        .metadata
+        {
+            font-size: 1.1rem;
+
+            margin-bottom: $gratio-3;
+
+            text-align: center;
+            // color: $brand-yellow;
+            p.byline
+            {
+                display: inline-block;
+                &:after
+                {
+                    content: '  |  ';
+                }
+                a
+                {
+                    font-weight: 700;
+
+                    color: $brand-primary;
+                }
+            }
+            time
+            {
+                display: inline-block;
+            }
+            .avatar-container
+            {
+                display: none;
+            }
+        }
+        .feature-image
+        {
+            position: relative;
+
+            overflow: hidden;
+
+            width: 100%;
+            height: rem(600px);
+            img
+            {
+                // width: 100%;
+                @include centerer-absolute(true, true);
+            }
+        }
+        .entry-content
+        {
+            position: relative;
+
+            margin-top: - 10rem;
+            padding: $gratio-6;
+
+            background-color: white;
+
+            @include container(700px);
+            &:before
+            {
+                position: absolute;
+                z-index: -1;
+                top: 15px;
+                left: -5px;
+
+                display: block;
+
+                width: 20px;
+                height: 200px;
+
+                content: '';
+                transform: rotate(-5deg);
+
+                background: rgba(39, 44, 49, .15);
+
+                filter: blur(5px);
+            }
+            &:after
+            {
+                position: absolute;
+                z-index: -1;
+                top: 15px;
+                right: -5px;
+
+                display: block;
+
+                width: 20px;
+                height: 200px;
+
+                content: '';
+                transform: rotate(5deg);
+
+                background: rgba(39,44,49,.15);
+
+                filter: blur(5px);
+            }
+            p
+            {
+                margin-bottom: $gratio-4;
+            }
+        }
+        footer
+        {
+            display: none;
+        }
+        .comments
+        {
+            display: none;
+        }
+    }
+}

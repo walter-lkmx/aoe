@@ -1,8 +1,13 @@
 <article @php(post_class())>
   <header>
-    <h1 class="entry-title">{{ get_the_title() }}</h1>
     @include('partials/entry-meta')
+    <h1 class="entry-title">{{ get_the_title() }}</h1>
   </header>
+  <div class="feature-image">
+        <?php if ( has_post_thumbnail()) : ?>
+        <?php the_post_thumbnail(); ?>
+        <?php endif; ?>
+  </div>
   <div class="entry-content">
     @php(the_content())
   </div>

@@ -7,7 +7,7 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif --}}
       <a href="/employer-solutions">Employer solutions</a> 
-      <a href="">Our experts</a>      
+      <a href="/blog">Our experts</a>      
       <a href="">Media</a>       
       <a class="work" href="">Work with us</a>
       <a class="subscribe" href="/subscribe" title="">Subscribe now</a>

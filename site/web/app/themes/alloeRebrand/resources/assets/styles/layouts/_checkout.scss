@@ -68,7 +68,7 @@ body.checkout {
         label {
           display: block;
         }
-        input[type="submit"] {
+        input[type="submit"], textarea {
           background-color: $brand-primary;
           color: $brand-white;
           box-shadow: none !important;
@@ -113,7 +113,7 @@ body.checkout {
             margin-bottom: $base-margin / 2;
           }
           input,
-          select,
+          select, textarea,
           .select2-selection {
             box-sizing: border-box;
             width: 100%;
@@ -138,6 +138,9 @@ body.checkout {
               // width: 100%;
             }
           }
+        }
+        #billing_country_field {
+          margin-top: $gratio-5;
         }
       }
       .col-2 {
@@ -289,4 +292,8 @@ body.checkout {
       }
     }
   }
+}
+
+.xdebug-error {
+  display: none;
 }

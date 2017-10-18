@@ -1,3 +1,4 @@
+@import "common/functions";
 @import "common/variables";
 
 // webfonts
@@ -28,6 +29,7 @@
 @import "layouts/checkout";
 @import "layouts/subscribe";
 @import "layouts/blog";
+@import "layouts/blog-single-post";
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";

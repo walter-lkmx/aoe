@@ -1,7 +1,7 @@
 <!doctype html>
 <html @php(language_attributes())>
   @include('partials.head')
-  <body @php(body_class())>
+  <body @php(body_class()) style="opacity:0">  
     @php(do_action('get_header'))
     @include('partials.header')
     <div class="wrap container" role="document">
