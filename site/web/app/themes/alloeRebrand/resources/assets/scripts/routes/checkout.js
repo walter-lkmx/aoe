@@ -53,7 +53,7 @@ export default {
           $.ajax({
             type: "POST",
             data :JSON.stringify(customerData),
-            url: "http://putsreq.com/OgxE4ZaepCbPy5rN2i0g",
+            url: "http://putsreq.com/43UuSz6SxWs39ejQ2Qf7",
             contentType: "application/json",
           });
       });

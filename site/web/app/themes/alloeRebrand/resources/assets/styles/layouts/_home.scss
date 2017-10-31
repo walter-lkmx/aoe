@@ -1,331 +1,287 @@
-.home
-{
-    .welcome
-    {
-        position: fixed;
-        z-index: 0;
-        top: 0;
+.home {
+  .welcome {
+    position: fixed;
+    z-index: 0;
+    top: 0;
 
-        width: 100%;
-        height: 700px;
-        padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
+    width: 100%;
+    height: 700px;
+    padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
+    text-align: center;
 
-        text-align: center;
+    background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
+    h1 {
+      font-size: $base-font-size * 5;
+      @include mq($max-width: 1024px) {
+        font-size: $base-font-size * 4;
+      }
+      line-height: 1; // width: 400px;
+      padding: 0 25%;
+    }
+    p {
+      font-size: $base-font-size * 1.4;
+      line-height: 1.5; // color: $brand-white;
+      display: inline-block;
 
-        background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
-        h1
-        {
-            font-size: $base-font-size * 5;
-            line-height: 1;
-            // width: 400px;
+      width: 450px;
+      margin-top: $base-margin * 2;
+    }
+    a {
+      font-size: $base-font-size * 1.4;
 
-            padding: 0 25%;
+      position: relative;
+
+      display: block;
+
+      width: 150px;
+      height: 150px;
+      margin-top: $base-margin * 2;
+      margin-right: auto;
+      margin-left: auto;
+
+      cursor: pointer;
+
+      color: $brand-white;
+      border-radius: 100rem;
+      background-color: $brand-primary;
+      &:hover {
+        background-color: darken($brand-primary, 10%);
+      }
+      span {
+        line-height: 1.2;
+
+        @include centerer-absolute;
+      }
+    }
+    * {
+      transition: $base-transition;
+    }
+  }
+  .overall {
+    position: relative;
+    z-index: 1;
+
+    margin-top: pxToRem(450px);
+    .our-numbers {
+      width: auto;
+      height: 574px;
+      padding: $base-padding; // background-image: url('images/background-shape.svg');
+      background-image: url('../images/background-shape-purple.svg');
+      background-position: center top;
+      background-size: cover;
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        @include container(1280px);
+      }
+      .message {
+        float: left;
+
+        width: 40%;
+        margin-top: $base-margin * 13.5;
+        padding: $base-padding;
+
+        color: $brand-white;
+        h2 {
+          font-size: $base-font-size * 3;
+          line-height: 1;
+
+          margin-bottom: $base-margin * 2;
+          padding-left: $base-padding * 2;
         }
-        p
-        {
-            font-size: $base-font-size * 1.4;
-            line-height: 1.5; // color: $brand-white;
+        p {
+          font-size: $base-font-size * 1.2;
+          line-height: 1.5;
 
-            display: inline-block;
-
-            width: 450px;
-            margin-top: $base-margin * 2;
+          padding-left: $base-padding * 2;
         }
-        a
-        {
-            font-size: $base-font-size * 1.4;
+      }
+      .unslider {
+        display: inline;
+        .app-screens {
+          float: left;
+          overflow: initial !important;
 
-            position: relative;
+          width: 30%;
+          height: 640px;
+          margin-top: pxToRem(20px);
+
+          img {
+            // width: 95%;
+            // height: auto;
+            box-shadow: 0 0 16px 0 rgba(6, 19, 21, .12);
+            @include mq($max-width: 1024px) {
+                width: 100%;
+            }
+          }
+        }
+        .unslider-nav {
+          display: none;
+        }
+        .unslider-arrow {
+          display: none;
+        }
+      }
+      .stats {
+        float: left;
+        overflow: hidden; // @include centerer-horizontal;
+        width: 30%;
+        height: pxToRem(280px) !important;
+        margin-top: $base-margin * 15;
+
+        text-align: center; // overflow: visible !important;
+        img {
+          height: pxToRem(100px);
+        }
+        p {
+          color: $brand-white;
+
+          span {
+            font-size: 2.5rem;
+            font-weight: $base-font-weight-heavy;
+            line-height: 1.5;
+          }
+          span.label {
+            font-size: 1.5rem;
+            font-weight: $base-font-weight-light;
 
             display: block;
-
-            width: 150px;
-            height: 150px;
-            margin-top: $base-margin * 2;
-            margin-right: auto;
-            margin-left: auto;
-
-            cursor: pointer;
-
-            color: $brand-white;
-            border-radius: 100rem;
-            background-color: $brand-primary;
-            &:hover
-            {
-                background-color: darken($brand-primary, 10%);
-            }
-            span
-            {
-                line-height: 1.2;
-
-                @include centerer-absolute;
-            }
+          }
         }
-        *
-        {
-            transition: $base-transition;
-        }
+      }
     }
-    .overall
-    {
-        position: relative;
-        z-index: 1;
+    .not-just-app {
+      position: relative;
 
-        margin-top: pxToRem(450px);
-        .our-numbers
-        {
-            width: auto;
-            height: 574px;
-            padding: $base-padding;
-            // background-image: url('images/background-shape.svg');
+      height: pxToRem(600px);
 
-            background-image: url('../images/background-shape-purple.svg');
-            background-position: center top;
-            background-size: cover;
-            *
-            {
-                box-sizing: border-box;
-            }
-            .container
-            {
-                @include container(1280px);
-            }
-            .message
-            {
-                float: left;
+      background-color: $brand-white;
 
-                width: 40%;
-                margin-top: $base-margin * 13.5;
-                padding: $base-padding;
+      @extend .not-just-app-animation;
+      h2 {
+        font-size: $base-font-size * 3;
+        position: absolute;
+        left: pxToRem(-80px);
 
-                color: $brand-white;
-                h2
-                {
-                    font-size: $base-font-size * 3;
-                    line-height: 1;
+        display: block;
+        float: left;
 
-                    margin-bottom: $base-margin * 2;
-                    padding-left: $base-padding * 2;
-                }
-                p
-                {
-                    font-size: $base-font-size * 1.2;
-                    line-height: 1.5;
-
-                    padding-left: $base-padding * 2;
-                }
-            }
-            .unslider
-            {
-                display: inline;
-                .app-screens
-                {
-                    float: left;
-                    overflow: initial !important;
-
-                    width: 30%;
-                    height: 640px;
-                    margin-top: pxToRem(20px);
-
-                    img
-                    {
-                        // width: 95%;
-                        // height: auto;
-                        box-shadow: 0 0 16px 0 rgba(6, 19, 21, .12);
-                    }
-                }
-                .unslider-nav
-                {
-                    display: none;
-                }
-                .unslider-arrow
-                {
-                    display: none;
-                }
-            }
-            .stats
-            {
-                float: left;
-                overflow: hidden; // @include centerer-horizontal;
-
-                width: 30%;
-                height: pxToRem(280px) !important;
-                margin-top: $base-margin * 15;
-
-                text-align: center;
-                // overflow: visible !important;
-                img
-                {
-                    height: pxToRem(100px);
-                }
-                p
-                {
-                    color: $brand-white;
-
-                    span
-                    {
-                        font-size: 2.5rem;
-                        font-weight: $base-font-weight-heavy;
-                        line-height: 1.5;
-                    }
-                    span.label
-                    {
-                        font-size: 1.5rem;
-                        font-weight: $base-font-weight-light;
-
-                        display: block;
-                    }
-                }
-            }
+        width: 25%;
+        @include mq($max-width: 1024px) {
+            left: -6rem;
+            width: 35%;
         }
-        .not-just-app
-        {
-            position: relative;
+        margin-top: pxToRem(250px);
 
-            height: pxToRem(600px);
-
-            background-color: $brand-white;
-
-            @extend .not-just-app-animation;
-            h2
-            {
-                font-size: $base-font-size * 3;
-
-                position: absolute;
-                left: pxToRem(-80px);
-
-                display: block;
-                float: left;
-
-                width: 25%;
-                margin-top: pxToRem(250px);
-
-                transform: rotate(-90deg);
-                text-align: right;
-            }
-        }
-        .simple-as
-        {
-            position: relative;
-
-            height: pxToRem(300px);
-            margin-top: -1px;
-            padding-top: $base-padding * 4;
-            // background-image: linear-gradient(0deg, #FF9900 1%, $brand-yellow 60%);
-
-            text-align: left;
-
-            background-color: $brand-yellow;
-
-
-            .content
-            {
-                width: 800px;
-                margin-right: auto;
-                margin-left: auto;
-
-                @include centerer-horizontal;
-            }
-            h2
-            {
-                font-size: $base-font-size * 3;
-            }
-            ul
-            {
-                margin-top: $base-margin - 2;
-
-                li
-                {
-                    font-size: $base-font-size * 1.4;
-
-                    display: inline-block;
-
-                    margin-right: $base-margin * 2;
-                    padding-top: $base-padding * 2;
-
-                    vertical-align: middle;
-
-                    img
-                    {
-                        margin-right: $base-margin;
-
-                        vertical-align: middle;
-                    }
-                    &.subscribe-now
-                    {
-                        padding-top: 0;
-
-                        a
-                        {
-                            text-align: center;
-
-                            background-color: $brand-dark;
-
-                            @extend .circle-button;
-                            span
-                            {
-                                padding-top: $base-padding / 2;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .read-experts
-        {
-            height: pxToRem(400px);
-            padding: $base-padding;
-            padding-top: $base-padding * 10;
-
-            text-align: center;
-
-            background-color: #fff;
-
-            img
-            {
-                line-height: 15;
-
-                display: inline-block;
-
-                margin-right: $base-margin;
-
-                vertical-align: baseline;
-            }
-            h2
-            {
-                font-size: $base-font-size * 3;
-                line-height: .8;
-
-                display: inline-block;
-
-                margin-bottom: $base-margin * 4;
-
-                text-align: left;
-
-                span
-                {
-                    font-size: $base-font-size * 5;
-
-                    display: block;
-                }
-            }
-            p
-            {
-                font-size: $base-font-size * 1.4;
-
-                margin-bottom: $base-margin * 4;
-
-                span
-                {
-                    display: block;
-                }
-            }
-            a
-            {
-                font-size: $base-font-size * 1.4;
-
-                color: $brand-purple;
-            }
-        }
+        transform: rotate(-90deg);
+        text-align: right;
+      }
     }
+    .simple-as {
+      position: relative;
+
+      height: pxToRem(300px);
+      margin-top: -1px;
+      padding-top: $base-padding * 4; // background-image: linear-gradient(0deg, #FF9900 1%, $brand-yellow 60%);
+      text-align: left;
+
+      background-color: $brand-yellow;
+
+
+      .content {
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include centerer-horizontal;
+      }
+      h2 {
+        font-size: $base-font-size * 3;
+      }
+      ul {
+        margin-top: $base-margin - 2;
+
+        li {
+          font-size: $base-font-size * 1.4;
+
+          display: inline-block;
+
+          margin-right: $base-margin * 2;
+          padding-top: $base-padding * 2;
+
+          vertical-align: middle;
+
+          img {
+            margin-right: $base-margin;
+
+            vertical-align: middle;
+          }
+          &.subscribe-now {
+            padding-top: 0;
+
+            a {
+              text-align: center;
+
+              background-color: $brand-dark;
+
+              @extend .circle-button;
+              span {
+                padding-top: $base-padding / 2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .read-experts {
+      height: pxToRem(400px);
+      padding: $base-padding;
+      padding-top: $base-padding * 10;
+
+      text-align: center;
+
+      background-color: #fff;
+
+      img {
+        line-height: 15;
+
+        display: inline-block;
+
+        margin-right: $base-margin;
+
+        vertical-align: baseline;
+      }
+      h2 {
+        font-size: $base-font-size * 3;
+        line-height: .8;
+
+        display: inline-block;
+
+        margin-bottom: $base-margin * 4;
+
+        text-align: left;
+
+        span {
+          font-size: $base-font-size * 5;
+
+          display: block;
+        }
+      }
+      p {
+        font-size: $base-font-size * 1.4;
+
+        margin-bottom: $base-margin * 4;
+
+        span {
+          display: block;
+        }
+      }
+      a {
+        font-size: $base-font-size * 1.4;
+
+        color: $brand-purple;
+      }
+    }
+  }
 }

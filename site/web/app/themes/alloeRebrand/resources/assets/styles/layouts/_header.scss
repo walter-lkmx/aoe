@@ -80,6 +80,9 @@ header.banner
             &.nav-primary
             {
                 margin-left: $base-margin * 12;
+                @include mq($max-width: 1024px) {
+                    margin-left: $base-margin * 2;
+                }
                 a
                 {
                     color: $brand-dark;

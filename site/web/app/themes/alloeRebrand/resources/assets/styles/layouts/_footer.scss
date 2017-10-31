@@ -1,59 +1,74 @@
 // Footer
 footer {
-  background-color: $brand-white;
+  position: relative;
+  z-index: 1;
+
+  clear: both;
+  overflow: hidden;
+
   height: 600px;
+
+  text-align: center;
+
+  background-color: $brand-white;
+
   @include mq($min-width: 480px, $max-width: 767px) {
     height: 400px;
   }
   @include mq($min-width: 768px, $max-width: 980px) {
     height: 400px;
   }
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-  clear: both;
   .width-boundaries {
     overflow: hidden;
+
     width: 800px;
+
     @include centerer-horizontal;
     .brand {
       float: left;
+
+      width: 40%;
+      height: pxToRem(240px);
+
       @include mq($max-width: 480px) {
         float: none;
       }
-      width: 40%;
-      height: pxToRem(240px);
       @include mq($max-width: 480px) {
         height: 12rem;
       }
       img {
         width: 60%;
+
         @include mq($max-width: 480px) {
-        width: 75%;
-      }
+          width: 75%;
+        }
         @include centerer-horizontal;
       }
     }
     .links {
-      float: left;
       font-size: $base-font-size - .1;
+
+      float: left;
+
       width: 60%;
       ul {
         float: left;
+
+        width: 50%;
+        margin-bottom: $base-margin * 2;
+
         @include mq($max-width: 480px) {
           float: none;
         }
-        width: 50%;
-        margin-bottom: $base-margin * 2;
         @include mq($max-width: 480px) {
           display: block;
+
           margin: 0 auto 2rem 6rem;
         }
         &.about {
           li:first-child {
-            background-color: $brand-primary;
             color: $brand-white;
+            background-color: $brand-primary;
           }
         }
         &.get-touch {
@@ -63,19 +78,22 @@ footer {
         }
         &.customer-service {
           li:first-child {
-            background-color: $brand-purple;
             color: $brand-white;
+            background-color: $brand-purple;
           }
         }
         li {
-          text-align: left;
           line-height: 1.5;
+
           clear: both;
+
+          text-align: left;
           &:first-child {
-            padding: $base-padding / 4 $base-padding * 2 $base-padding / 4 $base-padding / 2;
             display: inline-block;
             float: left;
+
             margin-bottom: $base-margin / 2;
+            padding: $base-padding / 4 $base-padding * 2 $base-padding / 4 $base-padding / 2;
           }
           a {
             color: $brand-dark;

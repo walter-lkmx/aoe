@@ -1,76 +1,89 @@
-.blog, .archive {
-
-  
+.blog,
+.archive {
   * {
     box-sizing: border-box;
   }
-  .wrap{
-  @include container(1280px);  
-  // font-size: 0;
+  .wrap {
+    @include container(1280px); // font-size: 0;
   }
   aside.sidebar {
-    width: 15%;
-    float: left;
-    padding: $base-padding;
     position: fixed;
+
+    float: left;
+
+    width: 15%;
+    padding: $base-padding;
     h3 {
-      margin-bottom: $base-margin;
       font-size: $base-font-size * 1.1;
+
+      margin-bottom: $base-margin;
     }
     ul {
       // padding-left: $base-padding / 2;
       li {
         a {
-          color: $brand-dark;
-          padding: $base-padding / 2 $base-padding;
           display: block;
+
+          padding: $base-padding / 2 $base-padding;
+
+          color: $brand-dark;
         }
       } // color loop
       @for $i from 1 through length($array-brand-color) {
         li:nth-child(#{length($array-brand-color)}n+#{$i}) a:hover {
-          background-color: nth($array-brand-color, $i);
-          color: $brand-white;
           text-decoration: none;
 
+          color: $brand-white;
+          background-color: nth($array-brand-color, $i);
         }
       }
     }
   }
   main {
-    width: 80%;
     float: right;
-    
+
+    width: 80%;
     margin-top: $base-margin * 4;
     .page-header {
       display: none;
     }
     article {
       position: relative;
+
       display: block;
       clear: both;
+
       height: pxToRem(450px); // overflow: hidden;
-      background-color: $brand-white;
       margin-bottom: $gratio-6;
+
+      background-color: $brand-white;
       .metadata {
-        transform: rotate(-90deg);
+        font-size: $base-font-size - .1;
+        font-weight: normal;
+
         position: absolute;
         z-index: 1;
         bottom: pxToRem(70px);
         left: pxToRem(-120px);
-        font-weight: normal;
-        font-size: $base-font-size - .1;
+
+        transform: rotate(-90deg);
         .avatar-container {
+          position: relative;
+
+          display: inline-block;
+          overflow: hidden;
+
           width: 60px;
           height: 60px;
-          overflow: hidden;
-          border-radius: pxToRem(100px);
-          position: relative;
-          display: inline-block;
-          vertical-align: top;
           margin-right: $base-margin;
+
+          vertical-align: top;
+
+          border-radius: pxToRem(100px);
           img.avatar {
             width: 150%;
             height: auto;
+
             transform: rotate(90deg) translate(-20%, 20%);
           }
         }
@@ -82,49 +95,58 @@
         }
       }
       .feature-image {
-        width: 40%;
-        height: pxToRem(450px);
+        position: relative;
+
         float: left;
         overflow: hidden;
+
+        width: 40%;
+        height: pxToRem(450px);
+
         text-align: center;
-        position: relative;
         img {
-          @include centerer-absolute(true, true);
           width: auto;
           height: 100%;
+
+          @include centerer-absolute(true, true);
         }
       }
 
       .content {
-        width: 60%;
         float: left;
         overflow: hidden;
+
+        width: 60%;
         header {
           padding-top: pxToRem(50px);
-          padding-left: pxToRem(50px);
           padding-right: pxToRem(50px);
+          padding-left: pxToRem(50px);
 
           h2 {
             a {
               font-size: $base-font-size * 1.8;
+
               color: $brand-dark;
               &:hover {
-                color: $brand-purple;
                 text-decoration: none;
+
+                color: $brand-purple;
               }
             }
           }
         }
         .entry-summary {
           padding-top: pxToRem(50px);
-          padding-left: pxToRem(50px);
           padding-right: pxToRem(50px);
+          padding-left: pxToRem(50px);
           p {
             a {
-              color: $brand-purple;
-              margin-top: $base-margin * 2;
-              clear: both;
               display: block;
+              clear: both;
+
+              margin-top: $base-margin * 2;
+
+              color: $brand-purple;
             }
           }
         }
