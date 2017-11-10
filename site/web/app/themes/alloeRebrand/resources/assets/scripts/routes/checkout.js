@@ -53,7 +53,7 @@ export default {
           $.ajax({
             type: "POST",
             data :JSON.stringify(customerData),
-            url: "https://staging.alloe.io/api/v1/user/company",
+            url: "http://putsreq.com/OgxE4ZaepCbPy5rN2i0g",
             contentType: "application/json",
           });
       });
