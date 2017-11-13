@@ -13,21 +13,21 @@
       <a href="">Media</a>       
       <a class="work" href="">Work with us</a>
       <a class="subscribe" href="/subscribe" title="">Subscribe now</a>
-      <a class="download-ios" href="" title="Download our APP in Apple Store">
+      <a class="download-ios" href="https://itunes.apple.com/us/app/alloe-io/id898822298?mt=8" title="Download our APP in Apple Store">
         <i class="fa fa-apple" aria-hidden="true"></i>
       </a>
-      <a class="download-android" href="" title="Download our APP in Play Store">
+      <a class="download-android" href="https://play.google.com/store/apps/details?id=io.alloe" title="Download our APP in Play Store">
         <i class="fa fa-android" aria-hidden="true"></i>
       </a>
     </nav>
     <nav class="social">
-    	<a href="" class="twitter">
+    	<a href="https://twitter.com/alloe_io" class="twitter">
     	    <i class="fa fa-twitter" aria-hidden="true"></i>
 		</a>
     	<a href="" class="facebook">
     	    <i class="fa fa-facebook" aria-hidden="true"></i>
 		</a>
-    	<a href="" class="linkedin">
+    	<a href="https://www.linkedin.com/company/alloe-io" class="linkedin">
     	    <i class="fa fa-linkedin" aria-hidden="true"></i>
 		</a>
     </nav>

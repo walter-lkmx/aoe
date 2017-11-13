@@ -5,7 +5,7 @@
 	  	  		<li><img src="@asset('images/icon-sign-up.svg')" alt=""> Sign Up</li>
 	  	  		<li><img src="@asset('images/icon-send.svg')" alt=""> Send Invitations</li>
 	  	  		<li><img src="@asset('images/icon-start.svg')" alt=""> Start</li>
-	  	  		<li class="subscribe-now"><a href="" title="Subscribe Now"><span>Subscribe Now</span></a></li>
+	  	  		<li class="subscribe-now"><a href="/subscribe" title="Subscribe Now"><span>Subscribe Now</span></a></li>
 	  	  	</ul>
 	   </div>
 </div>
