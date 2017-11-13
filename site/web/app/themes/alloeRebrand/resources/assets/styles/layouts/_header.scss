@@ -1,156 +1,184 @@
 // Header
-header.banner
-{
-    z-index: 9;
+header.banner {
+  z-index: 9;
 
-    padding: $base-padding;
-   
-        transition: $base-transition;
-    
-    .container
-    {
-        @include container(1280px);
-    }
-    &.js-is-sticky,
-    &.js-is-stuck
-    {
-        background-color: rgba($brand-white, 1);
+  padding: $base-padding;
 
-        .container
-        {
-            .brand
-            {
-                img
-                {
-                    height: 30px;
-                }
-            }
-            nav
-            {
-                &.nav-primary
-                {
-                    .subscribe
-                    {
-                        display: initial;
+  transition: $base-transition;
 
-                        padding: $base-padding / 2 $base-padding;
+  .container {
+    @include container(1280px);
+  }
+  &.js-is-sticky,
+  &.js-is-stuck {
+    background-color: rgba($brand-white, 1);
 
-                        color: $brand-white;
-                        background: $brand-primary;
-                        // border-radius: $base-border-radius * 4;
-                        &:hover
-                        {
-                            text-decoration: none;
-
-                            background: darken($brand-primary, 5%);
-                        }
-                    }
-                }
-                &.social
-                {
-                    padding-top: $base-padding / 7;
-                }
-            }
+    .container {
+      .brand {
+        img {
+          height: 30px;
         }
+      }
+      nav {
+        &.nav-primary {
+          .subscribe {
+            display: initial;
+
+            padding: $base-padding / 2 $base-padding;
+
+            color: $brand-white;
+            background: $brand-primary; // border-radius: $base-border-radius * 4;
+            &:hover {
+              text-decoration: none;
+
+              background: darken($brand-primary, 5%);
+            }
+          }
+        }
+        &.social {
+          padding-top: $base-padding / 7;
+        }
+      }
     }
-    .container
-    {
-        .brand
-        {
+  }
+  .container {
+    @include screen(320px, 920px) {
+      font-size: 0;
+    }
+    .brand {
+      display: inline-block;
+
+      vertical-align: middle;
+      @include screen(320px, 920px) {
+        width: 40%;
+        display: inline-block;
+      }
+      img {
+        height: 50px;
+      }
+    }
+    nav.mobile-menu {
+      display: none;
+
+      @include screen(320px, 920px) {
+        display: inline-block;
+        text-align: right;
+        width: 59%;
+        vertical-align: top;
+        a {
+          img {
+            width: $gratio-4;
             display: inline-block;
-
-            vertical-align: middle;
-            img
-            {
-                height: 50px;
-            }
+            vertical-align: top;
+          }
         }
-        nav
-        {
-            display: inline-block;
-
-            a
-            {
-                margin-left: $base-margin * 1.5;
-                &:first-child
-                {
-                    margin-left: 0;
-                }
-            }
-            &.nav-primary
-            {
-                margin-left: $base-margin * 12;
-                @include mq($max-width: 1024px) {
-                    margin-left: $base-margin * 2;
-                }
-                a
-                {
-                    color: $brand-dark;
-                    &:hover
-                    {
-                        color: $brand-purple;
-                    }
-                }
-                .subscribe
-                {
-                    display: none;
-                }
-                .download-ios
-                {
-                    font-size: $base-font-size * 1.5;
-
-                    margin-left: $base-margin * 2;
-
-                    color: #000; // ios logo color
-                    &:hover
-                    {
-                        text-decoration: none;
-                    }
-                }
-                .download-android
-                {
-                    font-size: $base-font-size * 1.5;
-
-                    margin-left: $base-margin;
-
-                    color: #a4c639; // android logo color
-                    &:hover
-                    {
-                        text-decoration: none;
-                    }
-                }
-            }
-            &.social
-            {
-                font-size: $base-font-size * 1.5;
-
-                display: inline-block;
-                float: right;
-
-                padding-top: $base-padding / 1.5;
-                a
-                {
-                    margin-left: $base-margin;
-
-                    color: $brand-grey;
-                    &:hover
-                    {
-                        text-decoration: none;
-                        &.twitter
-                        {
-                            color: $brand-twitter;
-                        }
-                        &.facebook
-                        {
-                            color: $brand-facebook;
-                        }
-                        &.linkedin
-                        {
-                            color: $brand-linkedin;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+    nav {
+      @include screen(921px, 2000px) {
+        display: inline-block !important;
+      }
+      @include screen(320px, 920px) {
+        display: none;
+      }
+      a {
+        margin-left: $base-margin * 1.5;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      &.nav-primary {
+        margin-left: $base-margin * 12;
+        @include mq($max-width: 1024px) {
+          margin-left: $base-margin * 2;
+        }
+        a {
+          color: $brand-dark;
+          &:hover {
+            color: $brand-purple;
+          }
+        }
+        .subscribe {
+          display: none;
+        }
+        .download-ios {
+          font-size: $base-font-size * 1.5;
+
+          margin-left: $base-margin * 2;
+
+          color: #000; // ios logo color
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        .download-android {
+          font-size: $base-font-size * 1.5;
+
+          margin-left: $base-margin;
+
+          color: #a4c639; // android logo color
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      &.social {
+        font-size: $base-font-size * 1.5;
+        @include screen(320px, 920px) {
+          display: none;
+        }
+        display: inline-block;
+        float: right;
+
+        padding-top: $base-padding / 1.5;
+        a {
+          margin-left: $base-margin;
+
+          color: $brand-grey;
+          &:hover {
+            text-decoration: none;
+            &.twitter {
+              color: $brand-twitter;
+            }
+            &.facebook {
+              color: $brand-facebook;
+            }
+            &.linkedin {
+              color: $brand-linkedin;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// mobile menu
+header.banner {
+  nav.nav-primary {
+    @include screen(320px, 920px) {
+      // display: block;
+      width: 100%;
+      background-color: white;
+      margin-left: 0 !important;
+      nav.social {
+        display: none !important;
+      }
+      a {
+        font-size: 1rem;
+        display: block;
+        margin-left: 0 !important;
+        padding: $gratio-3;
+        &:hover {
+          text-decoration: none;
+          background-color: rgba(black, 0.03);
+        }
+        &.download-ios,
+        &.download-android {
+          display: inline-block;
+        }
+      }
+    }
+  }
 }

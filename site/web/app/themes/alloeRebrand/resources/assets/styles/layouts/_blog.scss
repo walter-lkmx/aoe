@@ -7,16 +7,34 @@
     @include container(1280px); // font-size: 0;
   }
   aside.sidebar {
-    position: fixed;
-
-    float: left;
-
+    // position: fixed;
+    // float: left;
+    @include screen(320px, 920px) {
+      width: 100%;
+      ul {
+        width: 100%;
+        right: 0;
+        display: none;
+        position: absolute;
+        z-index: 9;
+        background-color: rgba(white, 0.95);
+      }
+    }
+    display: inline-block;
     width: 15%;
     padding: $base-padding;
+    vertical-align: top;
     h3 {
       font-size: $base-font-size * 1.1;
 
       margin-bottom: $base-margin;
+      @include screen(320px, 920px) {
+        &:after {
+          content: "▼";
+          font-size: 0.8rem;
+          margin-left: $gratio-3;
+        }
+      }
     }
     ul {
       // padding-left: $base-padding / 2;
@@ -40,33 +58,41 @@
     }
   }
   main {
-    float: right;
-
+    // float: right;
+    display: inline-block;
     width: 80%;
+    @include screen(320px, 1024px) {
+      width: 95%;
+      margin: 0 auto;
+      display: block;
+    }
     margin-top: $base-margin * 4;
     .page-header {
       display: none;
     }
     article {
+      font-size: 0;
       position: relative;
 
       display: block;
       clear: both;
 
       height: pxToRem(450px); // overflow: hidden;
+      @include screen(320px, 920px) {
+        height: auto;
+        padding-bottom: $gratio-3;
+      }
       margin-bottom: $gratio-6;
 
       background-color: $brand-white;
       .metadata {
         font-size: $base-font-size - .1;
         font-weight: normal;
-
-        position: absolute;
-        z-index: 1;
-        bottom: pxToRem(70px);
-        left: pxToRem(-120px);
-
-        transform: rotate(-90deg);
+        margin-bottom: $gratio-3; // position: absolute;
+        // z-index: 1;
+        // bottom: pxToRem(70px);
+        // left: pxToRem(-120px);
+        // transform: rotate(-90deg);
         .avatar-container {
           position: relative;
 
@@ -77,36 +103,51 @@
           height: 60px;
           margin-right: $base-margin;
 
-          vertical-align: top;
+          vertical-align: middle;
 
           border-radius: pxToRem(100px);
+          text-align: center;
           img.avatar {
-            width: 150%;
+            width: 120%; // margin-top: - $gratio-1;
             height: auto;
-
-            transform: rotate(90deg) translate(-20%, 20%);
+            @include centerer-absolute(true, true); // transform: rotate(90deg);
           }
         }
         p {
           display: inline-block;
+          vertical-align: middle;
           a {
+            display: inline-block !important;
+            margin-top: 0 !important;
+            vertical-align: top;
             color: $brand-purple;
           }
+        }
+        time {
+          display: inline-block !important;
+          vertical-align: middle;
         }
       }
       .feature-image {
         position: relative;
-
+        display: inline-block;
         float: left;
         overflow: hidden;
 
         width: 40%;
         height: pxToRem(450px);
-
+        @include screen(320px, 920px) {
+          width: 100%;
+          height: pxToRem(200px);
+        }
         text-align: center;
         img {
           width: auto;
           height: 100%;
+          @include screen(320px, 920px) {
+            width: 100%;
+            height: auto;
+          }
 
           @include centerer-absolute(true, true);
         }
@@ -114,15 +155,24 @@
 
       .content {
         float: left;
+        display: inline-block;
         overflow: hidden;
 
         width: 60%;
+        @include screen(320px, 920px) {
+          float: none;
+          width: 100%;
+        }
         header {
           padding-top: pxToRem(50px);
+          @include screen(320px, 1024px) {
+            padding-top: pxToRem(25px);
+          }
           padding-right: pxToRem(50px);
           padding-left: pxToRem(50px);
 
           h2 {
+            margin-bottom: $gratio-3;
             a {
               font-size: $base-font-size * 1.8;
 
@@ -136,9 +186,10 @@
           }
         }
         .entry-summary {
-          padding-top: pxToRem(50px);
+          padding-top: $gratio-3;
           padding-right: pxToRem(50px);
           padding-left: pxToRem(50px);
+          font-size: 1rem;
           p {
             a {
               display: block;

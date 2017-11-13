@@ -2,7 +2,6 @@
   * {
     animation-duration: 1s !important;
   }
-
   h2 {
     line-height: 1;
   }
@@ -11,73 +10,78 @@
     height: 100%;
     transition: $base-transition;
     position: absolute;
-    z-index: 0;
-    svg.alloe-svg-back {
-      float: right;
-      width: 75%;
-      height: pxToRem(150px);
-      margin-top: $base-margin - 10.4;
-      margin-right: $base-margin * 4;
-      z-index: 0; // position: absolute;
-      g {
-        fill: transparent;
-        stroke: transparent;
-        #alloe-interactive-a {
-          fill: $brand-primary;
-          animation: jello-vertical 0.9s infinite both;
-        }
-        #alloe-interactive-ll {
-          fill: $brand-yellow;
-        }
-        #alloe-interactive-o {
-          fill: $brand-purple;
-        }
-        #alloe-interactive-e {
-          fill: $brand-secondary;
-        }
-      }
-    }
+    z-index: 0; // svg.alloe-svg-back {
+    //   float: right;
+    //   width: 75%;
+    //   height: pxToRem(150px);
+    //   margin-top: $base-margin - 10.4;
+    //   margin-right: $base-margin * 4;
+    //   z-index: 0; // position: absolute;
+    //   g {
+    //     fill: transparent;
+    //     stroke: transparent;
+    //     #alloe-interactive-a {
+    //       fill: $brand-primary;
+    //       animation: jello-vertical 0.9s infinite both;
+    //     }
+    //     #alloe-interactive-ll {
+    //       fill: $brand-yellow;
+    //     }
+    //     #alloe-interactive-o {
+    //       fill: $brand-purple;
+    //     }
+    //     #alloe-interactive-e {
+    //       fill: $brand-secondary;
+    //     }
+    //   }
+    // }
   }
   svg.alloe-svg-front {
+    @include screen(320px,
+        767px) {
+      display: block;
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+      margin-top: $base-margin * 2;
+    }
+    @include screen(768px,
+        1023px) {
+      display: block;
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+    }
     float: right;
     width: 75%;
     height: pxToRem(150px);
     margin-top: $base-margin * 8;
-    margin-right: $base-margin * 4;
-    @include mq($max-width: 480px) {
-      margin-top: $base-margin * 10;
-      margin-left: $base-margin * 2;
-    }
-    @include mq($min-width: 480px, $max-width: 767px) {
-      margin-top: 13rem;
-      margin-right: 6rem;
-    }
-    z-index: 2;
+    margin-right: $base-margin * 4; // z-index: 2;
     position: relative;
-    @include mq($max-width: 480px) {
-      position: absolute;
-    }
-
     g {
-      fill: transaprent;
+      fill: transparent;
       stroke: $brand-dark;
     }
   }
   section {
     float: right;
     width: 75%;
+    @include screen(320px,
+        1023px) {
+      float: none;
+      width: 100%;
+    }
     figure {
       margin-top: $base-margin * 2;
       width: 50%;
-     
       overflow: hidden;
+
       h3 {
         font-size: $base-font-size * 1.5;
         margin-bottom: $base-margin;
       }
       p {
         line-height: 1.5;
-       
       }
       a {
         @extend .circle-button;
@@ -95,6 +99,21 @@
         }
       }
       &.feature-social {
+        @include screen(320px,
+        1023px) {
+          width: 80%;
+          display: block;
+          float: none;
+          margin-left: $gratio-4;
+          p {
+            float: none;
+            width: 70%;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+          }
+        }
         color: $brand-white;
 
         p {
@@ -103,6 +122,21 @@
         }
       }
       &.feature-engagement {
+        @include screen(320px,
+        1023px) {
+          width: 80%;
+          display: block;
+          float: none;
+          margin-left: $gratio-4;
+          p {
+            float: none;
+            width: 70%;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+          }
+        }
         margin-left: 30%;
 
 
@@ -112,6 +146,22 @@
         }
       }
       &.feature-management {
+
+        @include screen(320px,
+        1023px) {
+          width: 80%;
+          display: block;
+          float: none;
+          margin-left: $gratio-4;
+          p {
+            float: none;
+            width: 70%;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+          }
+        }
         margin-right: -5%;
         float: right;
         color: $brand-white;
@@ -122,22 +172,33 @@
       }
       &.feature-measurement {
         width: 75%;
-        @include mq($max-width: 480px) {
-          width: 80%
-        }
-        margin-right: 0;
-        @include mq($max-width: 480px) {
-          margin-right: 25px;
-        }
         float: right;
         text-align: right;
+        @include screen(320px,
+        1023px) {
+          width: 80%;
+          display: block;
+          float: none;
+          margin-left: $gratio-4;
+          text-align: left;
+          p {
+            float: none !important;
+            width: 60%  !important;
+            display: inline-block;
+          }
+          a {
+            float: none;
+            display: inline-block;
+            margin-left: $base-margin * 2;
+          }
+        }
 
         p {
           width: 70%;
           float: right;
         }
         a {
-          margin-left: $base-margin * 8;
+          // margin-left: $base-margin * 8;
         }
       }
     }
@@ -163,7 +224,7 @@
     g {
 
       #alloe-interactive-a {
-        // fill: $brand-white;
+        // fill: $brand-primary;
       }
       #alloe-interactive-ll {
         // fill: $brand-yellow;
@@ -175,5 +236,12 @@
         // fill: $brand-secondary;
       }
     }
+  }
+}
+
+.first-letter {
+  polygon#alloe-interactive-a {
+    stroke-width: 3px;
+    fill: white;
   }
 }

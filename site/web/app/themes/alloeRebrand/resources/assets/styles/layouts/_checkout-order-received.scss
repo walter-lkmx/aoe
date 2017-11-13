@@ -1,0 +1,56 @@
+body {
+  &.woocommerce-order-received {
+    .woocommerce {
+      background-color: white;
+      border: 1px solid rgba(black, 0.1);
+      padding: $gratio-4;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+      @include container(500px);
+      p.woocommerce-notice {
+        font-size: $gratio-4;
+        color: $brand-purple;
+        margin-bottom: $gratio-4;
+      }
+      p {
+      	a {
+      		color: $brand-purple;
+      		font-weight: 700;
+      	}
+      	&:last-child {
+      		display: none;
+      	}
+      }
+      ul.woocommerce-order-overview {
+        margin-bottom: $gratio-4;
+        li {
+          strong {
+            margin-left: $gratio-3;
+          }
+        }
+      }
+    }
+    section.woocommerce-order-details {
+      margin-top: $gratio-4;
+      h2 {
+        margin-bottom: $gratio-1;
+      }
+      .woocommerce-table {
+          margin-bottom: $gratio-4; 
+      }
+      table {
+      	width: 100%;
+      	tfoot {
+      		tr {
+      			th {
+      				text-align: right;
+      				padding-right: $gratio-3;
+      			}
+      		}
+      	}
+      }
+    }
+    .woocommerce-customer-details {
+      display: none;
+    }
+  }
+}

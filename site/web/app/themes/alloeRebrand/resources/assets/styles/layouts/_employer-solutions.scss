@@ -7,6 +7,7 @@
       text-align: left; // background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1)), url('images/welcome-background.jpg');
       background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
       height: 550px;
+
       padding-top: $base-padding * 10; // margin-top: pxToRem(-84px);
       position: fixed;
       top: 0;
@@ -15,6 +16,9 @@
       h1 {
         // width: 400px;
         font-size: $base-font-size * 5;
+        @include screen(320px, 920px) {
+          font-size: $base-font-size * 3;
+        }
         line-height: 1;
         width: 80%;
         @include centerer-absolute(false, true);
@@ -64,16 +68,22 @@
           display: inline-block;
           padding-top: $gratio-4;
           
-          margin-top: pxToRem(250px);
+          padding-top: pxToRem(100px);
           
           img {
             width: 30%;
+            @include screen(320px, 920px) {
+              width: 50%;
+            }
             // float: left;
             vertical-align: top;
           }
 
           .description {
             width: 60%;
+            @include screen(320px, 920px) {
+              width: 100%;
+            }
             font-size: 1rem;
             display: inline-block;
             background-color: $brand-white;
@@ -83,6 +93,9 @@
               padding: $base-padding / 2 $base-padding * 2 $base-padding / 2 0;
               display: block;
               width: 30%;
+              @include screen(320px, 920px) {
+                width: 200px;
+              }
             }
             section.feature {
               display: inline-block;
@@ -100,6 +113,9 @@
             }
             p {
               margin-bottom: $base-padding * 2;
+              @include screen(320px, 920px) {
+                padding-left: $gratio-3;
+              }
             }
           }
           &.social {

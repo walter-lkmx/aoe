@@ -12,7 +12,14 @@
     background-image: linear-gradient(rgba($brand-white, 1), rgba($brand-white, 1));
     h1 {
       font-size: $base-font-size * 5;
-      @include mq($max-width: 1024px) {
+      @include screen(320px, 767px) {
+        font-size: $base-font-size * 2;
+        @include container(400px);
+      }
+      @include screen(768px, 1023px) {
+        font-size: $base-font-size * 4;
+      }
+      @include screen(1024px, 2000px) {
         font-size: $base-font-size * 4;
       }
       line-height: 1; // width: 400px;
@@ -20,6 +27,10 @@
     }
     p {
       font-size: $base-font-size * 1.4;
+      @include screen(320px, 767px) {
+        font-size: $base-font-size * 1.1;
+        @include container(400px);
+      }
       line-height: 1.5; // color: $brand-white;
       display: inline-block;
 
@@ -61,10 +72,13 @@
     position: relative;
     z-index: 1;
 
-    margin-top: pxToRem(450px);
+    margin-top: pxToRem(600px);
     .our-numbers {
       width: auto;
       height: 574px;
+      @include screen(320px, 767px) {
+        height: 725px;
+      }
       padding: $base-padding; // background-image: url('images/background-shape.svg');
       background-image: url('../images/background-shape-purple.svg');
       background-position: center top;
@@ -77,7 +91,12 @@
       }
       .message {
         float: left;
-
+        @include screen(320px,
+        767px) {
+          float: none;
+          width: 90%;
+          text-align: center;
+        }
         width: 40%;
         margin-top: $base-margin * 13.5;
         padding: $base-padding;
@@ -85,6 +104,14 @@
         color: $brand-white;
         h2 {
           font-size: $base-font-size * 3;
+          @include screen(320px,
+          767px) {
+            font-size: $base-font-size * 2;
+          }
+          @include screen(768px,
+          1023px) {
+            font-size: $base-font-size * 2;
+          }
           line-height: 1;
 
           margin-bottom: $base-margin * 2;
@@ -92,6 +119,14 @@
         }
         p {
           font-size: $base-font-size * 1.2;
+          @include screen(320px,
+          767px) {
+            font-size: $base-font-size;
+          }
+          @include screen(768px,
+          1023px) {
+            font-size: $base-font-size;
+          }
           line-height: 1.5;
 
           padding-left: $base-padding * 2;
@@ -99,6 +134,13 @@
       }
       .unslider {
         display: inline;
+        @include screen(320px,
+        767px) {
+          display: none;
+          &:last-child {
+            display: initial;
+          }
+        }
         .app-screens {
           float: left;
           overflow: initial !important;
@@ -106,13 +148,24 @@
           width: 30%;
           height: 640px;
           margin-top: pxToRem(20px);
-
+          @include screen(320px,
+          767px) {
+            float: none;
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+          }
+          @include screen(768px,
+          1023px) {
+            margin-top: $gratio-9;
+          }
           img {
             // width: 95%;
             // height: auto;
             box-shadow: 0 0 16px 0 rgba(6, 19, 21, .12);
-            @include mq($max-width: 1024px) {
-                width: 100%;
+            @include screen(768px,
+            1024px) {
+              width: 100%;
             }
           }
         }
@@ -129,7 +182,15 @@
         width: 30%;
         height: pxToRem(280px) !important;
         margin-top: $base-margin * 15;
-
+        @include screen(320px,
+        767px) {
+          margin-top: $base-margin;
+          @include container(80%);
+          width: 200px;
+          position: absolute !important;
+          left: 0;
+          right: 0;
+        }
         text-align: center; // overflow: visible !important;
         img {
           height: pxToRem(100px);
@@ -155,10 +216,20 @@
       position: relative;
 
       height: pxToRem(600px);
-
+      @include screen(320px,
+      767px) {
+        height: pxToRem(500px);
+        overflow: hidden;
+      }
       background-color: $brand-white;
 
       @extend .not-just-app-animation;
+      .content {
+        @include screen(768px,
+        1023px) {
+          @include container(768px);
+        }
+      }
       h2 {
         font-size: $base-font-size * 3;
         position: absolute;
@@ -168,13 +239,40 @@
         float: left;
 
         width: 25%;
-        @include mq($max-width: 1024px) {
-            left: -6rem;
-            width: 35%;
+        @include screen(1024px,
+        2000px) {
+          left: -6rem;
+          width: 35%;
         }
         margin-top: pxToRem(250px);
 
         transform: rotate(-90deg);
+        @include screen(320px,
+        767px) {
+          font-size: $base-font-size * 2;
+          transform: rotate(0deg);
+          display: block;
+          padding-top: $gratio-4;
+          margin-bottom: $gratio-4;
+          margin: 0 auto;
+          width: 80%;
+          float: none;
+          text-align: left;
+          position: initial;
+          text-align: center;
+        }
+        @include screen(768px,
+        1023px) {
+          transform: rotate(0deg);
+          display: block;
+          padding-top: $gratio-6;
+          margin: 0 auto;
+          width: 50%;
+          float: none;
+          text-align: left;
+          position: initial;
+          text-align: center;
+        }
         text-align: right;
       }
     }
@@ -182,27 +280,87 @@
       position: relative;
 
       height: pxToRem(300px);
+      @include screen(320px,
+        767px) {
+        height: pxToRem(500px);
+        padding-bottom: $base-padding * 4;
+      }
       margin-top: -1px;
-      padding-top: $base-padding * 4; // background-image: linear-gradient(0deg, #FF9900 1%, $brand-yellow 60%);
+      padding-top: $base-padding * 4;
+      @include screen(768px,
+      1023px) {
+        padding-top: $gratio-3;
+        padding-bottom: $gratio-3;
+      }
       text-align: left;
 
       background-color: $brand-yellow;
 
 
       .content {
-        width: 800px;
-        margin-right: auto;
-        margin-left: auto;
-
         @include centerer-horizontal;
+        @include screen(320px,
+        767px) {
+          text-align: center;
+        }
+        @include screen(768px,
+        1023px) {
+          @include container(700px);
+          h2 {
+            font-size: $base-font-size * 2;
+            overflow: hidden;
+          }
+          ul {
+            margin-top: 1 - $base-margin;
+            li.subscribe-now {
+              a {
+                margin-top: $gratio-3;
+              }
+            }
+          }
+        }
+        @include screen(1024px,
+        2000px) {
+          @include container(900px);
+          h2 {
+            font-size: $base-font-size * 3;
+          }
+          ul {
+            margin-top: 1 - $base-margin;
+            li.subscribe-now {
+              a {
+                margin-top: $gratio-3;
+              }
+            }
+          }
+        }
       }
       h2 {
         font-size: $base-font-size * 3;
+        @include screen(320px,
+        767px) {
+          font-size: $base-font-size * 1.7;
+          padding-top: $gratio-3;
+          padding-left: $gratio-3;
+          overflow: hidden;
+          clear: both;
+        }
       }
       ul {
         margin-top: $base-margin - 2;
-
+        @include screen(320px,
+        767px) {
+          padding-top: $gratio-3;
+          padding-left: $gratio-3;
+          margin-top: 0;
+          overflow: hidden;
+          clear: both;
+        }
         li {
+          @include screen(320px,
+        767px) {
+            display: block;
+          }
           font-size: $base-font-size * 1.4;
 
           display: inline-block;
@@ -254,6 +412,9 @@
       }
       h2 {
         font-size: $base-font-size * 3;
+        @include screen(320px, 767px) {
+          font-size: $base-font-size * 2;
+        }
         line-height: .8;
 
         display: inline-block;
@@ -264,6 +425,9 @@
 
         span {
           font-size: $base-font-size * 5;
+          @include screen(320px, 767px) {
+          font-size: $base-font-size * 3;
+        }
 
           display: block;
         }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a66841ca05e3319e02946e239af3c59",
+    "content-hash": "c80b731d7a3bf52b1d84bebc9b3c96b3",
     "packages": [
         {
             "name": "alloe/woocommerce-subscriptions",
@@ -398,6 +398,26 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
+            "name": "wpackagist-plugin/restrict-author-posting",
+            "version": "2.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/restrict-author-posting/",
+                "reference": "tags/2.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/restrict-author-posting.2.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/restrict-author-posting/"
+        },
+        {
             "name": "wpackagist-plugin/theme-my-login",
             "version": "6.4.9",
             "source": {
@@ -439,15 +459,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "3.2.1",
+            "version": "3.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/3.2.1"
+                "reference": "tags/3.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -519,7 +539,7 @@
         },
         {
             "name": "wpackagist-plugin/wp-user-avatar",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-user-avatar/",
@@ -527,7 +547,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-user-avatar.zip?timestamp=1497493515",
+                "url": "https://downloads.wordpress.org/plugin/wp-user-avatar.zip?timestamp=1510394128",
                 "reference": null,
                 "shasum": null
             },

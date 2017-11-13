@@ -1,0 +1,122 @@
+.woocommerce-account {
+  background-color: $brand-white;
+  .main {
+    @include container(800px);
+    .page-header {
+      padding: $gratio-3 0;
+      margin-bottom: $gratio-3;
+      border-bottom: 1px solid rgba(black, 0.1);
+      h1 {
+        font-size: $gratio-3;
+      }
+    }
+    nav.woocommerce-MyAccount-navigation {
+      margin-bottom: $gratio-3;
+      padding-bottom: $gratio-3; // border-bottom: 1px solid rgba(black, 0.1);
+      ul {
+        li {
+          display: inline-block;
+          padding-right: $gratio-3;
+          &.woocommerce-MyAccount-navigation-link--customer-logout {
+            margin-left: $gratio-6;
+          }
+          &.woocommerce-MyAccount-navigation-link--orders,
+          &.woocommerce-MyAccount-navigation-link--downloads,
+          &.woocommerce-MyAccount-navigation-link--dashboard {
+            display: none;
+          }
+          a {
+            color: black;
+          }
+          &.is-active {
+            a {
+              padding-bottom: $gratio-1;
+              display: inline-block;
+              border-bottom: 3px solid $brand-primary;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .woocommerce-MyAccount-content {
+      a.button {
+        display: inline-block;
+        @include button(rgba(black, 0.1), black);
+        &:hover {
+          background-color: rgba(black, 0.2);
+        }
+      }
+      table {
+        margin-bottom: $gratio-4;
+        width: 100%;
+        tbody {
+          td {
+            &.woocommerce-PaymentMethod {
+              a {
+                @include button(rgba(black, 0.1), black);
+                margin-right: $gratio-2;
+                &:hover {
+                  background-color: rgba(black, 0.2);
+                }
+              }
+            }
+          }
+        }
+      }
+      form {
+        #billing_address_2_field {
+          display: none;
+        }
+        label {
+          vertical-align: top;
+          display: inline-block;
+          width: $gratio-9;
+          margin-bottom: $gratio-4;
+          &.checkbox  {
+          	margin-top: $gratio-4;
+          	width: 100%;
+          }
+          span {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+        fieldset {
+          legend {
+            padding-top: $gratio-4;
+            margin-bottom: $gratio-3;
+            font-weight: 400;
+            display: inline-block;
+          }
+        }
+        input[type="submit"] {
+          @include button($brand-purple, white);
+          display: inline-block;
+          font-weight: 400;
+          height: auto;
+          &:hover {
+            background-color: darken($brand-purple, 10%);
+          }
+        }
+      }
+      .woocommerce-Address {
+        margin-top: $gratio-4;
+        header {
+          margin-top: $gratio-3;
+          a.edit {
+            @include button(rgba(black, 0.1), black);
+            display: inline-block;
+             margin-top: $gratio-3;
+             margin-bottom: $gratio-3;
+            &:hover {
+              background-color: rgba(black, 0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

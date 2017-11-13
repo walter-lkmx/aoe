@@ -25,6 +25,7 @@
   "images/icon-stats-tennis.svg": "images/icon-stats-tennis_e3f707fd.svg",
   "images/icon-write-machine.svg": "images/icon-write-machine_b8cd4fd6.svg",
   "images/icons8-female_filled.svg": "images/icons8-female_filled_e00880ab.svg",
+  "images/icons8-menu_filled.svg": "images/icons8-menu_filled_164e2e14.svg",
   "images/icons8-toilet_filled.svg": "images/icons8-toilet_filled_d4f00a60.svg",
   "images/subscription-monthly.svg": "images/subscription-monthly_35550126.svg",
   "images/subscription-yearly.svg": "images/subscription-yearly_b63910d1.svg",
@@ -35,7 +36,7 @@
   "vendor/fontawesome-webfont.ttf?v=4.7.0": "vendor/fontawesome-webfont_b06871f2.ttf",
   "vendor/fontawesome-webfont.woff2?v=4.7.0": "vendor/fontawesome-webfont_af7ae505.woff2",
   "vendor/fontawesome-webfont.woff?v=4.7.0": "vendor/fontawesome-webfont_fee66e71.woff",
-  "scripts/customizer.js": "scripts/customizer_7c6535cc.js",
-  "styles/main.css": "styles/main_7c6535cc.css",
-  "scripts/main.js": "scripts/main_7c6535cc.js"
+  "scripts/customizer.js": "scripts/customizer_014970b7.js",
+  "styles/main.css": "styles/main_014970b7.css",
+  "scripts/main.js": "scripts/main_014970b7.js"
 }

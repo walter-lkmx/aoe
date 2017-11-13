@@ -1,7 +1,9 @@
 <header class="banner">
   <div class="container">
     <a class="brand" href="{{ home_url('/') }}"><img src="@asset('images/alloe-logo.svg')" alt="{{ get_bloginfo('name', 'display') }}"></a>
-    
+    <nav class="mobile-menu">
+      <a><img src="@asset('images/icons8-menu_filled.svg')" alt=""> </a>
+    </nav>
     <nav class="nav-primary">
       {{-- @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}

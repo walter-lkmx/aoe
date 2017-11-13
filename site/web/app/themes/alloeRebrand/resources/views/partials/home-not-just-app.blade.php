@@ -5,7 +5,7 @@
         <defs>
             <mask id="alloe-interactive-h" width="187.769" height="160.945" x="0" y="0" fill="#fff">
                 <polygon id="alloe-interactive-a" points="93.885 0 187.769 160.945 0 160.945" />
-                <use xlink:href="#alloe-interactive-a" />
+                <use xlink:href="#alloe-interactive-a" />‹
             </mask>
             <rect id="alloe-interactive-b" width="62.59" height="160.945" y=".029" />
             <mask id="alloe-interactive-i" width="62.59" height="160.945" x="0" y="0" fill="#fff">
@@ -64,8 +64,8 @@
         </figure>
         <figure class="feature-measurement">
             <h3>Measurement</h3>
-            <a href="" title=""><span>More</span></a>
             <p>Alloe.IO provides each admin with a monthly Know Your Numbers (KYN) dashboard of key metrics to gain the insights needed to influence healthy outcomes.</p>
+            <a href="" title=""><span>More</span></a>
         </figure>
     </section>
     {{-- SVG BACK --}}

@@ -111,19 +111,21 @@ export default {
       } else if ($('.class1').length) {
         // modeule title
         $(".not-just-app > h2").css({ "color": "#fff" });
+        $(".not-just-app").addClass("first-letter");
         // message
         $(".not-just-app > section > .feature-social").addClass("slide-in-right").css({ "display": "block" });
         $(".not-just-app > section > .feature-engagement").css({ "display": "none" });
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
         // active letter
-        $("#alloe-interactive-a").css({ "fill": "#fff", "stroke": "transparent" });
+        // $("#alloe-interactive-a").css({ "fill": "white", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-o").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class2').length) {
         // module background
         $(".not-just-app").addClass("slide-in-right").css({ "background-color": "#FF0C65" });
+        $(".not-just-app").removeClass("first-letter");
         // module title
         $(".not-just-app > h2").css({ "color": "#fff" });
         // message
@@ -132,8 +134,8 @@ export default {
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
         // active letter
-        $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
-        $("#alloe-interactive-ll").css({ "fill": "#fff", "stroke": "transparent" });
+        // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
+        $("#alloe-interactive-ll").css({ "fill": "#fff", "stroke": "#212A34" });
         $("#alloe-interactive-o").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class3').length) {
@@ -147,9 +149,9 @@ export default {
         $(".not-just-app > section > .feature-management").addClass("slide-in-right").css({ "display": "block" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
         // active letter
-        $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
+        // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });
-        $("#alloe-interactive-o").css({ "fill": "#fff", "stroke": "transparent" });
+        $("#alloe-interactive-o").css({ "fill": "#fff", "stroke": "#212A34" });
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class4').length) {
         // module background
@@ -162,10 +164,10 @@ export default {
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").addClass("slide-in-left").css({ "display": "block" });
         // active letter
-        $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
+        // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-o").css({ "fill": "transparent", "stroke": "#212A34" }); 
-        $("#alloe-interactive-ee").css({ "fill": "#fff", "stroke": "transparent" });
+        $("#alloe-interactive-ee").css({ "fill": "#fff", "stroke": "#212A34" });
       }
     }, 500);
     detector
