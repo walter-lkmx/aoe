@@ -1,4 +1,14 @@
 // Header
+body.woocommerce-checkout {
+  header.banner {
+    .container {
+      nav {
+        display: none !important;
+      }
+    }
+  }
+}
+
 header.banner {
   z-index: 9;
 
