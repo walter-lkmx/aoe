@@ -25,13 +25,13 @@ export default {
     // similar behavior as an HTTP redirect
     // window.location.replace("http://stackoverflow.com");
     var accountUrl = window.location.href;
-    if(accountUrl == 'http://localhost:3000/my-account/orders/'){
+    if(accountUrl == 'http://www-alloe.staging.lkmx.io/my-account/orders/'){
       console.log('accountUrl');
-      window.location.replace("http://localhost:3000/my-account/subscriptions/");
-    } else if (accountUrl == 'http://localhost:3000/my-account/downloads'){
-      window.location.replace("http://localhost:3000/my-account/subscriptions/");
-    } else if (accountUrl == 'http://localhost:3000/my-account'){
-      window.location.replace("http://localhost:3000/my-account/subscriptions/");
+      window.location.replace("http://www-alloe.staging.lkmx.io/my-account/subscriptions/");
+    } else if (accountUrl == 'http://www-alloe.staging.lkmx.io/my-account/downloads'){
+      window.location.replace("http://www-alloe.staging.lkmx.io/my-account/subscriptions/");
+    } else if (accountUrl == 'http://www-alloe.staging.lkmx.io/my-account'){
+      window.location.replace("http://www-alloe.staging.lkmx.io/my-account/subscriptions/");
     } else {
       // lol
     }
