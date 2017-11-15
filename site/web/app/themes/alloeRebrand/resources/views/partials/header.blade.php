@@ -10,8 +10,8 @@
       @endif --}}
       <a href="/employer-solutions">Employer solutions</a> 
       <a href="/blog">Our experts</a>      
-      <a href="">Media</a>       
-      <a class="work" href="">Work with us</a>
+      {{-- <a href="">Media</a>        --}}
+      {{-- <a class="work" href="">Work with us</a> --}}
       <a class="subscribe" href="/subscribe" title="">Subscribe now</a>
       <a class="download-ios" href="https://itunes.apple.com/us/app/alloe-io/id898822298?mt=8" title="Download our APP in Apple Store">
         <i class="fa fa-apple" aria-hidden="true"></i>
