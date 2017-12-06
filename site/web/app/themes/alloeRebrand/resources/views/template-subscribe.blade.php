@@ -6,7 +6,7 @@
 @while(have_posts()) @php(the_post())
 <div class="subscribe ">
     <div class="invitation">
-        <h1>Subscribe now and make your employees happy</h1>
+        <h1>Sign up now and be a healthy company</h1>
     </div>                
     <ul class="plans">
         <li class="monthly">

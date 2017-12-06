@@ -19,9 +19,9 @@ header.banner {
 
     .container {
       .brand {
-        img {
+        /*img {
           height: 30px;
-        }
+        }*/
       }
       nav {
         &.nav-primary {
@@ -103,14 +103,19 @@ header.banner {
           }
         }
         .subscribe {
-          display: none;
+          display: initial;
+
+            padding: $base-padding / 2 $base-padding;
+
+            color: $brand-white;
+            background: $brand-primary;
         }
         .download-ios {
           font-size: $base-font-size * 1.5;
 
           margin-left: $base-margin * 2;
 
-          color: #000; // ios logo color
+          color: $brand-grey; // ios logo color
           &:hover {
             text-decoration: none;
           }
@@ -120,7 +125,7 @@ header.banner {
 
           margin-left: $base-margin;
 
-          color: #a4c639; // android logo color
+          color: $brand-grey; // android logo color
           &:hover {
             text-decoration: none;
           }
@@ -141,15 +146,21 @@ header.banner {
           color: $brand-grey;
           &:hover {
             text-decoration: none;
+            &.facebook {
+              color: $brand-facebook;
+            }
             &.twitter {
               color: $brand-twitter;
             }
-            &.facebook {
-              color: $brand-facebook;
+            &.instagram {
+              color: $brand-instagram;
             }
             &.linkedin {
               color: $brand-linkedin;
             }
+          }
+          &.download-android {
+            margin-right: $base-margin * 1.5;
           }
         }
       }

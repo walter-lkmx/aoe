@@ -9,7 +9,7 @@
 		</div>
 		<div class="message">
 		  <h2>Our platform in numbers</h2> 
-		  <p>Subscribe to Alloe.IO to create, manage and measure group and employee health and wellness programs, incentives and user engagement. Manage your group of healthy humans with a dashboard not a flyer.</p>
+		  <p>Manage your group of healthy people with a dashboard. Subscribe to Alloe to create, manage and measure group and health and wellness programs, incentives and user engagement.</p>
 		</div>
 		<div class="stats">
 			<ul class="">

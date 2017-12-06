@@ -1,6 +1,6 @@
 <div class="not-just-app">
     <div class="content"></div>
-    <h2>Alloe it’s not just an app</h2> {{-- SVG FRONT --}}
+    <h2>It’s not just an app</h2> {{-- SVG FRONT --}}
     <svg class="alloe-svg-front" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="162" viewBox="0 0 1080 162">
         <defs>
             <mask id="alloe-interactive-h" width="187.769" height="160.945" x="0" y="0" fill="#fff">
@@ -49,22 +49,22 @@
     <section>
         <figure class="feature-social">
             <h3>Social</h3>
-            <p>Create a private health and wellness network for users to join challenges, track goals and encourage others to live a happy and healthy life. </p>
+            <p>Create a private health and wellness network for users to join challenges, track goals and encourage others to live happy and healthy lives.</p>
             <a href="/employer-solutions" title=""><span>More</span></a>
         </figure>
         <figure class="feature-engagement">
-            <h3>Engagement</h3>
-            <p>Create a private health and wellness network for users to join challenges, track goals and encourage others to live a happy and healthy life. </p>
+            <h3>Engage</h3>
+            <p>Create a private health and wellness network for users to join challenges, track goals and encourage others to live happy and healthy lives.</p>
             <a href="/employer-solutions" title=""><span>More</span></a>
         </figure>
         <figure class="feature-management">
-            <h3>Management</h3>
-            <p>Manage end-to-end group and enterprise health and wellness programs. Invite users, schedule events, program incentives and more all in one place.</p>
+            <h3>Manage</h3>
+            <p>Manage end-to-end group and enterprise health and wellness programs. Invite users, schedule events, build program incentives and more, all in one platform.</p>
             <a href="/employer-solutions" title=""><span>More</span></a>
         </figure>
         <figure class="feature-measurement">
-            <h3>Measurement</h3>
-            <p>Alloe.IO provides each admin with a monthly Know Your Numbers (KYN) dashboard of key metrics to gain the insights needed to influence healthy outcomes.</p>
+            <h3>Measure</h3>
+            <p>We provide each admin with a monthly 'Know Your Numbers' dashboard of key metrics to gain insights needed to influence healthy outcomes.</p>
             <a href="/employer-solutions" title=""><span>More</span></a>
         </figure>
     </section>

@@ -21,14 +21,14 @@ footer {
   .width-boundaries {
     overflow: hidden;
 
-    width: 800px;
+    width: 900px;
 
     @include centerer-horizontal;
     .brand {
       float: left;
 
       width: 40%;
-      height: pxToRem(240px);
+      height: pxToRem(150px);
 
       @include mq($max-width: 480px) {
         float: none;
@@ -40,7 +40,7 @@ footer {
         width: 60%;
 
         @include mq($max-width: 480px) {
-          width: 75%;
+          width: 60%;
         }
         @include centerer-horizontal;
       }
@@ -53,9 +53,12 @@ footer {
       width: 60%;
       ul {
         float: left;
-
-        width: 50%;
+        width: auto;
+        //width: 33%;
         margin-bottom: $base-margin * 2;
+        margin-right: $base-margin * 3;
+        top: 37%;
+        position: relative;
 
         @include mq($max-width: 480px) {
           float: none;
@@ -106,7 +109,7 @@ footer {
 
 
         &:nth-child(3n) {
-          clear: both;
+          clear: none;
         }
       }
     }

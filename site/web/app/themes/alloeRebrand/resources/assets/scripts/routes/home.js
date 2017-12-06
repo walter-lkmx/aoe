@@ -4,13 +4,15 @@ export default {
     $(".app-screens").unslider({
       autoplay: true,
       animation: 'fade',
-      delay: '10000',
+      //delay: '10000',
+      delay: '3000',
       speed: 1000,
     });
     $(".stats").unslider({
       autoplay: true,
       animation: 'vertical',
-      delay: '4000',
+      //delay: '4000',
+      delay: '3000',
       speed: 250,
     });
 
@@ -23,10 +25,10 @@ export default {
 
     // animated steps
     function animatedSteps() {
-      $('#animated-steps').prop('number', 2).animateNumber({ number: 10 }, 4000);
+      $('#animated-steps').prop('number', 2).animateNumber({ number: 10 }, 3000);
       setTimeout(function() {
         animatedCalories();
-      }, 4000);
+      }, 3000);
     }
 
     function animatedCalories() {
@@ -46,20 +48,20 @@ export default {
 
           target.text('' + floored_number);
         },
-      }, 4000);
+      }, 3000);
 
       setTimeout(function() {
         animatedMinutes();
-      }, 4000);
+      }, 3000);
     }
     // animated minutes
     function animatedMinutes() {
-      $('#animated-minutes').prop('number', 50).animateNumber({ number: 100 }, 4000);
+      $('#animated-minutes').prop('number', 50).animateNumber({ number: 100 }, 3000);
 
       setTimeout(function() {
         animatedMiles();
         //$('#animated-miles').prop('number', 2).animateNumber({ number: 10 }, 4000);
-      }, 4000);
+      }, 3000);
     }
     // animated miles
     function animatedMiles() {
@@ -79,7 +81,7 @@ export default {
 
           target.text('' + floored_number);
         },
-      }, 4000);
+      }, 3000);
     }
 
     animatedSteps();

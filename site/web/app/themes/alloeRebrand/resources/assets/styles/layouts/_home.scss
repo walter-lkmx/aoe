@@ -60,7 +60,7 @@
       }
       span {
         line-height: 1.2;
-
+        width: 53%;
         @include centerer-absolute;
       }
     }
@@ -381,11 +381,12 @@
             a {
               text-align: center;
 
-              background-color: $brand-dark;
+              background-color: $brand-primary;
 
               @extend .circle-button;
               span {
                 padding-top: $base-padding / 2;
+                width: 53%;
               }
             }
           }

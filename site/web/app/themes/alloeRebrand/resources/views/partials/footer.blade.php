@@ -5,19 +5,21 @@
         </div>
         <div class="links">
             <ul class="about">
-                <li>About Alloe.io</li>
-                <li><a href="">About</a></li>
+                <li>About us</li>
                 <li><a href="">Team</a></li>
-                <li><a href="">Security</a></li>
+                <li><a href="">Our Blog</a></li>
             </ul>
             <ul class="get-touch">
-                <li>Get in touch</li>
-                <li><a href="">Contact</a></li>
+                <li>Get connected</li>
+                <li><a href="">Sign up</a></li>
+                <li><a href="">Download our app</a></li>
+                <li><a href="">Contact us</a></li>
                 <li><a href="">Careers</a></li>
             </ul>
             <ul class="customer-service">
-                <li>Customer service</li>
+                <li>Support</li>
                 <li><a href="">My account</a></li>
+                <li><a href="">Solutions</a></li>
                 <li><a href="">FAQ</a></li>
             </ul>
         </div>
