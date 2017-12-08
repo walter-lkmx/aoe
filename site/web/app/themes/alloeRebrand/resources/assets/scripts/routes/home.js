@@ -98,7 +98,7 @@ export default {
         } else {
           counter++;
         }
-      }, 10000);
+      }, 6000);
     int
     var detector
     detector = setInterval(function() {

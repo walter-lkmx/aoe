@@ -13,11 +13,62 @@
 
       @include container(800px);
     }
+    aside.sidebar {
+    // position: fixed;
+    // float: left;
+    @include screen(320px, 920px) {
+      width: 100%;
+      ul {
+        width: 100%;
+        right: 0;
+        display: none;
+        position: absolute;
+        z-index: 9;
+        background-color: rgba(white, 0.95);
+      }
+    }
+    float: left;
+      position: fixed;
+    display: inline-block;
+    width: 12%;
+    padding: $base-padding;
+    vertical-align: top;
+    h3 {
+      font-size: $base-font-size * 1.1;
+
+      margin-bottom: $base-margin;
+      @include screen(320px, 920px) {
+        &:after {
+          content: "▼";
+          font-size: 0.8rem;
+          margin-left: $gratio-3;
+        }
+      }
+    }
+    ul {
+      // padding-left: $base-padding / 2;
+      li {
+        a {
+          display: block;
+
+          padding: $base-padding / 2 $base-padding;
+
+          color: $brand-dark;
+        }
+      } // color loop
+      @for $i from 1 through length($array-brand-color) {
+        li:nth-child(#{length($array-brand-color)}n+#{$i}) a:hover {
+          text-decoration: none;
+
+          color: $brand-white;
+          background-color: nth($array-brand-color, $i);
+        }
+      }
+    }
+  }
     .metadata {
       font-size: 1.1rem;
-
       margin-bottom: $gratio-3;
-
       text-align: center; // color: $brand-yellow;
       p.byline {
         display: inline-block;
@@ -46,6 +97,7 @@
       height: rem(600px);
       img {
         // width: 100%;
+        width: 100%;
         @include centerer-absolute(true, true);
       }
     }
@@ -93,6 +145,35 @@
         background: rgba(39, 44, 49, .15);
 
         filter: blur(5px);
+      }
+      .author-box {
+          background-color: #f4f4f4; 
+          margin: 20px 0; 
+          padding: 50px;
+          .metadata {
+            text-align: left;
+            .avatar-container {
+          //display: none;
+          display: inline-block;
+          float: left;
+          img {
+            border-radius: 50px;
+            margin-right: 20px;
+            width: 100px;
+          }
+        }
+        a {
+          display: block;
+          h2 {
+            vertical-align: top;
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+        }
+        .author-description {
+          display: block;
+        }
+          }
       }
       p {
         margin-bottom: $gratio-4;

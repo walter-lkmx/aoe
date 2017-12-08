@@ -9,6 +9,8 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
       @endif --}}
       <a href="/employer-solutions">Solutions</a>
+      <a href="">Team</a>
+      <a href="/blog">Our Blog</a>
       {{-- <a href="">Media</a>        --}}
       {{-- <a class="work" href="">Work with us</a> --}}
       <a class="subscribe" href="/subscribe" title="" target="_blank">Sign up now</a>

@@ -1,7 +1,7 @@
 <div class="welcome">
     <h1>
         <span class="break">
-            Alloe it’s not just an app
+            Alloe, it’s not just an app
         </span>
         <span class="element">
         </span>
@@ -41,7 +41,7 @@
                             Gym Subsidy:
                         </h3>
                         <p>
-                            Alloe makes it simple to launch a gym subsidy program which incentivizes users to meet Center for Disease Control (CDC) physical activity guidelines. Alloe administrators can set activity and gym check-in thresholds and tiered subsidy payments based on budget, time and check-ins.
+                            Alloe makes it simple to launch a gym subsidy program which incentivizes users to meet <a href="https://www.cdc.gov/HealthyLiving/" target="_blank"><b>Center for Disease Control</b></a> (CDC) physical activity guidelines. Alloe administrators can set activity and gym check-in thresholds and tiered subsidy payments based on budget, time and check-ins.
                         </p>
                     </section>
                     <section class="feature">

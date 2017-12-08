@@ -70,6 +70,35 @@
     .page-header {
       display: none;
     }
+    .author-box {
+          background-color: white;
+          padding: 0 50px 50px 50px;
+          margin-bottom: 20px;
+          .metadata {
+            text-align: left;
+            .avatar-container {
+          //display: none;
+          display: inline-block;
+          float: left;
+          img {
+            border-radius: 50px;
+            margin-right: 20px;
+            width: 100px;
+          }
+        }
+        a {
+          display: block;
+          h2 {
+            vertical-align: top;
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+        }
+        .author-description {
+          display: block;
+        }
+          }
+      }
     article {
       font-size: 0;
       position: relative;
