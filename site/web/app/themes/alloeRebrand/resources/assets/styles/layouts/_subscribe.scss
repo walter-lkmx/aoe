@@ -197,14 +197,21 @@ header.banner {
     ul.plans {
 
       li {
-        width: 33.33%;
+        width: 31%;
         @include screen(320px, 920px) {
           width: 100%;
         }
         float: left;
         padding: $base-padding * 2 $base-padding;
         border: 3px solid;
-        border-color: $brand-white;
+        //border-color: $brand-white;
+        margin-right: 1rem;
+        &:nth-child(2) {
+          border-color: $brand-primary;
+        }
+        &:nth-child(3) {
+          margin-right: 0;
+        }
         &:hover {
           border-color: $brand-dark;
         }
