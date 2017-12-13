@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="189" height="162" viewBox="0 0 189 162">
+  <defs>
+    <polygon id="alloe-interactive-triangle-a" points="93.885 0 187.769 160.945 0 160.945"/>
+    <mask id="alloe-interactive-triangle-b" width="187.769" height="160.945" x="0" y="0" fill="#fff">
+      <use xlink:href="#alloe-interactive-triangle-a"/>
+    </mask>
+  </defs>
+  <use fill="#F12E65" fill-rule="evenodd" stroke="#F12E65" stroke-dasharray="1 1 1" stroke-linecap="square" stroke-width="4" mask="url(#alloe-interactive-triangle-b)" transform="translate(.633 .06)" xlink:href="#alloe-interactive-triangle-a"/>
+</svg>
