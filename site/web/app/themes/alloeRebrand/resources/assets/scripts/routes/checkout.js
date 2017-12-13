@@ -2,7 +2,8 @@
 export default {
   init() {
 
-    $('html,body').animate({scrollTop: $("header").offset().top}, 'slow');
+    $('html,body').animate({
+        scrollTop: $("header").offset().top}, 'slow');
 
     $(document).on({
       ajaxStop: function() {
