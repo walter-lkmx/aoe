@@ -197,27 +197,46 @@ header.banner {
     ul.plans {
 
       li {
-        width: 31%;
+        width: 33%;
         @include screen(320px, 920px) {
           width: 100%;
         }
         float: left;
         padding: $base-padding * 2 $base-padding;
-        border: 3px solid;
+        //border: 3px solid;
         //border-color: $brand-white;
-        margin-right: 1rem;
-        &:nth-child(2) {
-          border-color: $brand-primary;
+        //margin-right: 1rem;
+        &:nth-child(1) {
+          /*border: 3px solid $brand-white;
+          border-right: 3px solid $brand-dark;
+          &:hover {
+            border: 3px solid $brand-dark;
+          }*/
         }
         &:nth-child(3) {
+          /*border: 3px solid $brand-white;
+          border-right: 3px solid $brand-dark;
+          &:hover {
+            border: 3px solid $brand-primary;
+          }*/
+        }
+        &:nth-child(5) {
+          /*border: 3px solid $brand-white;
           margin-right: 0;
+          &:hover {
+            border: 3px solid $brand-dark;
+          }*/
         }
-        &:hover {
+        /*&:hover {
           border-color: $brand-dark;
-        }
-        h2 {
-          font-size: $base-font-size * 1.6;
+        }*/
+        h1 {
+          font-size: $base-font-size * 2;
           font-weight: $base-font-weight-normal;
+          margin-bottom: $base-margin * 3;
+        }
+        h4 {
+          font-weight: $base-font-weight-normal / 4;
           margin-bottom: $base-margin;
         } // &.monthly {
         //   h2 {
@@ -225,10 +244,7 @@ header.banner {
         //   }
         // }
         &.yearly {
-          &:hover {
-            border-color: $brand-primary;
-          }
-          h2 {
+          h1 {
             color: $brand-primary;
           }
         } // &.customized {
@@ -268,6 +284,13 @@ header.banner {
             @include button($brand-dark, $brand-white);
           }
         }
+      }
+      .vertical-line {
+        border-right: 1px solid;
+        border-color: rgba($brand-dark, 0.3);
+        width: 3px !important;
+        padding: 0 !important;
+        height: 208px;
       }
     }
   }

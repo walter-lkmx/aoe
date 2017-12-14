@@ -10,7 +10,8 @@
     </div>                
     <ul class="plans">
         <li class="monthly">
-            <h2>Less than 500 employees<br>$9.99</h2>
+            <p>Less than 500 employees</p>
+            <h1>$9.99</h1>
             <!--p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
             <ul class="features">
                 <li><span>✓</span> Itaque earum rerum</li>
@@ -23,8 +24,10 @@
                 <span class="legendMonthly">Subscribe monthly</span>
             </a>
         </li>
+        <li class="vertical-line"></li>
         <li class="yearly">
-            <h2>501 - 1000 employees<br>$120</h2>
+            <p>501 - 1000 employees</p>
+            <h1>$120</h1>
             <!--p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
             <ul class="features">
                 <li><span>✓</span> Itaque earum rerum</li>
@@ -37,8 +40,10 @@
                 <span class="legendYearly">Subscribe yearly</span> 
             </a>
         </li>
+        <li class="vertical-line"></li>
         <li class="customized">
-            <h2>More than 1000 employees<br>Contact us</h2>
+            <p>More than 1000 employees</p>
+            <h1>Contact us</h1>
             <!--p>Nam libero tempore, cum soluta nobis est eligendi optio</p>
             <ul class="features">
                 <li><span>✓</span> Itaque earum rerum</li>
