@@ -207,25 +207,58 @@ header.banner {
         //border-color: $brand-white;
         //margin-right: 1rem;
         &:nth-child(1) {
+          -webkit-transition: margin-top 0.5s;
+          transition: margin-top 0.5s;
           /*border: 3px solid $brand-white;
-          border-right: 3px solid $brand-dark;
+          border-right: 3px solid $brand-dark;*/
           &:hover {
-            border: 3px solid $brand-dark;
-          }*/
+            margin-top: 20px;
+          }
+          @include screen(320px, 920px) {
+            -webkit-transition: margin-left 0.5s;
+            transition: margin-left 0.5s;
+            &:hover {
+              margin: 0 0 0 20px;
+            }
+          }
         }
         &:nth-child(3) {
+          -webkit-transition: margin-top 0.5s;
+          transition: margin-top 0.5s;
           /*border: 3px solid $brand-white;
           border-right: 3px solid $brand-dark;
           &:hover {
             border: 3px solid $brand-primary;
           }*/
+          &:hover {
+            margin-top: 20px;
+          }
+          @include screen(320px, 920px) {
+            -webkit-transition: margin-left 0.5s;
+            transition: margin-left 0.5s;
+            &:hover {
+              margin: 0 0 0 20px;
+            }
+          }
         }
         &:nth-child(5) {
+          -webkit-transition: margin-top 0.5s;
+          transition: margin-top 0.5s;
           /*border: 3px solid $brand-white;
           margin-right: 0;
           &:hover {
             border: 3px solid $brand-dark;
           }*/
+          &:hover {
+            margin-top: 20px;
+          }
+          @include screen(320px, 920px) {
+            -webkit-transition: margin-left 0.5s;
+            transition: margin-left 0.5s;
+            &:hover {
+              margin: 0 0 0 20px;
+            }
+          }
         }
         /*&:hover {
           border-color: $brand-dark;
@@ -290,7 +323,10 @@ header.banner {
         border-color: rgba($brand-dark, 0.3);
         width: 3px !important;
         padding: 0 !important;
-        height: 208px;
+        height: 220px;
+        @include screen(320px, 920px) {
+          height: 0 !important;
+        }
       }
     }
   }
