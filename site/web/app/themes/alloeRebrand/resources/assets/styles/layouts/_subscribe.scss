@@ -206,57 +206,69 @@ header.banner {
         //border: 3px solid;
         //border-color: $brand-white;
         //margin-right: 1rem;
-        &:nth-child(1) {
-          -webkit-transition: margin-top 0.5s;
-          transition: margin-top 0.5s;
+        &.monthly {
+          -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          border-right: 1px solid;
+          border-color: rgba($brand-dark, 0.11);
           /*border: 3px solid $brand-white;
           border-right: 3px solid $brand-dark;*/
           &:hover {
-            margin-top: 20px;
+            margin-top: -2px;
+            box-shadow: -1px 4px 6px rgba(50,50,93,.11);
           }
           @include screen(320px, 920px) {
-            -webkit-transition: margin-left 0.5s;
-            transition: margin-left 0.5s;
+            -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          border-right: 0 !important;
             &:hover {
-              margin: 0 0 0 20px;
+              box-shadow: 2px 4px 6px rgba(50,50,93,.11);
             }
           }
         }
-        &:nth-child(3) {
-          -webkit-transition: margin-top 0.5s;
+        &.yearly {
+          -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          /*-webkit-transition: margin-top 0.5s;
           transition: margin-top 0.5s;
-          /*border: 3px solid $brand-white;
+          border: 3px solid $brand-white;
           border-right: 3px solid $brand-dark;
           &:hover {
             border: 3px solid $brand-primary;
           }*/
           &:hover {
-            margin-top: 20px;
+            margin-top: -2px;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11);
           }
           @include screen(320px, 920px) {
-            -webkit-transition: margin-left 0.5s;
-            transition: margin-left 0.5s;
+            -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          border: 0 !important;
             &:hover {
-              margin: 0 0 0 20px;
+              box-shadow: 2px 4px 6px rgba(50,50,93,.11);
             }
           }
         }
-        &:nth-child(5) {
-          -webkit-transition: margin-top 0.5s;
-          transition: margin-top 0.5s;
+        &.customized {
+          -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          border-left: 1px solid;
+          border-color: rgba($brand-dark, 0.11);
           /*border: 3px solid $brand-white;
           margin-right: 0;
           &:hover {
             border: 3px solid $brand-dark;
           }*/
           &:hover {
-            margin-top: 20px;
+            margin-top: -2px;
+            box-shadow: 1px 4px 6px rgba(50,50,93,.11);
           }
           @include screen(320px, 920px) {
-            -webkit-transition: margin-left 0.5s;
-            transition: margin-left 0.5s;
+            -webkit-transition: all .15s ease-in-out .15s;
+          transition: all .15s ease-in-out .15s;
+          border-left: 0 !important;
             &:hover {
-              margin: 0 0 0 20px;
+              box-shadow: 2px 4px 6px rgba(50,50,93,.11);
             }
           }
         }
@@ -318,16 +330,16 @@ header.banner {
           }
         }
       }
-      .vertical-line {
-        border-right: 1px solid;
-        border-color: rgba($brand-dark, 0.3);
-        width: 3px !important;
-        padding: 0 !important;
-        height: 220px;
-        @include screen(320px, 920px) {
-          height: 0 !important;
-        }
-      }
+      /*.vertical-line {
+          border-right: 1px solid;
+          border-color: rgba($brand-dark, 0.3);
+          width: 3px !important;
+          padding: 0 !important;
+          height: 220px;
+          @include screen(320px, 920px) {
+            height: 0 !important;
+          }
+        }*/
     }
   }
 }

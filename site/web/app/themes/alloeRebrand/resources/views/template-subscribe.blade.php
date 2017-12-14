@@ -24,7 +24,6 @@
                 <span class="legendMonthly">Subscribe monthly</span>
             </a>
         </li>
-        <li class="vertical-line"></li>
         <li class="yearly">
             <p>501 - 1000 employees</p>
             <h1>$120</h1>
@@ -40,7 +39,6 @@
                 <span class="legendYearly">Subscribe yearly</span> 
             </a>
         </li>
-        <li class="vertical-line"></li>
         <li class="customized">
             <p>More than 1000 employees</p>
             <h1>Contact us</h1>
