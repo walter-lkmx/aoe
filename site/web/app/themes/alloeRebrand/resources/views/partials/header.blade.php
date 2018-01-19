@@ -13,7 +13,7 @@
       <a href="/blog">Our Blog</a>
       {{-- <a href="">Media</a>        --}}
       {{-- <a class="work" href="">Work with us</a> --}}
-      <a class="subscribe" href="/subscribe" title="" target="_blank">Sign up now</a>
+      <a class="subscribe" href="https://staging.alloe.io/insight/checkout/packages" title="" target="_blank">Sign up now</a>
     </nav>
     <nav class="social">
     <a class="download-ios" href="https://staging.alloe.io/bin/" title="Download our APP in Apple Store" target="_blank">
