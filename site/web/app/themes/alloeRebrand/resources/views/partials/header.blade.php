@@ -16,10 +16,10 @@
       <a class="subscribe" href="/subscribe" title="" target="_blank">Sign up now</a>
     </nav>
     <nav class="social">
-    <a class="download-ios" href="https://itunes.apple.com/us/app/alloe-io/id898822298?mt=8" title="Download our APP in Apple Store" target="_blank">
+    <a class="download-ios" href="https://staging.alloe.io/bin/" title="Download our APP in Apple Store" target="_blank">
         <i class="fa fa-apple" aria-hidden="true"></i>
       </a>
-      <a class="download-android" href="https://play.google.com/store/apps/details?id=io.alloe" title="Download our APP in Play Store" target="_blank">
+      <a class="download-android" href="https://staging.alloe.io/bin/alloe.apk" title="Download our APP in Play Store" target="_blank">
         <i class="fa fa-android" aria-hidden="true"></i>
       </a>
           <a href="" class="facebook" target="_blank">
