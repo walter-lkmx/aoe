@@ -36,46 +36,52 @@
     //   }
     // }
   }
-  svg.alloe-svg-front {
-    @include screen(320px,
-        767px) {
-      display: block;
-      float: none;
-      width: 90%;
-      margin: 0 auto;
-      margin-top: $base-margin * 2;
-    }
-    @include screen(768px,
-        1023px) {
-      display: block;
-      float: none;
-      width: 90%;
-      margin: 0 auto;
-    }
-    float: right;
-    width: 75%;
-    height: pxToRem(150px);
-    margin-top: $base-margin * 8;
-    margin-right: $base-margin * 4; // z-index: 2;
-    position: relative;
-    g {
-      fill: transparent;
-      stroke: $brand-dark;
-    }
-  }
   section {
-    float: right;
-    width: 75%;
+    float: none;
+    width: 95%;
+    margin: 0 2.5%;
     @include screen(320px,
         1023px) {
       float: none;
       width: 100%;
     }
+    svg.alloe-svg-front {
+      padding: 3rem 0;
+      @include screen(320px, 767px) {
+        display: block;
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0;
+        height: pxToRem(120px);
+        padding: 3rem 0;
+      }
+      @include screen(768px, 1023px) {
+        display: block;
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem 0;
+      }
+      @include screen(1024px, 2000px) {
+        padding: 8rem 0 4rem 0;
+      }
+      g {
+        fill: transparent;
+        stroke: $brand-dark;
+      }
+      float: right;
+      width: 100%;
+      height: pxToRem(150px);
+      margin-right: auto; // z-index: 2;
+      margin-left: auto;
+      position: relative;
+    }
     figure {
       margin-top: $base-margin * 2;
       width: 50%;
       overflow: hidden;
-
+      padding-bottom: $base-margin * 3;
       h3 {
         font-size: $base-font-size * 1.5;
         margin-bottom: $base-margin;
@@ -99,8 +105,17 @@
         }
       }
       &.feature-social {
-        @include screen(320px,
-        1023px) {
+        @include screen(320px, 767px) {
+          width: 85% !important;
+          p {
+            display: block;
+            width: 100% !important;
+          }
+          a {
+            display: block;
+          }
+        }
+        @include screen(320px,1023px) {
           width: 80%;
           display: block;
           float: none;
@@ -112,18 +127,37 @@
           }
           a {
             display: inline-block;
+            @include screen(320px, 767px) {
+            margin-top: $base-margin;
+          }
           }
         }
-        color: $brand-white;
+        @include screen(1024px, 2000px) {
 
+        }
+        margin-left: 5%;
+        color: $brand-white;
+        margin-top: 0;
         p {
           width: 70%;
           float: left;
         }
+        a {
+          float: left;
+        }
       }
       &.feature-engagement {
-        @include screen(320px,
-        1023px) {
+        @include screen(320px, 767px) {
+          width: 85% !important;
+          p {
+            display: block;
+            width: 100% !important;
+          }
+          a {
+            display: block;
+          }
+        }
+        @include screen(320px, 1023px) {
           width: 80%;
           display: block;
           float: none;
@@ -135,20 +169,36 @@
           }
           a {
             display: inline-block;
+            @include screen(320px, 767px) {
+            margin-top: $base-margin;
+          }
           }
         }
         margin-left: 30%;
-
-
+        margin-top: 0;
         p {
           width: 70%;
           float: left;
         }
       }
       &.feature-management {
-
-        @include screen(320px,
-        1023px) {
+        @include screen(320px, 767px) {
+          width: 85% !important;
+          float: right;
+          h3 {
+            text-align: right;
+          }
+          p {
+            width: 100% !important;
+            text-align: right;
+            float: right !important;
+          }
+          a {
+            margin: $base-margin $base-margin 0 0;
+            float: right;
+          }
+        }
+        @include screen(320px, 1023px) {
           width: 80%;
           display: block;
           float: none;
@@ -162,8 +212,9 @@
             display: inline-block;
           }
         }
-        margin-right: -5%;
-        float: right;
+        margin-top: 0;
+        margin-left: 55%;
+        //float: right;
         color: $brand-white;
         p {
           width: 70%;
@@ -171,25 +222,45 @@
         }
       }
       &.feature-measurement {
-        width: 75%;
-        float: right;
+        margin-left: 45%;
+        //width: 75%;
+        //float: right;
         text-align: right;
-        @include screen(320px,
-        1023px) {
+        //margin: 0 70px 0 0;
+        @include screen(320px, 767px) {
+          width: 85% !important;
+          float: right;
+          h3 {
+            text-align: right;
+          }
+          p {
+            width: 100% !important;
+            text-align: right;
+            float: right !important;
+          }
+          a {
+            margin: $base-margin $base-margin 0 0 !important;
+            float: right !important;
+          }
+        }
+        
+        @include screen(320px,1023px) {
           width: 80%;
           display: block;
           float: none;
           margin-left: $gratio-4;
           text-align: left;
           p {
-            float: none !important;
-            width: 60%  !important;
+            float: none;
+            width: 60%;
             display: inline-block;
           }
           a {
-            float: none;
             display: inline-block;
             margin-left: $base-margin * 2;
+            @include screen(320px, 767px) {
+            margin-top: $base-margin;
+          }
           }
         }
 
@@ -199,6 +270,7 @@
         }
         a {
           // margin-left: $base-margin * 8;
+          float: right !important;
         }
       }
     }
@@ -241,7 +313,22 @@
 
 .first-letter {
   polygon#alloe-interactive-a {
-    stroke-width: 3px;
+    stroke-width: 2px;
+    fill: white;
+  }
+
+  rect#alloe-interactive-ll {
+    stroke-width: 2px;
+    fill: white;
+  }
+
+  circle#alloe-interactive-o {
+    stroke-width: 2px;
+    fill: white;
+  }
+
+  rect#alloe-interactive-e {
+    stroke-width: 2px;
     fill: white;
   }
 }

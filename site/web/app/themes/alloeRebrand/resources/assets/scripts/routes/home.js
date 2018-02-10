@@ -110,15 +110,27 @@ export default {
         $(".not-just-app > section > .feature-engagement").css({ "display": "none" });
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-unfilled").css({ "display": "block" });
+        $(".not-just-app > section > .alloe-svg-a").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-ll").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-o").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-e").css({ "display": "none" });
       } else if ($('.class1').length) {
         // modeule title
+        //$(".not-just-app").addClass("slide-in-left").css({ "background-color": "#41DE7F" });
+        $(".not-just-app").css({ "background-color": "#41DE7F" });
         $(".not-just-app > h2").css({ "color": "#fff" });
-        $(".not-just-app").addClass("first-letter");
+        //$(".not-just-app").addClass("first-letter");
         // message
         $(".not-just-app > section > .feature-social").addClass("slide-in-right").css({ "display": "block" });
         $(".not-just-app > section > .feature-engagement").css({ "display": "none" });
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-unfilled").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-a").css({ "display": "block" });
+        $(".not-just-app > section > .alloe-svg-ll").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-o").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-e").css({ "display": "none" });
         // active letter
         // $("#alloe-interactive-a").css({ "fill": "white", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });
@@ -126,8 +138,9 @@ export default {
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class2').length) {
         // module background
-        $(".not-just-app").addClass("slide-in-right").css({ "background-color": "#FF0C65" });
-        $(".not-just-app").removeClass("first-letter");
+        //$(".not-just-app").addClass("slide-in-right").css({ "background-color": "#FF0C65" });
+        $(".not-just-app").css({ "background-color": "#FF0C65" });
+        //$(".not-just-app").removeClass("first-letter");
         // module title
         $(".not-just-app > h2").css({ "color": "#fff" });
         // message
@@ -135,6 +148,11 @@ export default {
         $(".not-just-app > section > .feature-engagement").addClass("slide-in-left").css({ "display": "block" });
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-unfilled").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-a").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-ll").css({ "display": "block" });
+        $(".not-just-app > section > .alloe-svg-o").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-e").css({ "display": "none" });
         // active letter
         // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "#fff", "stroke": "#212A34" });
@@ -142,7 +160,8 @@ export default {
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class3').length) {
         // module background
-        $(".not-just-app").addClass("slide-in-left").css({ "background-color": "#FFCC00" });
+        //$(".not-just-app").addClass("slide-in-left").css({ "background-color": "#FFCC00" });
+        $(".not-just-app").css({ "background-color": "#FFCC00" });
         // module title
         $(".not-just-app > h2").css({ "color": "#fff" });
         // message
@@ -150,6 +169,11 @@ export default {
         $(".not-just-app > section > .feature-engagement").css({ "display": "none" });
         $(".not-just-app > section > .feature-management").addClass("slide-in-right").css({ "display": "block" });
         $(".not-just-app > section > .feature-measurement").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-unfilled").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-a").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-ll").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-o").css({ "display": "block" });
+        $(".not-just-app > section > .alloe-svg-e").css({ "display": "none" });
         // active letter
         // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });
@@ -157,7 +181,8 @@ export default {
         $("#alloe-interactive-ee").css({ "fill": "transparent", "stroke": "#212A34" });
       } else if ($('.class4').length) {
         // module background
-        $(".not-just-app").addClass("slide-in-right").css({ "background-color": "#5000C5" });
+        //$(".not-just-app").addClass("slide-in-right").css({ "background-color": "#5000C5" });
+        $(".not-just-app").css({ "background-color": "#5000C5" });
         // module title
         $(".not-just-app > h2").css({ "color": "#fff" });
         // message
@@ -165,6 +190,11 @@ export default {
         $(".not-just-app > section > .feature-engagement").css({ "display": "none" });
         $(".not-just-app > section > .feature-management").css({ "display": "none" });
         $(".not-just-app > section > .feature-measurement").addClass("slide-in-left").css({ "display": "block" });
+        $(".not-just-app > section > .alloe-svg-unfilled").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-a").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-ll").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-o").css({ "display": "none" });
+        $(".not-just-app > section > .alloe-svg-e").css({ "display": "block" });
         // active letter
         // $("#alloe-interactive-a").css({ "fill": "transparent", "stroke": "#212A34" });
         $("#alloe-interactive-ll").css({ "fill": "transparent", "stroke": "#212A34" });

@@ -214,63 +214,67 @@
     }
     .not-just-app {
       position: relative;
-
-      height: pxToRem(600px);
-      @include screen(320px,
-      767px) {
-        height: pxToRem(500px);
-        overflow: hidden;
-      }
+      min-height:450px;
+      //height: pxToRem(600px);
+      top: -1px;
       background-color: $brand-white;
-
+      @include screen(320px, 767px) {
+        //height: pxToRem(502px);
+        //height: auto;
+        overflow: hidden;
+        padding-bottom: $base-padding * 2;
+      }
       @extend .not-just-app-animation;
       .content {
-        @include screen(768px,
-        1023px) {
+        //height: 100%;
+        @include screen(768px, 2000px) {
           @include container(768px);
         }
       }
       h2 {
         font-size: $base-font-size * 3;
         position: absolute;
-        left: pxToRem(-80px);
-
+        right: 4rem;
+        //left: pxToRem(-80px);
         display: block;
-        float: left;
-
-        width: 25%;
+        float: right;
+        //width: 25%;
+        width: 100%;
         @include screen(1024px,
         2000px) {
-          left: -6rem;
-          width: 35%;
+          right: 6rem;
+          //left: -6rem;
+          //width: 100%;
         }
-        margin-top: pxToRem(250px);
+        margin-top: pxToRem(48px);
 
-        transform: rotate(-90deg);
+        //transform: rotate(-90deg);
         @include screen(320px,
         767px) {
           font-size: $base-font-size * 2;
-          transform: rotate(0deg);
+          //transform: rotate(0deg);
           display: block;
-          padding-top: $gratio-4;
+          padding-top: $base-padding * 4;
           margin-bottom: $gratio-4;
-          margin: 0 auto;
-          width: 80%;
-          float: none;
-          text-align: left;
-          position: initial;
+          margin: auto;
+          //width: 80%;
+          float: none !important;
           text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          right: 0;
+          position: inherit;
+          padding-bottom: 1rem;
         }
-        @include screen(768px,
-        1023px) {
-          transform: rotate(0deg);
+        @include screen(768px,1023px) {
+          //transform: rotate(0deg);
           display: block;
           padding-top: $gratio-6;
           margin: 0 auto;
-          width: 50%;
+          //width: 50%;
           float: none;
           text-align: left;
-          position: initial;
+          position: inherit;
           text-align: center;
         }
         text-align: right;
