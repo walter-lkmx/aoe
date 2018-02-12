@@ -105,39 +105,12 @@
         }
       }
       &.feature-social {
-        @include screen(320px, 767px) {
-          width: 85% !important;
-          p {
-            display: block;
-            width: 100% !important;
-          }
-          a {
-            display: block;
-          }
-        }
-        @include screen(320px,1023px) {
-          width: 80%;
-          display: block;
-          float: none;
-          margin-left: $gratio-4;
-          p {
-            float: none;
-            width: 70%;
-            display: inline-block;
-          }
-          a {
-            display: inline-block;
-            @include screen(320px, 767px) {
-            margin-top: $base-margin;
-          }
-          }
-        }
-        @include screen(1024px, 2000px) {
-
-        }
-        margin-left: 5%;
+        //margin-left: 5%;
+        //left: 10%;
         color: $brand-white;
         margin-top: 0;
+        position: relative;
+
         p {
           width: 70%;
           float: left;
@@ -145,10 +118,9 @@
         a {
           float: left;
         }
-      }
-      &.feature-engagement {
         @include screen(320px, 767px) {
           width: 85% !important;
+          left: 5%;
           p {
             display: block;
             width: 100% !important;
@@ -157,34 +129,107 @@
             display: block;
           }
         }
-        @include screen(320px, 1023px) {
+        @include screen(768px,1023px) {
           width: 80%;
           display: block;
           float: none;
-          margin-left: $gratio-4;
+          left: 5%;
+          //margin-left: $gratio-4;
           p {
-            float: none;
+            float: left;
             width: 70%;
             display: inline-block;
           }
           a {
             display: inline-block;
             @include screen(320px, 767px) {
-            margin-top: $base-margin;
-          }
+              margin-top: $base-margin;
+            }
           }
         }
-        margin-left: 30%;
+        @include screen(1024px, 1200px) {
+          left: 0%;
+        }
+        @include screen(1201px, 1400px) {
+          left: 5%;
+        }
+        @include screen(1401px, 1600px) {
+          left: 10%;
+        }
+        @include screen(1601px, 1800px) {
+          left: 15%;
+        }
+        @include screen(1801px, 2000px) {
+          left: 20%;
+        }
+      }
+      &.feature-engagement {
+        //margin-left: 30%;
         margin-top: 0;
+        position: relative;
         p {
           width: 70%;
           float: left;
         }
+        @include screen(320px, 767px) {
+          width: 85% !important;
+          left: 5%;
+          p {
+            display: block;
+            width: 100% !important;
+          }
+          a {
+            display: block;
+          }
+        }
+        @include screen(768px, 1023px) {
+          width: 60%;
+          display: block;
+          float: none;
+          left: 30%;
+          //margin-left: $gratio-4;
+          p {
+            float: left;
+            width: 70%;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+            @include screen(320px, 767px) {
+              margin-top: $base-margin;
+            }
+          }
+        }
+        @include screen(1024px, 1200px) {
+          left: 30%;
+        }
+        @include screen(1201px, 1400px) {
+          left: 30%;
+        }
+        @include screen(1401px, 1600px) {
+          left: 35%;
+        }
+        @include screen(1601px, 1800px) {
+          left: 35%;
+        }
+        @include screen(1801px, 2000px) {
+          left: 38%;
+        }
       }
       &.feature-management {
+        margin-top: 0;
+        position: relative;
+        //margin-left: 55%;
+        //float: right;
+        color: $brand-white;
+        p {
+          width: 70%;
+          float: left;
+        }
         @include screen(320px, 767px) {
           width: 85% !important;
           float: right;
+          right: 10%;
           h3 {
             text-align: right;
           }
@@ -198,44 +243,68 @@
             float: right;
           }
         }
-        @include screen(320px, 1023px) {
-          width: 80%;
+        @include screen(768px, 1023px) {
+          width: 60%;
           display: block;
           float: none;
-          margin-left: $gratio-4;
+          left: 35%;
+          //margin-left: $gratio-4;
+          h3 {
+            position: relative;
+            left: 30%;
+          }
           p {
-            float: none;
+            float: right;
             width: 70%;
             display: inline-block;
           }
           a {
             display: inline-block;
+            margin-left: 0;
+            left: 10%;
           }
         }
-        margin-top: 0;
-        margin-left: 55%;
-        //float: right;
-        color: $brand-white;
-        p {
-          width: 70%;
-          float: left;
+        @include screen(1024px, 1200px) {
+          left: 55%;
+        }
+        @include screen(1201px, 1400px) {
+          left: 55%;
+        }
+        @include screen(1401px, 1600px) {
+          left: 55%;
+        }
+        @include screen(1601px, 1800px) {
+          left: 55%;
+        }
+        @include screen(1801px, 2000px) {
+          left: 55%;
         }
       }
       &.feature-measurement {
-        margin-left: 45%;
+        position: relative;
+        //margin-left: 45%;
         //width: 75%;
         //float: right;
-        text-align: right;
+        //text-align: right;
         //margin: 0 70px 0 0;
+        p {
+          width: 70%;
+          float: right;
+          text-align: right;
+        }
+        a {
+          // margin-left: $base-margin * 8;
+          float: right !important;
+        }
+        h3 {
+          text-align: right;
+        }
         @include screen(320px, 767px) {
           width: 85% !important;
           float: right;
-          h3 {
-            text-align: right;
-          }
+          right: 10%;
           p {
             width: 100% !important;
-            text-align: right;
             float: right !important;
           }
           a {
@@ -244,33 +313,61 @@
           }
         }
         
-        @include screen(320px,1023px) {
-          width: 80%;
+        @include screen(768px,1023px) {
+          width: 60%;
           display: block;
           float: none;
-          margin-left: $gratio-4;
+          //margin-left: $gratio-4;
           text-align: left;
+          left: 35%;
           p {
-            float: none;
+            float: right;
             width: 60%;
             display: inline-block;
           }
           a {
             display: inline-block;
-            margin-left: $base-margin * 2;
-            @include screen(320px, 767px) {
-            margin-top: $base-margin;
-          }
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+           /* @include screen(320px, 767px) {
+              margin-top: $base-margin;
+            }*/
           }
         }
-
-        p {
-          width: 70%;
-          float: right;
+        @include screen(1024px, 1200px) {
+          left: 50%;
+          a {
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+          }
         }
-        a {
-          // margin-left: $base-margin * 8;
-          float: right !important;
+        @include screen(1201px, 1400px) {
+          left: 45%;
+          a {
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+          }
+        }
+        @include screen(1401px, 1600px) {
+          left: 38%;
+          a {
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+          }
+        }
+        @include screen(1601px, 1800px) {
+          left: 35%;
+          a {
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+          }
+        }
+        @include screen(1801px, 2000px) {
+          left: 30%;
+          a {
+            margin-right: $base-margin * 2;
+            margin-left: 0;
+          }
         }
       }
     }

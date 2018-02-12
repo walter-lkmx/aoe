@@ -240,6 +240,7 @@
         float: right;
         //width: 25%;
         width: 100%;
+        text-align: right;
         @include screen(1024px,
         2000px) {
           right: 6rem;
@@ -266,7 +267,7 @@
           position: inherit;
           padding-bottom: 1rem;
         }
-        @include screen(768px,1023px) {
+        @include screen(768px,910px) {
           //transform: rotate(0deg);
           display: block;
           padding-top: $gratio-6;
@@ -275,14 +276,12 @@
           float: none;
           text-align: left;
           position: inherit;
-          text-align: center;
+          //text-align: center;
         }
-        text-align: right;
       }
     }
     .simple-as {
       position: relative;
-
       height: pxToRem(300px);
       @include screen(320px,
         767px) {
@@ -293,6 +292,7 @@
       padding-top: $base-padding * 4;
       @include screen(768px,
       1023px) {
+        height: pxToRem(380px);
         padding-top: $gratio-3;
         padding-bottom: $gratio-3;
       }
@@ -311,12 +311,24 @@
         1023px) {
           @include container(700px);
           h2 {
-            font-size: $base-font-size * 2;
-            overflow: hidden;
+            font-size: $base-font-size * 3;
+            text-align: center;
+            //overflow: hidden;
           }
           ul {
-            margin-top: 1 - $base-margin;
+            margin-top: $base-margin;
+            margin-left: 0;
+              margin-right: 0;
+              width:100%;
+            li {
+              margin-left: 0;
+              margin-right: $base-margin * 2;
+            }
             li.subscribe-now {
+              margin-left: $base-margin * -1;
+              display: inline-block;
+              margin-right: 0;
+
               a {
                 margin-top: $gratio-3;
               }
