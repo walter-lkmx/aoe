@@ -38,8 +38,8 @@
   }
   section {
     float: none;
-    width: 95%;
-    margin: 0 2.5%;
+    width: 100%;
+    //margin: 0 2.5%;
     @include screen(320px,
         1023px) {
       float: none;
@@ -54,7 +54,10 @@
         margin: 0 auto;
         margin-top: 0;
         height: pxToRem(120px);
-        padding: 3rem 0;
+        padding: 1.5rem 0;
+        polygon, rect, circle {
+          stroke-width: 4;
+        }
       }
       @include screen(768px, 1023px) {
         display: block;
@@ -127,6 +130,7 @@
           }
           a {
             display: block;
+            margin: $base-margin 0 0 0 !important;
           }
         }
         @include screen(768px,1023px) {
@@ -180,6 +184,7 @@
           }
           a {
             display: block;
+            margin: $base-margin 0 0 0 !important;
           }
         }
         @include screen(768px, 1023px) {
@@ -229,7 +234,7 @@
         @include screen(320px, 767px) {
           width: 85% !important;
           float: right;
-          right: 10%;
+          right: 6%;
           h3 {
             text-align: right;
           }
@@ -239,7 +244,7 @@
             float: right !important;
           }
           a {
-            margin: $base-margin $base-margin 0 0;
+            margin: $base-margin 0 0 0 !important;
             float: right;
           }
         }
@@ -282,6 +287,7 @@
       }
       &.feature-measurement {
         position: relative;
+        margin-top: 0;
         //margin-left: 45%;
         //width: 75%;
         //float: right;
@@ -302,13 +308,13 @@
         @include screen(320px, 767px) {
           width: 85% !important;
           float: right;
-          right: 10%;
+          right: 6%;
           p {
             width: 100% !important;
             float: right !important;
           }
           a {
-            margin: $base-margin $base-margin 0 0 !important;
+            margin: $base-margin 0 0 0 !important;
             float: right !important;
           }
         }

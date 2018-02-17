@@ -281,7 +281,7 @@
                                     <use xlink:href="#path-1"></use>
                                 </mask>
                                 <!--g id="alloe-interactive-a"></g-->
-                                <polygon stroke="#212A34" stroke-width="2" mask="url(#mask-2)" points="93.885 0 187.769 160.945 0 160.945"></polygon>
+                                <polygon stroke="#fff" stroke-width="2" mask="url(#mask-2)" points="93.885 0 187.769 160.945 0 160.945"></polygon>
                             </g>
                         </g>
                         <g id="Group" transform="translate(324.553000, 1.030000)">
@@ -291,7 +291,7 @@
                                         <use xlink:href="#path-3"></use>
                                     </mask>
                                     <!--g id="alloe-interactive-ll"></g-->
-                                    <rect stroke="#212A34" stroke-width="2" mask="url(#mask-4)" x="0" y="0.029" width="62.59" height="160.945"></rect>
+                                    <rect stroke="#fff" stroke-width="2" mask="url(#mask-4)" x="0" y="0.029" width="62.59" height="160.945"></rect>
                                 </g>
                             </g>
                             <g id="alloe-interactive-ll-link" transform="translate(98.000000, 0.000000)">
@@ -300,7 +300,7 @@
                                         <use xlink:href="#path-5"></use>
                                     </mask>
                                     <!--g id="alloe-interactive-ll"></g-->
-                                    <rect stroke="#212A34" stroke-width="2" mask="url(#mask-6)" x="0.355" y="0.029" width="62.59" height="160.945"></rect>
+                                    <rect stroke="#fff" stroke-width="2" mask="url(#mask-6)" x="0.355" y="0.029" width="62.59" height="160.945"></rect>
                                 </g>
                             </g>
                         </g>
@@ -310,7 +310,7 @@
                                     <use xlink:href="#path-7"></use>
                                 </mask>
                                 <use id="alloe-interactive-o" fill="#FFFFFF" xlink:href="#path-7"></use>
-                                <circle id="alloe-interactive-o" stroke="#212A34" stroke-width="2" mask="url(#mask-8)" cx="80.473" cy="81.133" r="80.473"></circle>
+                                <circle id="alloe-interactive-o" stroke="#fff" stroke-width="2" mask="url(#mask-8)" cx="80.473" cy="81.133" r="80.473"></circle>
                             </g>
                         </g>
                         <g id="Group" transform="translate(917.713000, 1.766000)">
@@ -320,7 +320,7 @@
                                         <use xlink:href="#path-9"></use>
                                     </mask>
                                     <!--g id="alloe-interactive-e"></g-->
-                                    <rect stroke="#212A34" stroke-width="2" mask="url(#mask-10)" x="0.393" y="0.412" width="44.216" height="160.945"></rect>
+                                    <rect stroke="#fff" stroke-width="2" mask="url(#mask-10)" x="0.393" y="0.412" width="44.216" height="160.945"></rect>
                                 </g>
                             </g>
                             <g id="alloe-interactive-e-link" transform="translate(81.841000, 80.661000) rotate(-90.000000) translate(-81.841000, -80.661000) translate(59.341000, -0.339000)">
@@ -329,7 +329,7 @@
                                         <use xlink:href="#path-11"></use>
                                     </mask>
                                     <!--g id="alloe-interactive-e"></g-->
-                                    <rect stroke="#212A34" stroke-width="2" mask="url(#mask-12)" x="0.393" y="0.187" width="44.216" height="160.945"></rect>
+                                    <rect stroke="#fff" stroke-width="2" mask="url(#mask-12)" x="0.393" y="0.187" width="44.216" height="160.945"></rect>
                                 </g>
                             </g>
                             <g id="alloe-interactive-e-link" transform="translate(81.961000, 22.541000) rotate(-90.000000) translate(-81.961000, -22.541000) translate(59.461000, -58.459000)">
@@ -338,7 +338,7 @@
                                         <use xlink:href="#path-13"></use>
                                     </mask>
                                     <!--g id="alloe-interactive-e"></g-->
-                                    <rect stroke="#212A34" stroke-width="2" mask="url(#mask-14)" x="0.393" y="0.067" width="44.216" height="160.945"></rect>
+                                    <rect stroke="#fff" stroke-width="2" mask="url(#mask-14)" x="0.393" y="0.067" width="44.216" height="160.945"></rect>
                                 </g>
                             </g>
                         </g>
