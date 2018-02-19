@@ -214,15 +214,16 @@
     }
     .not-just-app {
       position: relative;
-      min-height:450px;
+      //min-height:450px;
       //height: pxToRem(600px);
       top: -1px;
+      padding: $base-padding * 4 0;
       background-color: $brand-white;
       @include screen(320px, 767px) {
         //height: pxToRem(502px);
         //height: auto;
         overflow: hidden;
-        padding-bottom: $base-padding * 2;
+        //padding-bottom: $base-padding * 2;
       }
       @extend .not-just-app-animation;
       .content {
@@ -247,16 +248,15 @@
           //left: -6rem;
           //width: 100%;
         }
-        margin-top: pxToRem(48px);
+        //margin-top: pxToRem(48px);
 
         //transform: rotate(-90deg);
-        @include screen(320px,
-        767px) {
+        @include screen(320px, 767px) {
           font-size: $base-font-size * 2;
           //transform: rotate(0deg);
           display: block;
-          padding-top: $base-padding * 4;
-          margin-bottom: $gratio-4;
+          //padding-top: $base-padding * 4;
+          //margin-bottom: $gratio-4;
           margin: auto;
           //width: 80%;
           float: none !important;
@@ -265,7 +265,7 @@
           margin-right: auto;
           right: 0;
           position: inherit;
-          padding-bottom: 1rem;
+          //padding-bottom: 1rem;
         }
         @include screen(768px,910px) {
           //transform: rotate(0deg);

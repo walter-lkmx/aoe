@@ -10,53 +10,54 @@
     height: 100%;
     transition: $base-transition;
     position: absolute;
-    z-index: 0; // svg.alloe-svg-back {
-    //   float: right;
-    //   width: 75%;
-    //   height: pxToRem(150px);
-    //   margin-top: $base-margin - 10.4;
-    //   margin-right: $base-margin * 4;
-    //   z-index: 0; // position: absolute;
-    //   g {
-    //     fill: transparent;
-    //     stroke: transparent;
-    //     #alloe-interactive-a {
-    //       fill: $brand-primary;
-    //       animation: jello-vertical 0.9s infinite both;
-    //     }
-    //     #alloe-interactive-ll {
-    //       fill: $brand-yellow;
-    //     }
-    //     #alloe-interactive-o {
-    //       fill: $brand-purple;
-    //     }
-    //     #alloe-interactive-e {
-    //       fill: $brand-secondary;
-    //     }
-    //   }
-    // }
+    z-index: 0;
+    top: 0;
+  /*svg.alloe-svg-back {
+       float: right;
+       width: 75%;
+       height: pxToRem(150px);
+       margin-top: $base-margin - 10.4;
+       margin-right: $base-margin * 4;
+      z-index: 0; // position: absolute;
+       g {
+         fill: transparent;
+         stroke: transparent;
+         #alloe-interactive-a {
+          fill: $brand-primary;
+           animation: jello-vertical 0.9s infinite both;
+         }
+         #alloe-interactive-ll {
+           fill: $brand-yellow;
+         }
+         #alloe-interactive-o {
+           fill: $brand-purple;
+         }
+         #alloe-interactive-e {
+           fill: $brand-secondary;
+         }
+       }
+    }*/
   }
   section {
     float: none;
     width: 100%;
-    //margin: 0 2.5%;
+    margin-top: 3rem;
     @include screen(320px,
         1023px) {
       float: none;
       width: 100%;
     }
     svg.alloe-svg-front {
-      padding: 3rem 0;
       @include screen(320px, 767px) {
         display: block;
         float: none;
         width: 90%;
         margin: 0 auto;
-        margin-top: 0;
+        margin-top: 3rem;
         height: pxToRem(120px);
-        padding: 1.5rem 0;
+        //padding: 1.5rem 0;
         polygon, rect, circle {
-          stroke-width: 4;
+          stroke-width: 3;
         }
       }
       @include screen(768px, 1023px) {
@@ -64,16 +65,16 @@
         float: none;
         width: 90%;
         margin: 0 auto;
-        padding: 3rem 0;
+        //padding: 3rem 0;
       }
       @include screen(1024px, 2000px) {
-        padding: 8rem 0 4rem 0;
+        margin-top: 6rem;
       }
       g {
         fill: transparent;
         stroke: $brand-dark;
       }
-      float: right;
+      //float: right;
       width: 100%;
       height: pxToRem(150px);
       margin-right: auto; // z-index: 2;
@@ -84,7 +85,7 @@
       margin-top: $base-margin * 2;
       width: 50%;
       overflow: hidden;
-      padding-bottom: $base-margin * 3;
+      //padding-bottom: $base-margin * 3;
       h3 {
         font-size: $base-font-size * 1.5;
         margin-bottom: $base-margin;
@@ -111,7 +112,7 @@
         //margin-left: 5%;
         //left: 10%;
         color: $brand-white;
-        margin-top: 0;
+        //margin-top: 0;
         position: relative;
 
         p {
@@ -169,7 +170,7 @@
       }
       &.feature-engagement {
         //margin-left: 30%;
-        margin-top: 0;
+        //margin-top: 0;
         position: relative;
         p {
           width: 70%;
@@ -222,7 +223,7 @@
         }
       }
       &.feature-management {
-        margin-top: 0;
+        //margin-top: 0;
         position: relative;
         //margin-left: 55%;
         //float: right;
@@ -287,7 +288,7 @@
       }
       &.feature-measurement {
         position: relative;
-        margin-top: 0;
+        //margin-top: 0;
         //margin-left: 45%;
         //width: 75%;
         //float: right;
